@@ -1,4 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
+import styled from "styled-components";
 
 function SlideImg() {
   return (
@@ -13,8 +14,10 @@ function SlideImg() {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h5>JS-02P</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <Title>JS-02P</Title>
+            <Content>
+              Nulla vitae elit libero, a pharetra augue mollis interdum.
+            </Content>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -24,8 +27,10 @@ function SlideImg() {
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h5>JS-06</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Title>JS-06</Title>
+            <Content>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </Content>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -35,10 +40,10 @@ function SlideImg() {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h5>JS-08</h5>
-            <p>
+            <Title>JS-08</Title>
+            <Content>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            </Content>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -47,3 +52,15 @@ function SlideImg() {
 }
 
 export default SlideImg;
+
+const Title = styled.div`
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 500;
+  line-height: 1.2;
+`;
+
+const Content = styled.p`
+  margin-bottom: 1rem;
+  color: white;
+`;
