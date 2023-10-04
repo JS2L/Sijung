@@ -8,9 +8,9 @@ function SlideImg() {
       {/* 사진 바꾸고 p태그 설명 넣기 추가해야함 */}
       <Carousel data-bs-theme="dark">
         <Carousel.Item>
-          <img
+          <SlideStyle
             className="d-block w-100"
-            src="/img/transmittance_2.jpg"
+            src="/img/JS-02P.png"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -21,9 +21,9 @@ function SlideImg() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
+          <SlideStyle
             className="d-block w-100"
-            src="/img/transmittance_2.jpg"
+            src="/img/JS-06.png"
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -63,4 +63,9 @@ const Title = styled.div`
 const Content = styled.p`
   margin-bottom: 1rem;
   color: white;
+`;
+
+const SlideStyle = styled.img`
+  max-height: 450px;
+  object-fit: cover;
 `;
