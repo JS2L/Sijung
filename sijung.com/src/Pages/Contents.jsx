@@ -38,6 +38,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 20px;
+  margin-bottom: 20px;
   background: none;
   transition: background 0.3s ease;
   color: black;
@@ -65,6 +66,7 @@ const Title = styled.div`
   font-size: 22px;
   margin-top: 20px;
   margin-bottom: 10px;
+  font-family: "Pretendard-Black" !important;
 `;
 
 const Detail = styled.p`

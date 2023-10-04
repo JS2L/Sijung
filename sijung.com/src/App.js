@@ -2,6 +2,7 @@ import Header from "./Pages/Header";
 import SlideImg from "./Pages/SlideImg";
 import Contents from "./Pages/Contents";
 import AboutUs from "./Pages/AboutUs";
+import PredictionSection from "./Pages/Prediction";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <SlideImg />
       <Contents />
-      <AboutUs />
+      <PredictionSection />
     </div>
   );
 }

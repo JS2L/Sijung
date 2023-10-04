@@ -10,9 +10,10 @@ function Header() {
           <Logo src="/img/logo.png" />
           <Navbar.Brand href="#home">SIJUNG</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#home">회사소개</Nav.Link>
+            <Nav.Link href="#features">제품소개</Nav.Link>
+            <Nav.Link href="#pricing">보유기술</Nav.Link>
+            <Nav.Link href="#">기상서비스</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

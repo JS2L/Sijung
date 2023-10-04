@@ -59,7 +59,7 @@ const Paragraph = styled.p`
   margin: 10px 50px 10px 50px;
   padding: 0;
   word-break: break-all;
-  font-family: "Noto Sans KR";
+  font-family: "Pretendard-Black", sans-serif;
 `;
 
 const ParagraphBold = styled.p`
@@ -68,7 +68,7 @@ const ParagraphBold = styled.p`
   margin: 10px 50px 10px 50px;
   padding: 0;
   word-break: break-all;
-  font-family: "Noto Sans KR";
+  font-family: "Pretendard-Black", sans-serif;
   font-weight: 700;
   color: #206fb1;
 `;
