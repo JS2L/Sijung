@@ -4,6 +4,11 @@ function ImgContent() {
   return (
     <ContentWrap>
       <AboutUsWrap>
+        <ParagraphTitle>
+          "뛰어난 기술력과 우수한 품질을 바탕으로
+          <br />
+          고객 만족을 실현하는 기업, (주)시정 입니다."
+        </ParagraphTitle>
         <Paragraph>
           (주)시정은 한국표준과학원의 기술 출자로 설립된 연구소 기업입니다.
           <br />
@@ -71,6 +76,16 @@ const ParagraphBold = styled.p`
   font-family: "Pretendard-Black", sans-serif;
   font-weight: 700;
   color: #206fb1;
+`;
+
+const ParagraphTitle = styled.p`
+  font-size: 24px;
+  line-height: 38px;
+  margin: 10px 50px 10px 50px;
+  padding: 0;
+  word-break: break-all;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-weight: 700;
 `;
 
 const Sign = styled.p`

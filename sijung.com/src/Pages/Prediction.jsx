@@ -18,6 +18,7 @@ function PredictionSection() {
         src="/img/Prediction_1.png"
         alt="First slide"
       />
+      <p>A.I Weather System</p>
     </PredictionContainer>
   );
 }
@@ -42,10 +43,10 @@ const BlueBox = styled.div`
   max-height: 100%;
   margin-bottom: 20px;
   padding-bottom: 50px;
-  position: absolute; /* 절대 위치로 설정 */
-  top: 0; /* 맨 위로 위치 */
+  position: absolute;
+  top: 0;
   left: 0;
-  z-index: 1; /* 다른 요소 위에 렌더링 */
+  z-index: 1;
 `;
 
 const BlueBoxTitle = styled.p`
@@ -67,7 +68,9 @@ const BlueBoxtxt = styled.p`
 
 const ImgRight = styled.img`
   position: absolute;
-  width: 643px !important;
-  height: 732px;
-  z-index: 1; /* 박스 아래에 렌더링 */
+  width: 505px !important;
+  height: 593px;
+  z-index: 1;
+  margin-left: 600px;
 `;
+

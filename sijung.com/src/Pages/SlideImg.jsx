@@ -15,9 +15,7 @@ function SlideImg() {
           />
           <Carousel.Caption>
             <Title>JS-02P</Title>
-            <Content>
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </Content>
+            <Content>인공지능 자동 기상 관측 장비</Content>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -28,9 +26,7 @@ function SlideImg() {
           />
           <Carousel.Caption>
             <Title>JS-06</Title>
-            <Content>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </Content>
+            <Content>인공지능 영상 분석 시정계</Content>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -41,9 +37,7 @@ function SlideImg() {
           />
           <Carousel.Caption>
             <Title>JS-08</Title>
-            <Content>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </Content>
+            <Content>인공지능 파노라마 영상 분석 시정계</Content>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -61,8 +55,9 @@ const Title = styled.div`
 `;
 
 const Content = styled.p`
-  margin-bottom: 1rem;
+  margin-bottom: 5px;
   color: white;
+  font-family: "PretendardVairable";
 `;
 
 const SlideStyle = styled.img`
