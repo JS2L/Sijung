@@ -18,7 +18,7 @@ function PredictionSection() {
         src="/img/Prediction_1.png"
         alt="First slide"
       />
-      <p>A.I Weather System</p>
+      <Imgtxt>A.I Weather System</Imgtxt>
     </PredictionContainer>
   );
 }
@@ -74,3 +74,9 @@ const ImgRight = styled.img`
   margin-left: 600px;
 `;
 
+const Imgtxt = styled.p`
+  font-family: "Pretendard-Bold";
+  font-size: 35px;
+  margin-top: 400px;
+  margin-right: 350px;
+`;
