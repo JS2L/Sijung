@@ -17,20 +17,17 @@ function PredictionSection() {
       <ImgRightTxt>A.I Weather System</ImgRightTxt>
       <ImgLeft src="/img/Prediction_2.png" alt="2nd Prediction" />
       <ImgLeftTxt>
-        A.I VIDEO ANALYSIS
+        AIR POLLUTION
         <br />
-        VISIBILITY
+        MONITERING SYSTEM
       </ImgLeftTxt>
       <ImgRightLow src="/img/Prediction_3.png" alt="3rd Prediction" />
-      <ImgRightTxtLow>
-        A.I PANORAMA
-        <br />
-        VIDEO ANALYSIS
-        <br />
-        VISIBILITY
-      </ImgRightTxtLow>
+      <ImgRightTxtLow>SURVEILLANCE SOLUTION</ImgRightTxtLow>
       <ImgLeftLow src="/img/Prediction_4.png" alt="4th Prediction" />
-      <ImgLeftTxtLow>RETRO REFLECTOR</ImgLeftTxtLow>
+      <ImgLeftTxtLow>
+        Big Data Business &<br />
+        System Integration
+      </ImgLeftTxtLow>
     </PredictionContainer>
   );
 }
@@ -123,8 +120,8 @@ const ImgRightTxtLow = styled.p`
   position: absolute;
   font-family: "Pretendard-Bold";
   font-size: 35px;
-  margin-top: 1900px;
-  margin-right: 400px;
+  margin-top: 2000px;
+  margin-right: 550px;
 `;
 
 const ImgLeftLow = styled.img`
@@ -140,6 +137,6 @@ const ImgLeftTxtLow = styled.p`
   position: absolute;
   font-family: "Pretendard-Bold";
   font-size: 35px;
-  margin-top: 2650px;
+  margin-top: 2600px;
   margin-left: 400px;
 `;
