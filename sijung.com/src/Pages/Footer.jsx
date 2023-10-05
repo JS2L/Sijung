@@ -31,17 +31,17 @@ const FooterContainer = styled.footer`
 `;
 
 const FooterAddress = styled.p`
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 10px;
 `;
 
 const FooterTel = styled.p`
-  font-size: 15px;
+  font-size: 18px;
   color: #0072ff;
 `;
 
 const FooterCP = styled.p`
-  font-size: 15px;
+  font-size: 18px;
 `;
 
 const White_logo = styled.img`
