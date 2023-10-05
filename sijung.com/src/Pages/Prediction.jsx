@@ -13,14 +13,24 @@ function PredictionSection() {
         </BlueBoxtxt>
         <BlueBoxtxt>아이디어에 근거한 고유의 시정 측정 기술로 예측</BlueBoxtxt>
       </BlueBox>
-      <ImgRight src="/img/Prediction_1.png" alt="First slide" />
+      <ImgRight src="/img/Prediction_1.png" alt="1st Prediction" />
       <ImgRightTxt>A.I Weather System</ImgRightTxt>
-      <ImgLeft src="/img/Prediction_2.png" alt="Second slide" />
+      <ImgLeft src="/img/Prediction_2.png" alt="2nd Prediction" />
       <ImgLeftTxt>
         A.I VIDEO ANALYSIS
         <br />
         VISIBILITY
       </ImgLeftTxt>
+      <ImgRightLow src="/img/Prediction_3.png" alt="3rd Prediction" />
+      <ImgRightTxtLow>
+        A.I PANORAMA
+        <br />
+        VIDEO ANALYSIS
+        <br />
+        VISIBILITY
+      </ImgRightTxtLow>
+      <ImgLeftLow src="/img/Prediction_4.png" alt="4th Prediction" />
+      <ImgLeftTxtLow>RETRO REFLECTOR</ImgLeftTxtLow>
     </PredictionContainer>
   );
 }
@@ -32,7 +42,7 @@ const PredictionContainer = styled.div`
   justify-content: center;
   overflow: hidden;
   position: relative;
-  height: 3000px;
+  height: 2900px;
 `;
 
 const BlueBox = styled.div`
@@ -88,7 +98,7 @@ const ImgLeft = styled.img`
   width: 505px !important;
   height: 593px;
   z-index: 1;
-  margin-top: 950px;
+  margin-top: 850px;
   margin-right: 600px;
 `;
 
@@ -96,6 +106,40 @@ const ImgLeftTxt = styled.p`
   position: absolute;
   font-family: "Pretendard-Bold";
   font-size: 35px;
-  margin-top: 1400px;
+  margin-top: 1300px;
+  margin-left: 400px;
+`;
+
+const ImgRightLow = styled.img`
+  position: absolute;
+  width: 505px !important;
+  height: 593px;
+  z-index: 1;
+  margin-left: 600px;
+  margin-top: 1500px;
+`;
+
+const ImgRightTxtLow = styled.p`
+  position: absolute;
+  font-family: "Pretendard-Bold";
+  font-size: 35px;
+  margin-top: 1900px;
+  margin-right: 400px;
+`;
+
+const ImgLeftLow = styled.img`
+  position: absolute;
+  width: 505px !important;
+  height: 593px;
+  z-index: 1;
+  margin-top: 2160px;
+  margin-right: 600px;
+`;
+
+const ImgLeftTxtLow = styled.p`
+  position: absolute;
+  font-family: "Pretendard-Bold";
+  font-size: 35px;
+  margin-top: 2650px;
   margin-left: 400px;
 `;
