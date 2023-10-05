@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "../Assets/Fonts/Font.css";
 
 function PredictionSection() {
   return (
@@ -12,6 +13,11 @@ function PredictionSection() {
         </BlueBoxtxt>
         <BlueBoxtxt>아이디어에 근거한 고유의 시정 측정 기술로 예측</BlueBoxtxt>
       </BlueBox>
+      <ImgRight
+        className="d-block w-100"
+        src="/img/Prediction_1.png"
+        alt="First slide"
+      />
     </PredictionContainer>
   );
 }
@@ -23,6 +29,8 @@ const PredictionContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
+  height: 1000px;
 `;
 
 const BlueBox = styled.div`
@@ -31,9 +39,13 @@ const BlueBox = styled.div`
   padding: 20px;
   border-radius: 5px;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   margin-bottom: 20px;
   padding-bottom: 50px;
+  position: absolute; /* 절대 위치로 설정 */
+  top: 0; /* 맨 위로 위치 */
+  left: 0;
+  z-index: 1; /* 다른 요소 위에 렌더링 */
 `;
 
 const BlueBoxTitle = styled.p`
@@ -49,6 +61,13 @@ const BlueBoxtxt = styled.p`
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 100px;
-  font-family: "YEONGJUPunggiGinseng";
+  font-family: "Pretendard-Black";
   font-size: 25px;
+`;
+
+const ImgRight = styled.img`
+  position: absolute;
+  width: 643px !important;
+  height: 732px;
+  z-index: 1; /* 박스 아래에 렌더링 */
 `;

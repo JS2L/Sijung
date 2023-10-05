@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "../Assets/Fonts/Font.css";
 
 function Contents() {
   return (
@@ -66,7 +67,6 @@ const Title = styled.div`
   font-size: 22px;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: "Pretendard-Black" !important;
 `;
 
 const Detail = styled.p`
