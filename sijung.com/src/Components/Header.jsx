@@ -3,25 +3,28 @@ import styled from "styled-components";
 
 function Header() {
   return (
-    <div>
+    <HeaderStyle>
       {/* 시정로고 + bootstrap Navbar */}
+      {/* 갈아 엎어야 할거 같음 */}
       <Navbar bg="light" data-bs-theme="light">
         <Container>
           <Logo src="/img/logo.png" />
           <Navbar.Brand href="#home">SIJUNG</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">회사소개</Nav.Link>
-            <Nav.Link href="#features">제품소개</Nav.Link>
-            <Nav.Link href="#pricing">보유기술</Nav.Link>
-            <Nav.Link href="#">기상서비스</Nav.Link>
+            <Nav.Link>회사소개</Nav.Link>
+            <Nav.Link>제품소개</Nav.Link>
+            <Nav.Link>보유기술</Nav.Link>
+            <Nav.Link>기상서비스</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-    </div>
+    </HeaderStyle>
   );
 }
 
 export default Header;
+
+const HeaderStyle = styled.div``;
 
 const Logo = styled.img`
   width: 53px;

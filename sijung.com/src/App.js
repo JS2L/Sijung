@@ -1,18 +1,19 @@
-import Header from "./Pages/Header";
-import SlideImg from "./Pages/SlideImg";
-import Contents from "./Pages/Contents";
-import AboutUs from "./Pages/AboutUs";
-import PredictionSection from "./Pages/Prediction";
-import Footer from "./Pages/Footer";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Main from "./Pages/Main";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Header />
-      <SlideImg />
-      <Contents />
-      <PredictionSection />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />}></Route>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

@@ -30,9 +30,9 @@ function SlideImg() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
+          <SlideStyle
             className="d-block w-100"
-            src="/img/transmittance_2.jpg"
+            src="/img/JS-082.png"
             alt="Third slide"
           />
           <Carousel.Caption>
