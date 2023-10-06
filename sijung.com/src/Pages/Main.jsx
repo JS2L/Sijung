@@ -4,7 +4,7 @@ import PredictionSection from "../Components/Prediction";
 
 function Main() {
   return (
-    <div className="App">
+    <div>
       <SlideImg />
       <Contents />
       <PredictionSection />

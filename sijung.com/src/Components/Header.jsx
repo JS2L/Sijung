@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import styled from "styled-components";
 
@@ -8,8 +10,11 @@ function Header() {
       {/* 갈아 엎어야 할거 같음 */}
       <Navbar bg="light" data-bs-theme="light">
         <Container>
-          <Logo src="/img/logo.png" />
-          <Navbar.Brand href="#home">SIJUNG</Navbar.Brand>
+          <Link to="/">
+            {/* Logo를 클릭하면 Main 페이지로 이동합니다. */}
+            <Logo src="/img/logo.png" />
+          </Link>
+          <Navbar.Brand>SIJUNG</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link>회사소개</Nav.Link>
             <Nav.Link>제품소개</Nav.Link>
