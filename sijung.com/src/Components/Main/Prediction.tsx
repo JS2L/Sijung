@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import "../../Assets/Fonts/Font.css";
+import "../../Fonts/Font.css";
 
 function PredictionSection() {
   return (

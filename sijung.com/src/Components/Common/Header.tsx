@@ -1,39 +1,76 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Nav, Navbar, Container } from "react-bootstrap";
 import styled from "styled-components";
+import "../../Fonts/Font.css";
+
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <HeaderStyle>
-      {/* 시정로고 + bootstrap Navbar */}
-      {/* 갈아 엎어야 할거 같음 */}
-      <Navbar bg="light" data-bs-theme="light">
-        <Container>
-          <Link to="/">
-            {/* Logo를 클릭하면 Main 페이지로 이동합니다. */}
-            <Logo src="/img/logo.png" />
-          </Link>
-          <Navbar.Brand>SIJUNG</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link>회사소개</Nav.Link>
-            <Nav.Link>제품소개</Nav.Link>
-            <Nav.Link>보유기술</Nav.Link>
-            <Nav.Link>기상서비스</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </HeaderStyle>
+    <HeaderContainer>
+      <Logo>
+        <Link to="/">
+          <img src="/img/logo.png" alt="logo" />
+        </Link>
+      </Logo>
+      <Navigation>
+        <NavList>
+          <NavItem>
+            <Link to="/introComp">회사소개</Link>
+          </NavItem>
+          <NavItem>제품소개</NavItem>
+          <NavItem>보유기술</NavItem>
+          <NavItem>기상서비스</NavItem>
+        </NavList>
+      </Navigation>
+    </HeaderContainer>
   );
 }
 
 export default Header;
 
-const HeaderStyle = styled.div``;
+const HeaderContainer = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+`;
 
-const Logo = styled.img`
-  width: 53px;
-  height: 38px;
-  margin-right: 10px;
-  padding-top: 3px;
+const Logo = styled.div`
+  margin-left: 70px;
+  img {
+    width: 150px;
+    height: auto;
+  }
+`;
+
+const Navigation = styled.nav`
+  ul {
+    list-style: none;
+    display: flex;
+  }
+`;
+
+const NavList = styled.ul`
+  display: flex;
+  margin: 0;
+  padding: 0;
+`;
+
+const NavItem = styled.li`
+  margin-right: 20px;
+  color: black;
+  font-family: "Pretendard-Bold";
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  a {
+    color: inherit; /* Link 내부의 텍스트 색상을 상속합니다. */
+    text-decoration: none; /* 링크의 기본 텍스트 밑줄을 제거합니다. */
+  }
+  &:hover {
+    color: #00a0e4;
+    cursor: pointer;
+  }
 `;

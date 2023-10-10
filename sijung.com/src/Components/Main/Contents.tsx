@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import "../../Assets/Fonts/Font.css";
+import "../../Fonts/Font.css";
 
 function Contents() {
   return (
@@ -65,6 +65,7 @@ const ContentItem = styled.div`
 `;
 
 const Title = styled.div`
+  font-family: "PretendardVariable";
   font-size: 22px;
   margin-top: 20px;
   margin-bottom: 10px;

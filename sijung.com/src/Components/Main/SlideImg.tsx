@@ -1,13 +1,14 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import styled from "styled-components";
+import "../../Fonts/Font.css";
 
 function SlideImg() {
   return (
     <div>
       {/* bootstrap Carousels */}
       {/* 사진 바꾸고 p태그 설명 넣기 추가해야함 */}
-      <Carousel data-bs-theme="dark">
+      <Carousel>
         <Carousel.Item>
           <SlideStyle
             className="d-block w-100"
