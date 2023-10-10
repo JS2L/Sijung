@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import "../Assets/Fonts/Font.css";
+import "../../Assets/Fonts/Font.css";
 
 function Contents() {
   return (

@@ -1,7 +1,7 @@
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
+import Header from "./Components/Common/Header";
+import Footer from "./Components/Common/Footer";
 import Main from "./Pages/Main";
-import Company from "./Components/Company";
+import IntroComp from "./Pages/IntroComp";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Main />}></Route>
-          <Route path="/Company" element={<Company />}></Route>
+          <Route path="/IntroComp" element={<IntroComp />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

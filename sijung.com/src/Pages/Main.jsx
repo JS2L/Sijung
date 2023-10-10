@@ -1,6 +1,6 @@
-import SlideImg from "../Components/SlideImg";
-import Contents from "../Components/Contents";
-import PredictionSection from "../Components/Prediction";
+import SlideImg from "../Components/Main/SlideImg";
+import Contents from "../Components/Main/Contents";
+import PredictionSection from "../Components/Main/Prediction";
 
 function Main() {
   return (
