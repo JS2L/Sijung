@@ -1,3 +1,5 @@
+import React from "react";
+
 import SlideImg from "../Components/Main/SlideImg";
 import Contents from "../Components/Main/Contents";
 import PredictionSection from "../Components/Main/Prediction";

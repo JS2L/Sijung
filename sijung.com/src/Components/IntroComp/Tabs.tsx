@@ -21,9 +21,9 @@ function Tab4() {
 }
 
 function Tabs() {
-  const [activeTab, setActiveTab] = useState("tab1");
+  const [activeTab, setActiveTab] = useState<string>("tab1");
 
-  const handleTabClick = (tab) => {
+  const handleTabClick = (tab: string) => {
     setActiveTab(tab);
   };
 
@@ -83,7 +83,7 @@ const TabButtons = styled.div`
   padding: 10px;
 `;
 
-const TabButton = styled.button`
+const TabButton = styled.button<{ active: boolean }>`
   background-color: ${(props) => (props.active ? "#0077ff" : "white")};
   color: ${(props) => (props.active ? "white" : "gray")};
   border: 0px solid #ccc;
