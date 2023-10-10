@@ -1,8 +1,9 @@
 import React from "react";
 import Company from "../Components/Common/Company";
-import Tabs from "../Components/IntroComp/IntroTabs";
 
-function IntroComp() {
+import Tabs from "../Components/Product/JSTabs";
+
+function Product() {
   return (
     <div>
       <Company />
@@ -11,4 +12,4 @@ function IntroComp() {
   );
 }
 
-export default IntroComp;
+export default Product;

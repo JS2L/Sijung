@@ -17,9 +17,12 @@ function Header() {
           <NavItem>
             <Link to="/introComp">회사소개</Link>
           </NavItem>
-          <NavItem>제품소개</NavItem>
+          <NavItem>
+            <Link to="/Product">제품소개</Link>
+          </NavItem>
           <NavItem>보유기술</NavItem>
           <NavItem>기상서비스</NavItem>
+          <NavItem>비식별화</NavItem>
         </NavList>
       </Navigation>
     </HeaderContainer>
@@ -34,7 +37,7 @@ const HeaderContainer = styled.header`
   align-items: center;
   color: white;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 `;
 
 const Logo = styled.div`

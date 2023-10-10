@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import AboutUs from "./AboutUs";
 import History from "./History";
+import Patent from "./Patent";
+import News from "./News";
 
 function Tab1() {
   return <AboutUs />;
@@ -13,11 +15,11 @@ function Tab2() {
 }
 
 function Tab3() {
-  return <div>탭 3 내용</div>;
+  return <Patent />;
 }
 
 function Tab4() {
-  return <div>탭 4 내용</div>;
+  return <News />;
 }
 
 function Tabs() {
