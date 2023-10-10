@@ -59,7 +59,7 @@ const NavList = styled.ul`
 `;
 
 const NavItem = styled.li`
-  margin-right: 20px;
+  margin-right: 70px;
   color: black;
   font-family: "Pretendard-Bold";
   text-decoration: none;

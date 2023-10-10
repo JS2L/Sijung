@@ -8,10 +8,10 @@ function Footer() {
         대전광역시 유성구 테크노4로 17 대덕비즈센터 B동 101호
       </FooterAddress>
       <FooterTel>TEL : 042-933-5520 / E-MAIL : steve17@sijung.com.</FooterTel>
-      <White_logo
+      <WhiteLogo
         src="/img/SIJUNG_white.png"
         alt="SIJUNG_White_logo"
-      ></White_logo>
+      ></WhiteLogo>
       <FooterCP> COPYRIGHT (C) 2023 SIJUNG. ALL RIGHTS RESERVED.</FooterCP>
     </FooterContainer>
   );
@@ -45,7 +45,7 @@ const FooterCP = styled.p`
   font-size: 18px;
 `;
 
-const White_logo = styled.img`
+const WhiteLogo = styled.img`
   padding-right: 200px;
   align-self: flex-end;
 `;
