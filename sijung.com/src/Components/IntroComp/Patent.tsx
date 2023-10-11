@@ -56,6 +56,7 @@ const ImageList = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 50px;
 `;
 
 const ImageItem = styled.div`
