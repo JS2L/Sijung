@@ -4,18 +4,36 @@ import styled from "styled-components";
 import JS02P from "./JS02P";
 import JS06 from "./JS06";
 import JS08 from "./JS08";
-import TitleBar from "./TitleBar"; // TitleBar 컴포넌트를 불러옵니다.
+import TitleBar from "./TitleBar";
 
 function Tab1() {
-  return <JS02P />;
+  return (
+    <TitleBar
+      backgroundImage="/img/TitleBarBG.png"
+      title="JS-02P"
+      content="인공지능 자동 기상 관측 장비"
+    />
+  );
 }
 
 function Tab2() {
-  return <JS06 />;
+  return (
+    <TitleBar
+      backgroundImage="/img/TitleBarBG.png"
+      title="JS-02P"
+      content="인공지능 영상 분석 시정계"
+    />
+  );
 }
 
 function Tab3() {
-  return <JS08 />;
+  return (
+    <TitleBar
+      backgroundImage="/img/TitleBarBG.png"
+      title="JS-02P"
+      content="인공지능 파노라마 영상 분석 시정계"
+    />
+  );
 }
 
 function Tabs() {
@@ -47,12 +65,14 @@ function Tabs() {
           JS-08
         </TabButton>
       </TabButtons>
-      <TitleBar backgroundImage="/img/TitleBarBG.png" title="JS-02P" />
       <TabContent>
         {activeTab === "tab1" && <Tab1 />}
         {activeTab === "tab2" && <Tab2 />}
         {activeTab === "tab3" && <Tab3 />}
       </TabContent>
+      {activeTab === "tab1" && <JS02P />}
+      {activeTab === "tab2" && <JS06 />}
+      {activeTab === "tab3" && <JS08 />}
     </TabsContainer>
   );
 }
@@ -73,6 +93,7 @@ const TabButtons = styled.div`
   margin-left: 130px;
   margin-right: 130px;
   padding: 10px;
+  z-index: 1;
 `;
 
 const TabButton = styled.button<{ active: boolean }>`
