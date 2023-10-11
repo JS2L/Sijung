@@ -4,6 +4,7 @@ import styled from "styled-components";
 import JS02P from "./JS02P";
 import JS06 from "./JS06";
 import JS08 from "./JS08";
+import TitleBar from "./TitleBar"; // TitleBar 컴포넌트를 불러옵니다.
 
 function Tab1() {
   return <JS02P />;
@@ -46,6 +47,7 @@ function Tabs() {
           JS-08
         </TabButton>
       </TabButtons>
+      <TitleBar backgroundImage="/img/TitleBarBG.png" title="JS-02P" />
       <TabContent>
         {activeTab === "tab1" && <Tab1 />}
         {activeTab === "tab2" && <Tab2 />}
