@@ -17,7 +17,7 @@ const IntroEn = styled.p`
   font-family: "Pretendard-Bold";
   font-size: 40px;
   color: #0072ff;
-  margin-top: 70px;
+  margin-top: 100px;
   margin-left: 100px;
 `;
 
