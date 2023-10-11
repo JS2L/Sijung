@@ -20,7 +20,7 @@ function Tab2() {
   return (
     <TitleBar
       backgroundImage="/img/TitleBarBG.png"
-      title="JS-02P"
+      title="JS-06"
       content="인공지능 영상 분석 시정계"
     />
   );
@@ -30,7 +30,7 @@ function Tab3() {
   return (
     <TitleBar
       backgroundImage="/img/TitleBarBG.png"
-      title="JS-02P"
+      title="JS-08"
       content="인공지능 파노라마 영상 분석 시정계"
     />
   );
@@ -102,6 +102,7 @@ const TabButton = styled.button<{ active: boolean }>`
   border: 0px solid #ccc;
   padding: 50px 80px;
   cursor: pointer;
+  width: 300px;
   border-radius: 7px;
   margin: 20px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.08);

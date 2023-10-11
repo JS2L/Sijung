@@ -23,8 +23,12 @@ function Header() {
           <NavItem>
             <Link to="/Technology">보유기술</Link>
           </NavItem>
-          <NavItem>기상서비스</NavItem>
-          <NavItem>비식별화</NavItem>
+          <NavItem>
+            <Link to="/Nalgaem">기상서비스</Link>
+          </NavItem>
+          <NavItem>
+            <Link to="/Mozaic">비식별화</Link>
+          </NavItem>
         </NavList>
       </Navigation>
     </HeaderContainer>
@@ -39,7 +43,13 @@ const HeaderContainer = styled.header`
   align-items: center;
   color: white;
   padding: 20px;
+  background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 `;
 
 const Logo = styled.div`

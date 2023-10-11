@@ -67,7 +67,7 @@ const TabButton = styled.button<{ active: boolean }>`
   color: ${(props) => (props.active ? "white" : "gray")};
   border: 0px solid #ccc;
   padding: 50px 80px;
-  width: 300px;
+  max-width: 300px;
   cursor: pointer;
   border-radius: 7px;
   margin: 20px;

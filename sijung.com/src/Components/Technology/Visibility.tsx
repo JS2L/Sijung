@@ -28,9 +28,11 @@ const Container = styled.div`
 const Title = styled.p`
   font-size: 25px;
   font-family: "KoPubDotum-Bold";
+  margin-top: 50px;
 `;
 
 const Content = styled.p`
   font-size: 20px;
   font-family: "KoPubDotum-Medium";
+  margin-top: 50px;
 `;
