@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Company() {
+function HeadTitle() {
   return (
     <div>
       <IntroEn>A.I VIDEO ANALYSIS COMPANY</IntroEn>
@@ -11,7 +11,7 @@ function Company() {
   );
 }
 
-export default Company;
+export default HeadTitle;
 
 const IntroEn = styled.p`
   font-family: "Pretendard-Bold";
