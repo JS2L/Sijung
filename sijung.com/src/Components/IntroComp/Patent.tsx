@@ -19,6 +19,7 @@ function Patent() {
     "/img/Patent12.png",
     "/img/Patent13.png",
     "/img/Patent14.jpg",
+    "/img/Patent15.jpg",
   ];
 
   const openModal = (imagePath: string) => {

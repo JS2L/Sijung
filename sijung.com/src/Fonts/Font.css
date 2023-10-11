@@ -55,4 +55,34 @@
   src: url("./NexonLv2/NEXON\ Lv2\ Gothic\ Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "KoPubWorldBatangBold";
+  src: url("./KoPubWorld/KoPubWorld\ Batang\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KoPubWorldBatangLight";
+  src: url("./KoPubWorld/KoPubWorld\ Batang\ Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KoPubWorldBatangMedium";
+  src: url("./KoPubWorld/KoPubWorld\ Batang\ Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KoPubWorldDotumBold";
+  src: url("./KoPubWorld/KoPubWorld\ Dotum\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KoPubWorldDotumLight";
+  src: url("./KoPubWorld/KoPubWorld\ Dotum\ Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KoPubWorldDotumMedium";
+  src: url("./KoPubWorld/KoPubWorld\ Dotum\ Medium.ttf") format("truetype");
+}
+
 /* 각 굵기와 스타일에 대한 @font-face 규칙 추가 */

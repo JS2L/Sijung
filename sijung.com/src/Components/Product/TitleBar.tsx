@@ -35,7 +35,7 @@ const TitleBarContainer = styled.div`
 const TitleAndContent = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 150px;
+  margin-left: 200px;
 `;
 
 const TitleText = styled.h1`

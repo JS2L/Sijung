@@ -20,7 +20,9 @@ function Header() {
           <NavItem>
             <Link to="/Product">제품소개</Link>
           </NavItem>
-          <NavItem>보유기술</NavItem>
+          <NavItem>
+            <Link to="/Technology">보유기술</Link>
+          </NavItem>
           <NavItem>기상서비스</NavItem>
           <NavItem>비식별화</NavItem>
         </NavList>
