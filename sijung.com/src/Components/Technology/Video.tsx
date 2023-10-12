@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
-import videoData from "./VideoData";
+// import videoData from "./VideoData";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Video() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <Img1Container>
-        <Title>영상 시정계</Title>
-        <Content>
+        <Title data-aos="fade-left" data-aos-duration="1000">
+          영상 시정계
+        </Title>
+        <Content data-aos="fade-left" data-aos-duration="1000">
           <BlackNum>01</BlackNum>
           <br />
           Refine data set
         </Content>
-        <Content style={{ color: "black", fontSize: "20px" }}>
+        <Content
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          style={{ color: "black", fontSize: "20px" }}
+        >
           학습 셋(Learning)을 수정하고 변형과 라벨 오류를 제거하기 위해 검증,
           <br />
           보강된 100% 유효한 트레이닝 셋을 구성하여 검증
@@ -23,7 +35,12 @@ function Video() {
           <br />
           이는 fault tolerance 측정과 정확도에서 우수한 결과를 도출
         </Content>
-        <VideoImg1 src="/Img/VideoImg1.png" alt="Refine data set" />
+        <VideoImg1
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          src="/Img/VideoImg1.png"
+          alt="Refine data set"
+        />
         <Content
           style={{
             marginLeft: "200px",

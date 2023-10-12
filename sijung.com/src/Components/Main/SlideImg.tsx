@@ -34,7 +34,7 @@ function SlideImg() {
         <Carousel.Item>
           <SlideStyle
             className="d-block w-100"
-            src="/img/JS-082.png"
+            src="/img/JS-08.jpg"
             alt="Third slide"
           />
           <Carousel.Caption>
@@ -51,14 +51,14 @@ export default SlideImg;
 
 const Title = styled.div`
   font-size: 1.25rem;
-  color: white;
+  color: Black;
   font-weight: 500;
   line-height: 1.2;
 `;
 
 const Content = styled.p`
   margin-bottom: 5px;
-  color: white;
+  color: black;
   font-family: "PretendardVairable";
 `;
 

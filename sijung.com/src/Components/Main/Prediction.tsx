@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import "../../Fonts/Font.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function PredictionSection() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <PredictionContainer>
       <BlueBox>
@@ -13,20 +19,41 @@ function PredictionSection() {
         </BlueBoxtxt>
         <BlueBoxtxt>아이디어에 근거한 고유의 시정 측정 기술로 예측</BlueBoxtxt>
       </BlueBox>
-      <ImgRight src="/img/Prediction_1.png" alt="1st Prediction Img" />
-      <ImgRightTxt>A.I Weather System</ImgRightTxt>
-      <ImgLeft src="/img/Prediction_2.png" alt="2nd Prediction Img" />
-      <ImgLeftTxt>
-        AIR POLLUTION
-        <br />
-        MONITERING SYSTEM
+      <ImgRight
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        src="/img/Prediction_1.png"
+        alt="1st Prediction Img"
+      />
+      <ImgRightTxt data-aos="fade-left" data-aos-duration="1000">
+        A.I Visibility
+      </ImgRightTxt>
+      <ImgLeft
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        src="/img/Prediction_2.png"
+        alt="2nd Prediction Img"
+      />
+      <ImgLeftTxt data-aos="fade-right" data-aos-duration="1000">
+        A.I De-identification
       </ImgLeftTxt>
-      <ImgRightLow src="/img/Prediction_3.png" alt="3rd Prediction Img" />
-      <ImgRightTxtLow>SURVEILLANCE SOLUTION</ImgRightTxtLow>
-      <ImgLeftLow src="/img/Prediction_4.png" alt="4th Prediction Img" />
-      <ImgLeftTxtLow>
-        Big Data Business &<br />
-        System Integration
+      <ImgRightLow
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        src="/img/Prediction_3.png"
+        alt="3rd Prediction Img"
+      />
+      <ImgRightTxtLow data-aos="fade-left" data-aos-duration="1000">
+        A.I Vision
+      </ImgRightTxtLow>
+      <ImgLeftLow
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        src="/img/Prediction_4.png"
+        alt="4th Prediction Img"
+      />
+      <ImgLeftTxtLow data-aos="fade-right" data-aos-duration="1000">
+        Nalgaem Service
       </ImgLeftTxtLow>
     </PredictionContainer>
   );
@@ -103,7 +130,7 @@ const ImgLeftTxt = styled.p`
   position: absolute;
   font-family: "Pretendard-Bold";
   font-size: 35px;
-  margin-top: 1300px;
+  margin-top: 1350px;
   margin-left: 400px;
 `;
 
@@ -137,6 +164,6 @@ const ImgLeftTxtLow = styled.p`
   position: absolute;
   font-family: "Pretendard-Bold";
   font-size: 35px;
-  margin-top: 2600px;
+  margin-top: 2650px;
   margin-left: 400px;
 `;
