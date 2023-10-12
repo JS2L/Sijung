@@ -1,21 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import "../../Fonts/Font.css";
+import { Link } from "react-router-dom";
 
 function Contents() {
   return (
     <Container>
       <ContentItem>
-        <Title>AI Visibility</Title>
-        <Detail>시정 내용</Detail>
+        <Link to="/Nalgaem">
+          <Title>AI Visibility</Title>
+          <Detail>시정 내용</Detail>
+        </Link>
       </ContentItem>
       <ContentItem>
-        <Title>AI De-identification</Title>
-        <Detail>비식별화 내용</Detail>
+        <Link to="/Mozaic">
+          <Title>AI De-identification</Title>
+          <Detail>비식별화 내용</Detail>
+        </Link>
       </ContentItem>
       <ContentItem>
-        <Title>AI Vision</Title>
-        <Detail>비전 내용</Detail>
+        <Link to="/Technology">
+          <Title>AI Vision</Title>
+          <Detail>비전 내용</Detail>
+        </Link>
       </ContentItem>
     </Container>
   );
@@ -51,6 +58,10 @@ const ContentItem = styled.div`
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 `;
 

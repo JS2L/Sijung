@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import JS02P from "./JS02P";
 import JS06 from "./JS06";
 import JS08 from "./JS08";
 import TitleBar from "./TitleBar";
+
+type TabParams = {
+  tab: string;
+};
 
 function Tab1() {
   return (
@@ -37,10 +42,22 @@ function Tab3() {
 }
 
 function Tabs() {
-  const [activeTab, setActiveTab] = useState<string>("tab1");
+  const { tab } = useParams<TabParams>();
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState("tab1");
+
+  useEffect(() => {
+    if (tab) {
+      setActiveTab(tab);
+    } else {
+      // URL이 없으면 기본값 (tab1)
+      navigate(`/Product/${activeTab}`);
+    }
+  }, [tab, activeTab, navigate]);
 
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
+    navigate(`/Product/${tab}`);
   };
 
   return (
@@ -110,6 +127,7 @@ const TabButton = styled.button<{ active: boolean }>`
     background-color: lightblue;
     color: black;
   }
+}
 `;
 
 const TabContent = styled.div`

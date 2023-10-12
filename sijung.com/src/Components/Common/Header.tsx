@@ -18,7 +18,7 @@ function Header() {
             <Link to="/introComp">회사소개</Link>
           </NavItem>
           <NavItem>
-            <Link to="/Product">제품소개</Link>
+            <Link to="/Product/tab1">제품소개</Link>
           </NavItem>
           <NavItem>
             <Link to="/Technology">보유기술</Link>
@@ -81,8 +81,8 @@ const NavItem = styled.li`
   font-weight: bold;
   transition: color 0.3s ease-in-out;
   a {
-    color: inherit; /* Link 내부의 텍스트 색상을 상속합니다. */
-    text-decoration: none; /* 링크의 기본 텍스트 밑줄을 제거합니다. */
+    color: inherit;
+    text-decoration: none;
   }
   &:hover {
     color: #00a0e4;
