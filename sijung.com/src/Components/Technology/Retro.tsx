@@ -16,7 +16,9 @@ function Retro() {
         되돌아가 광원에 있는 사람이 쉽게 볼 수 있습니다.
       </Content>
       <ContentContainer>
-        <ImagesContainer>이미지란</ImagesContainer>
+        <ImagesContainer>
+          <img src="/Img/Retro.png" />
+        </ImagesContainer>
         <TextContainer>
           <Title style={{ fontSize: "40px" }}>
             SIJUNG
@@ -61,6 +63,8 @@ const ContentContainer = styled.div`
 
 const ImagesContainer = styled.div`
   flex: 1.7;
+  padding-top: 20px;
+  padding-right: 30px;
 `;
 
 const TextContainer = styled.div`
