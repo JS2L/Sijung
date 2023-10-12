@@ -15,14 +15,14 @@ function Video() {
         <Title data-aos="fade-left" data-aos-duration="1000">
           영상 시정계
         </Title>
-        <Content data-aos="fade-left" data-aos-duration="1000">
+        <Content data-aos="fade-left" data-aos-duration="1500">
           <BlackNum>01</BlackNum>
           <br />
           Refine data set
         </Content>
         <Content
           data-aos="fade-left"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
           style={{ color: "black", fontSize: "20px" }}
         >
           학습 셋(Learning)을 수정하고 변형과 라벨 오류를 제거하기 위해 검증,
@@ -42,6 +42,8 @@ function Video() {
           alt="Refine data set"
         />
         <Content
+          data-aos="fade-up"
+          data-aos-duration="1000"
           style={{
             marginLeft: "200px",
           }}
@@ -51,6 +53,8 @@ function Video() {
           Redesign CNN training algorithm
         </Content>
         <Content
+          data-aos="fade-up"
+          data-aos-duration="1000"
           style={{
             color: "black",
             fontSize: "20px",
@@ -64,9 +68,11 @@ function Video() {
           입력값으로 처리할 수 있는 알고리즘 개발
         </Content>
       </Img1Container>
-      <Img2Container>
+      <Img2Container data-aos="fade-left" data-aos-duration="1000">
         <ImageContainer>
           <VideoImg2
+            data-aos="fade-left"
+            data-aos-duration="1000"
             src="/Img/VideoImg2.png"
             alt="Perform hyper parameter tweaking"
           />
@@ -93,7 +99,7 @@ function Video() {
           </Img2Content>
         </ContentContainer>
       </Img2Container>
-      <Img2Container>
+      <Img2Container data-aos="fade-right" data-aos-duration="1000">
         <ContentContainer>
           <Img2Content>
             <BlackNum>04</BlackNum>
@@ -122,7 +128,7 @@ function Video() {
           />
         </ImageContainer>
       </Img2Container>
-      <Img2Container>
+      <Img2Container data-aos="fade-left" data-aos-duration="1000">
         <ImageContainer>
           <VideoImg2
             src="/Img/VideoImg4.png"
@@ -154,7 +160,7 @@ function Video() {
           </Img2Content>
         </ContentContainer>
       </Img2Container>
-      <Img1Container>
+      <Img1Container data-aos="fade" data-aos-duration="3000">
         <ImgBox>
           <VideoImg1
             src="/Img/VideoImg5.png"
@@ -162,6 +168,8 @@ function Video() {
           />
         </ImgBox>
         <Content
+          data-aos="fade-in"
+          data-aos-duration="3000"
           style={{
             marginLeft: "200px",
           }}
@@ -171,6 +179,8 @@ function Video() {
           Implement DCP based verstion
         </Content>
         <Content
+          data-aos="fade-in"
+          data-aos-duration="3000"
           style={{
             color: "black",
             fontSize: "20px",
