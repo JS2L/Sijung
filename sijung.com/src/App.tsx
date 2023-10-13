@@ -1,15 +1,19 @@
 import React from "react";
 
+// 공용 컴포넌트
 import Header from "./Components/Common/Header";
 import Footer from "./Components/Common/Footer";
+import ScrollToTop from "./Components/Common/ScroollToTop";
+
+// 화면배치 컴포넌트
 import Main from "./Pages/Main";
 import IntroComp from "./Pages/IntroComp";
 import Product from "./Pages/Product";
 import Technology from "./Pages/Technology";
 import Nalgaem from "./Pages/Nalgaem";
 import Mozaic from "./Pages/Visibility";
-import ScrollToTop from "./Components/Common/ScroollToTop";
 
+// BrowserRouter를 통한 url 설정
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {

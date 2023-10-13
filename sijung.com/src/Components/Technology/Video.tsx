@@ -4,6 +4,7 @@ import styled from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// 보유기술 - 영상시정계 ! 구조 망했음 ! AOS활용
 function Video() {
   useEffect(() => {
     AOS.init();

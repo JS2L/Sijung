@@ -18,7 +18,7 @@ function Retro() {
       </Content>
       <ContentContainer>
         <ImagesContainer>
-          <img src="/Img/Retro.png" />
+          <img src="/Img/Retro.png" alt="Retro" />
         </ImagesContainer>
         <TextContainer>
           <Title style={{ fontSize: "40px" }}>

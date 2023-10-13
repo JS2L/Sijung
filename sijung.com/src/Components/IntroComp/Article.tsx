@@ -19,7 +19,7 @@ const Article: React.FC<ArticleProps> = ({
     <ArticleContainer>
       <ArticleImage>
         <a href={source} target="_blank" rel="noopener noreferrer">
-          <img src={imageSrc} alt="Article Image" />
+          <img src={imageSrc} alt="Article" />
         </a>
       </ArticleImage>
       <ArticleContent>
