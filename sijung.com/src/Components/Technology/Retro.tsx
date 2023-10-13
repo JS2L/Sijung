@@ -53,7 +53,7 @@ const Container = styled.div`
 
 const Title = styled.p`
   font-size: 25px;
-  font-family: "KoPubDotum-Bold";
+  font-family: "KoPubWorldDotumBold";
   margin-top: 50px;
 `;
 
@@ -75,6 +75,6 @@ const TextContainer = styled.div`
 
 const Content = styled.p`
   font-size: 20px;
-  font-family: "KoPubDotum-Medium";
-  margin-top: 50px;
+  font-family: "KoPubWorldDotumMedium";
+  margin-top: 30px;
 `;

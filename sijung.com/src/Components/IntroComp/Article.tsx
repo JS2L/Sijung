@@ -41,7 +41,7 @@ const ArticleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  margin: 80px;
 `;
 
 const ArticleImage = styled.div`

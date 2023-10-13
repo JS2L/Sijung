@@ -24,38 +24,39 @@ function PredictionSection() {
       </BlueBox>
       <ImgRight
         data-aos="fade-left"
-        data-aos-duration="1000"
+        data-aos-duration="1500"
+        data-aos-offset="170"
         src="/img/Prediction_1.png"
         alt="1st Prediction Img"
       />
-      <ImgRightTxt data-aos="fade-left" data-aos-duration="1000">
+      <ImgRightTxt data-aos="fade-left" data-aos-duration="1500">
         A.I Visibility
       </ImgRightTxt>
       <ImgLeft
         data-aos="fade-right"
-        data-aos-duration="1000"
+        data-aos-duration="1500"
         src="/img/Prediction_2.png"
         alt="2nd Prediction Img"
       />
-      <ImgLeftTxt data-aos="fade-right" data-aos-duration="1000">
+      <ImgLeftTxt data-aos="fade-right" data-aos-duration="1500">
         A.I De-identification
       </ImgLeftTxt>
       <ImgRightLow
         data-aos="fade-left"
-        data-aos-duration="1000"
+        data-aos-duration="1500"
         src="/img/Prediction_3.png"
         alt="3rd Prediction Img"
       />
-      <ImgRightTxtLow data-aos="fade-left" data-aos-duration="1000">
+      <ImgRightTxtLow data-aos="fade-left" data-aos-duration="1500">
         A.I Vision
       </ImgRightTxtLow>
       <ImgLeftLow
         data-aos="fade-right"
-        data-aos-duration="1000"
+        data-aos-duration="1500"
         src="/img/Prediction_4.png"
         alt="4th Prediction Img"
       />
-      <ImgLeftTxtLow data-aos="fade-right" data-aos-duration="1000">
+      <ImgLeftTxtLow data-aos="fade-right" data-aos-duration="1500">
         Nalgaem Service
       </ImgLeftTxtLow>
     </PredictionContainer>

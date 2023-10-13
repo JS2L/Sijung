@@ -206,7 +206,7 @@ const Img1Container = styled.div`
 
 const Title = styled.p`
   font-size: 40px;
-  font-family: "KoPubWorldDotum-Bold";
+  font-family: "KoPubWorldDotumBold";
   color: rgb(0, 114, 255);
   font-weight: bold;
   line-height: 1.017;
@@ -222,7 +222,7 @@ const BlackNum = styled.span`
 const Content = styled.p`
   display: flex;
   font-size: 29px;
-  font-family: "KoPubWorldDotum-Medium";
+  font-family: "KoPubWorldDotumMedium";
   color: rgb(0, 114, 255);
   margin-bottom: 100px;
   margin-left: 50px;
@@ -259,7 +259,7 @@ const ContentContainer = styled.div`
 const Img2Content = styled.div`
   display: flex;
   font-size: 29px;
-  font-family: "KoPubWorldDotum-Medium";
+  font-family: "KoPubWorldDotumMedium";
   color: rgb(0, 114, 255);
   margin-left: 100px;
   margin-bottom: 50px;
