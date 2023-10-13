@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// 비식별화 헤드타이틀 ! MOZAIC
 function HeadTitle() {
   return (
     <div>
