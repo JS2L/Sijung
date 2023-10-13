@@ -5,6 +5,7 @@ import Video from "./Video";
 import Visibility from "./Visibility";
 import Retro from "./Retro";
 
+// 보유기술 탭 ! url작업 고민중
 function Tabs() {
   const [activeTab, setActiveTab] = useState<string>("tab1");
 

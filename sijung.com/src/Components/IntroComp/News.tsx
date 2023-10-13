@@ -1,6 +1,7 @@
 import React from "react";
 import Article from "./Article";
 
+// 회사소개 - 보도자료 ! (주)시정의 기사를 모아둠 ! 사진 or 제목 클릭시 기사로 이동 ! 배열로 관리
 const News: React.FC = () => {
   const articles = [
     {

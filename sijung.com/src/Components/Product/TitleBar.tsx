@@ -7,6 +7,7 @@ interface TitleBarProps {
   content: string;
 }
 
+// 제품소개 JSTabs에 걸쳐져 있는 타이틀바 ! 탭이 바뀌면 내용도 바뀜
 function TitleBar({ backgroundImage, title, content }: TitleBarProps) {
   return (
     <TitleBarContainer style={{ backgroundImage: `url(${backgroundImage})` }}>

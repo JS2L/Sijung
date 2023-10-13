@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// 3가지 페이지(회사소개, 제품소개, 보유기술 에서 쓰이는 공용 헤드타이틀) background 느낌
 function HeadTitle() {
   return (
     <div>

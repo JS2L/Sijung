@@ -6,6 +6,7 @@ import History from "./History";
 import Patent from "./Patent";
 import News from "./News";
 
+// 회사소개 - HeadTitle 바로 아래 4가지 탭 ! url 나누기 고민중(Params)
 function Tab1() {
   return <AboutUs />;
 }

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import "../../Fonts/Font.css";
 import { Link } from "react-router-dom";
 
+// 중요한 내용 3가지 강조 (시각화) ! hover시 img ! 클릭시 각 페이지로 이동
 function Contents() {
   return (
     <Container>

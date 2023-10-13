@@ -4,6 +4,7 @@ import "../../Fonts/Font.css";
 
 import { Link } from "react-router-dom";
 
+// 헤더 Header ! Link로 각 페이지 이동
 function Header() {
   return (
     <HeaderContainer>

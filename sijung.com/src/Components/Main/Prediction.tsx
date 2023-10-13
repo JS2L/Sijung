@@ -4,6 +4,9 @@ import "../../Fonts/Font.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// 메인 하단 시각화 ! AOS 활용 ! 참조 블로그 링크
+// https://velog.io/@dhwnatjr678/AOS-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%82%AC%EC%9A%A9%EB%B2%95%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8
+
 function PredictionSection() {
   useEffect(() => {
     AOS.init();

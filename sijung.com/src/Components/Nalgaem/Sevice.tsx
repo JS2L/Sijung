@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// 기상서비스 메인 내용
 function Service() {
   return <Container>날갬란</Container>;
 }

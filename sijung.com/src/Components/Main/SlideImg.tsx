@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "../../Fonts/Font.css";
 
+// 3단 이미지 슬라이드 ! 부트스트랩 활용
 function SlideImg() {
   return (
     <div>

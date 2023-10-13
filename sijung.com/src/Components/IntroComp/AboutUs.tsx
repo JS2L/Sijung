@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// 회사소개 - CEO 소개 ! 싸인만 img
 function ImgContent() {
   return (
     <ContentWrap>
@@ -20,7 +21,6 @@ function ImgContent() {
           <br /> 관련 특허도 다수 보유중에 있습니다.
         </Paragraph>
         <Paragraph>
-          {" "}
           미래를 예측하는 가장 좋은 방법은 미래를 창조하는 것 이라 합니다.
           <br /> 미국 경영학자 피터 드러커의 말처럼 저희는 앞으로 시정계 시장의
           패러다임을 직접 창조해 나가고자 합니다.

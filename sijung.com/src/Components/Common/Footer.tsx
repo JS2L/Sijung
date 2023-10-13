@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// 푸터 ! Footer ! F00t3r ! 푸ㅌr
 function Footer() {
   return (
     <FooterContainer>

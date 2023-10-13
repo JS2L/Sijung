@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// 회사소개 - 회사 연혁 ! 배열로 관리 ! 2023추가 예정
 function History() {
   const data = [
     { year: "2022", contents: ["공군 구매조건부 R&D 사업 진행 중"] },

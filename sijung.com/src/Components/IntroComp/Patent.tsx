@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+// 회사소개 - 인증서&특허증 ! img모음 ! hover size*1.1 효과 ! 클릭시 가운데에서 확대 ! 배열로 관리
 function Patent() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 

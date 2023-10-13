@@ -11,6 +11,7 @@ type TabParams = {
   tab: string;
 };
 
+// JS-02P, JS-06, JS-08 모음집 ! 탭으로 관리 ! Params로 url관리 ! State로 tab 상태관리
 function Tab1() {
   return (
     <TitleBar

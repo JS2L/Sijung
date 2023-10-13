@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// JS-08 내용
 function JS08() {
   return (
     <div>

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// JS-02P 내용
 function JS02P() {
   return (
     <div>

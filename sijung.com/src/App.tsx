@@ -8,6 +8,7 @@ import Product from "./Pages/Product";
 import Technology from "./Pages/Technology";
 import Nalgaem from "./Pages/Nalgaem";
 import Mozaic from "./Pages/Visibility";
+import ScrollToTop from "./Components/Common/ScroollToTop";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Mozaic" element={<Mozaic />}></Route>
         </Routes>
         <Footer />
+        <ScrollToTop />
       </BrowserRouter>
     </div>
   );

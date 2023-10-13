@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// 기상서비스 전용 헤드타이틀 ! 날갬 설명
 function HeadTitle() {
   return (
     <div>

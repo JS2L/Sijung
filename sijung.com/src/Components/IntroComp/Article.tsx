@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// 회사소개 - 보도자료의 뼈대 ! 타입관리 및 스타일 관리
 interface ArticleProps {
   imageSrc: string;
   title: string;

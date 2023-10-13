@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// 보유기술 - Retro Reflector ! 설명 추가
 function Retro() {
   return (
     <Container>
@@ -34,7 +35,7 @@ function Retro() {
             <br />
             (주)시정은 ABS 소재로 사출, 알루미늄 진공증착을 하는
             <br />
-            방식의 기술을 보유하고 있습니다.{" "}
+            방식의 기술을 보유하고 있습니다.
           </Content>
         </TextContainer>
       </ContentContainer>
