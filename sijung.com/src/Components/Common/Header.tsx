@@ -58,15 +58,15 @@ const HeaderContainer = styled.header`
   z-index: 2;
 
   @media (max-width: 900px) {
-    flex-direction: column; /* 세로로 배치 */
-    align-items: flex-start; /* 왼쪽 정렬 */
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
 const LogoContainer = styled.div`
-  display: flex; /* 로고와 버튼을 같은 라인에 배치 */
-  justify-content: space-between; /* 로고와 버튼을 양 끝에 배치 */
-  align-items: center; /* 로고와 버튼을 수직 정렬 */
+  display: flex; // 로고와 버튼을 같은선상에 두기 위함 !
+  justify-content: space-between; // 로고와 버튼을 양 끝에 배치 !
+  align-items: center;
 
   @media (max-width: 900px) {
     width: 100%;
@@ -86,7 +86,7 @@ const ToggleButton = styled.button`
   color: #00a0e4;
   font-weight: bold;
   cursor: pointer;
-  margin-left: 10px; /* 로고와 버튼 사이 여백 설정 */
+  margin-left: 10px;
   display: none;
 
   @media (max-width: 900px) {
@@ -118,7 +118,8 @@ const NavList = styled.ul`
   padding: 0;
 
   @media (max-width: 900px) {
-    flex-direction: column; /* 세로로 배치 */
+    flex-direction: column;
+    padding-top: 10px;
   }
 `;
 

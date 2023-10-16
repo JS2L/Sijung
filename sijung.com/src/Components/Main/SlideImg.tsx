@@ -9,7 +9,7 @@ function SlideImg() {
   return (
     <div>
       {/* bootstrap Carousels */}
-      <Carousel style={{ marginTop: "70px" }}>
+      <Carousel style={{ marginTop: "70px", marginBottom: "50px" }}>
         <Carousel.Item>
           <Link to="/Product/tab1">
             <SlideStyle
@@ -61,12 +61,31 @@ const Title = styled.div`
   color: Black;
   font-weight: 500;
   line-height: 1.2;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 22px;
+  }
 `;
 
 const Content = styled.p`
   margin-bottom: 5px;
+  margin-top: 5px;
   color: black;
   font-family: "PretendardVairable";
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 20px;
+    margin-bottom: -40px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 14px;
+    margin-bottom: -40px;
+  }
 `;
 
 const SlideStyle = styled.img`

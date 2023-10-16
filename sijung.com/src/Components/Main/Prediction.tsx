@@ -3,9 +3,7 @@ import styled from "styled-components";
 import "../../Fonts/Font.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-// 메인 하단 시각화 ! AOS 활용 ! 참조 블로그 링크
-// https://velog.io/@dhwnatjr678/AOS-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%82%AC%EC%9A%A9%EB%B2%95%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8
+import { Link } from "react-router-dom";
 
 function PredictionSection() {
   useEffect(() => {
@@ -30,7 +28,7 @@ function PredictionSection() {
         alt="1st Prediction Img"
       />
       <ImgRightTxt data-aos="fade-left" data-aos-duration="1500">
-        A.I Visibility
+        <Link to="/introComp">A.I Visibility</Link>
       </ImgRightTxt>
       <ImgLeft
         data-aos="fade-right"
@@ -39,7 +37,7 @@ function PredictionSection() {
         alt="2nd Prediction Img"
       />
       <ImgLeftTxt data-aos="fade-right" data-aos-duration="1500">
-        A.I De-identification
+        <Link to="/mozaic">A.I De-identification</Link>
       </ImgLeftTxt>
       <ImgRightLow
         data-aos="fade-left"
@@ -48,7 +46,7 @@ function PredictionSection() {
         alt="3rd Prediction Img"
       />
       <ImgRightTxtLow data-aos="fade-left" data-aos-duration="1500">
-        A.I Vision
+        <Link to="/technology">A.I Vision</Link>
       </ImgRightTxtLow>
       <ImgLeftLow
         data-aos="fade-right"
@@ -57,7 +55,7 @@ function PredictionSection() {
         alt="4th Prediction Img"
       />
       <ImgLeftTxtLow data-aos="fade-right" data-aos-duration="1500">
-        Nalgaem Service
+        <Link to="/nalgaem">Nalgaem Service</Link>
       </ImgLeftTxtLow>
     </PredictionContainer>
   );
@@ -71,6 +69,10 @@ const PredictionContainer = styled.div`
   overflow: hidden;
   position: relative;
   height: 2900px;
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    height: 1000px;
+  }
 `;
 
 const BlueBox = styled.div`
@@ -85,6 +87,16 @@ const BlueBox = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 0px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
 `;
 
 const BlueBoxTitle = styled.p`
@@ -94,6 +106,15 @@ const BlueBoxTitle = styled.p`
   font-family: "Pretendard-Bold";
   font-size: 35px;
   color: #5ceaff;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 32px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 24px;
+    margin: 10px;
+  }
 `;
 
 const BlueBoxtxt = styled.p`
@@ -102,6 +123,15 @@ const BlueBoxtxt = styled.p`
   margin-left: 100px;
   font-family: "Pretendard-Black";
   font-size: 25px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 20px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 14px;
+    margin: 10px;
+  }
 `;
 
 const ImgRight = styled.img`
@@ -111,6 +141,17 @@ const ImgRight = styled.img`
   z-index: 1;
   margin-left: 600px;
   margin-top: 200px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 300px;
+    height: auto 0;
+    margin-left: 250px;
+    margin-top: 250px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 const ImgRightTxt = styled.p`
@@ -119,6 +160,23 @@ const ImgRightTxt = styled.p`
   font-size: 35px;
   margin-top: 700px;
   margin-right: 400px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 25px;
+    margin-top: 750px;
+    margin-right: 400px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 35px;
+    margin-top: 200px;
+    margin-left: 500px;
+  }
 `;
 
 const ImgLeft = styled.img`
@@ -128,6 +186,16 @@ const ImgLeft = styled.img`
   z-index: 1;
   margin-top: 850px;
   margin-right: 600px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 300px;
+    height: auto 0;
+    margin-right: 250px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 const ImgLeftTxt = styled.p`
@@ -136,6 +204,22 @@ const ImgLeftTxt = styled.p`
   font-size: 35px;
   margin-top: 1350px;
   margin-left: 400px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 25px;
+    margin-left: 500px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 35px;
+    margin-top: 400px;
+    margin-right: 450px;
+  }
 `;
 
 const ImgRightLow = styled.img`
@@ -145,6 +229,16 @@ const ImgRightLow = styled.img`
   z-index: 1;
   margin-left: 600px;
   margin-top: 1500px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 300px;
+    height: auto 0;
+    margin-left: 250px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 const ImgRightTxtLow = styled.p`
@@ -153,6 +247,22 @@ const ImgRightTxtLow = styled.p`
   font-size: 35px;
   margin-top: 2000px;
   margin-right: 550px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 25px;
+    margin-right: 380px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 35px;
+    margin-top: 600px;
+    margin-left: 700px;
+  }
 `;
 
 const ImgLeftLow = styled.img`
@@ -162,6 +272,16 @@ const ImgLeftLow = styled.img`
   z-index: 1;
   margin-top: 2160px;
   margin-right: 600px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 300px;
+    height: auto 0;
+    margin-right: 250px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 const ImgLeftTxtLow = styled.p`
@@ -170,4 +290,20 @@ const ImgLeftTxtLow = styled.p`
   font-size: 35px;
   margin-top: 2650px;
   margin-left: 400px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 25px;
+    margin-left: 450px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 35px;
+    margin-top: 800px;
+    margin-right: 500px;
+  }
 `;
