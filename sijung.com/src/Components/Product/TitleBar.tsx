@@ -31,22 +31,54 @@ const TitleBarContainer = styled.div`
   align-items: center;
   position: relative;
   margin-top: -100px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    height: 300px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    height: 200px;
+  }
 `;
 
 const TitleAndContent = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 200px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 100px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    margin-left: 50px;
+  }
 `;
 
 const TitleText = styled.h1`
   font-size: 55px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: "Pretendard-Bold";
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 45px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 35px;
+  }
 `;
 
 const ContentText = styled.p`
   font-size: 40px;
   margin-top: 10px;
   font-family: "Pretendard-Bold";
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 30px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 20px;
+  }
 `;

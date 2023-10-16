@@ -93,9 +93,7 @@ const BlueBox = styled.div`
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    padding: 10px 30px 10px;
   }
 `;
 

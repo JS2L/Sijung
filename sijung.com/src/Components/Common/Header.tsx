@@ -11,11 +11,11 @@ function Header() {
       <LogoContainer>
         <Logo>
           <Link to="/">
-            <img src="/img/logo.png" alt="logo" />
+            <img src="/Img/logo.png" alt="logo" />
           </Link>
         </Logo>
         <ToggleButton onClick={() => setShowItems(!showItems)}>
-          <ToggleImage src="./img/Toggle.png" alt="Toggle Items" />
+          <ToggleImage src="/Img/ToggleSwitch.png" alt="ToggleSwitch" />
         </ToggleButton>
       </LogoContainer>
       <Navigation showItems={showItems}>
@@ -81,13 +81,9 @@ const Logo = styled.div`
 `;
 
 const ToggleButton = styled.button`
-  background: transparent;
   border: none;
-  color: #00a0e4;
-  font-weight: bold;
-  cursor: pointer;
-  margin-left: 10px;
   display: none;
+  background-color: white;
 
   @media (max-width: 900px) {
     display: block;

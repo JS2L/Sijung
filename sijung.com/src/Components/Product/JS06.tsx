@@ -27,7 +27,15 @@ function JS06() {
 export default JS06;
 
 const Container = styled.div`
-  height: 350px;
+  height: auto;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    height: auto;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    height: auto;
+  }
 `;
 
 const TitleContainer = styled.p`
@@ -35,13 +43,35 @@ const TitleContainer = styled.p`
   font-size: 25px;
   margin-top: 130px;
   margin-left: 200px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 20px;
+    margin: 80px 20px 80px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 15px;
+    margin: 40px 10px 40px;
+  }
 `;
 
 const ImgContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 const JSImg = styled.img`
   margin-left: 200px;
+  margin-bottom: 50px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 95%;
+    margin: 0px 30px 50px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    width: 95%;
+    margin-left: 0px;
+  }
 `;
