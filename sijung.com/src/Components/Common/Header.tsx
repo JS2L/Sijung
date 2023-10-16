@@ -87,7 +87,7 @@ const ToggleButton = styled.button`
 
   @media (max-width: 900px) {
     display: block;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 `;
 

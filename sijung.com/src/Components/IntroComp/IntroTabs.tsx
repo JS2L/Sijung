@@ -84,6 +84,20 @@ const TabButtons = styled.div`
   margin-left: 130px;
   margin-right: 130px;
   padding: 10px;
+  z-index: 1;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 23px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 0px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 18px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 `;
 
 const TabButton = styled.button<{ active: boolean }>`
@@ -95,9 +109,19 @@ const TabButton = styled.button<{ active: boolean }>`
   border-radius: 7px;
   margin: 20px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.08);
+
   &:hover {
     background-color: lightblue;
     color: black;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    padding: 40px 40px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    padding: 20px 20px;
+    margin: 5px 5px 55px;
   }
 `;
 
