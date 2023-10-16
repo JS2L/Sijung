@@ -46,6 +46,10 @@ const Container = styled.div`
     background: url("/img/Transmittance_1.jpg") center/cover no-repeat;
     color: white;
   }
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 // 애니메이션 적용, 마우스 호버 시 요소 확대, 그림자 효과 추가
