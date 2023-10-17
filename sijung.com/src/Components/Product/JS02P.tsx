@@ -33,14 +33,13 @@ function JS02P() {
       </OutSection>
       <ImageContainer>
         <ImageContent>설치 이미지</ImageContent>
-
-        <Carousel showArrows={false} showThumbs={false} infiniteLoop autoPlay>
+        <Carousel showArrows={true} showThumbs={false} infiniteLoop autoPlay>
           {carouselImages.map((image, index) => (
             <div key={index}>
               <img
                 src={image.src}
                 alt={image.alt}
-                style={{ objectFit: "cover", height: "600px" }}
+                style={{ objectFit: "cover" }}
               />
             </div>
           ))}
@@ -57,10 +56,12 @@ const Container = styled.div`
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
     height: auto;
+    padding: 50px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
     height: auto;
+    padding: 10px;
   }
 `;
 
@@ -80,7 +81,7 @@ const Title = styled.p`
 
 const Characteristic = styled.div`
   font-family: "Pretendard-Bold";
-  font-size: 30px;
+  font-size: 29px;
 `;
 
 const FeatureSection = styled.div`
@@ -88,6 +89,14 @@ const FeatureSection = styled.div`
   justify-content: center;
   align-items: center;
   padding: 30px 80px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    padding: 30px 20px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    padding: 30px 20px;
+  }
 `;
 
 const Feature = styled.div`
@@ -98,7 +107,16 @@ const Feature = styled.div`
   border: 2px solid #dddddd;
   border-radius: 8px;
   width: 450px;
-  height: 280px;
+  height: auto;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 160px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    min-width: 100px;
+    margin: 5px;
+  }
 `;
 
 const FeatureImage = styled.img`
@@ -106,11 +124,30 @@ const FeatureImage = styled.img`
   height: auto;
   margin: 50px;
   margin-bottom: 60px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 60px;
+    margin-bottom: 40px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    width: 50px;
+    margin: 20px;
+    margin-bottom: 10px;
+  }
 `;
 
 const FeatureText = styled.p`
   font-family: "KoPubWorldDotumMedium";
   font-size: 18px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 16px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 12px;
+  }
 `;
 
 const OutSection = styled.div`
@@ -118,6 +155,14 @@ const OutSection = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0px 80px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    padding: 20px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    padding: 0px 20px;
+  }
 `;
 
 const OutContent = styled.p`
@@ -128,12 +173,25 @@ const OutContent = styled.p`
   margin: 0px 20px;
   width: 450px;
   margin-bottom: 80px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 160px;
+    font-size: 16px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    min-width: 100px;
+    font-size: 12px;
+    margin: 0px;
+    margin-bottom: 40px;
+  }
 `;
 
 const ImageContainer = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  height: auto;
 `;
 
 const ImageContent = styled.p`
@@ -152,12 +210,12 @@ const features = [
   {
     image: "/Img/Characteristic1.png",
     alt: "Characteristic 1",
-    text: "인공지능 영상 분석 기술로 시정 측정",
+    text: "인공지능 영상분석 기술 시정측정",
   },
   {
     image: "/Img/Characteristic3.png",
     alt: "Characteristic 3",
-    text: "외부 설치용 카메라",
+    text: "외부 설치용 카메라 보유",
   },
   {
     image: "/Img/Characteristic2.png",
@@ -172,6 +230,13 @@ const outContents = [
     <br />
     전체화면 및 화면 전환 기능 제공
   </span>,
-  "장기 관측을 위해 외부 설치용 하우징은 부식이 잘 되지 않는 재질로 구성 되어 있습니다.",
-  "온도, 습도, 풍향, 풍속, 기압 등을 측정, 웨더스테이션 센서 장착",
+  <span>
+    장기 관측을 위해 외부 설치용 하우징은 부식이
+    <br />잘 되지 않는 재질로 구성 되어 있습니다.
+  </span>,
+  <span>
+    온도, 습도, 풍향, 풍속, 기압 등을 측정,
+    <br />
+    웨더스테이션 센서 장착
+  </span>,
 ];

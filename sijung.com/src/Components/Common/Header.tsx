@@ -57,7 +57,7 @@ const HeaderContainer = styled.header`
   right: 0;
   z-index: 2;
 
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -68,7 +68,7 @@ const LogoContainer = styled.div`
   justify-content: space-between; // 로고와 버튼을 양 끝에 배치 !
   align-items: center;
 
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     width: 100%;
   }
 `;
@@ -85,7 +85,7 @@ const ToggleButton = styled.button`
   display: none;
   background-color: white;
 
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     display: block;
     margin-right: 10px;
   }
@@ -103,7 +103,7 @@ const Navigation = styled.nav<{ showItems: boolean }>`
     margin-left: 25px;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     display: ${(props) => (props.showItems ? "block" : "none")};
   }
 `;
@@ -113,7 +113,7 @@ const NavList = styled.ul`
   margin: 0;
   padding: 0;
 
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     flex-direction: column;
     padding-top: 10px;
   }
@@ -138,7 +138,7 @@ const NavItem = styled.li`
     cursor: pointer;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     margin: 10px 0;
   }
 `;

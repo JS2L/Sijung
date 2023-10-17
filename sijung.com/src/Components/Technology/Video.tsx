@@ -13,16 +13,16 @@ function Video() {
   return (
     <div>
       <Img1Container>
-        <Title data-aos="fade-left" data-aos-duration="1000">
+        <Title data-aos="fade-right" data-aos-duration="1000">
           영상 시정계
         </Title>
-        <Content data-aos="fade-left" data-aos-duration="1500">
+        <Content data-aos="fade-right" data-aos-duration="1500">
           <BlackNum>01</BlackNum>
           <br />
           Refine data set
         </Content>
         <Content
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-duration="2000"
           style={{ color: "black", fontSize: "20px" }}
         >
@@ -61,10 +61,10 @@ function Video() {
           입력값으로 처리할 수 있는 알고리즘 개발
         </SecContent>
       </Img1Container>
-      <Img2Container data-aos="fade-left" data-aos-duration="1000">
+      <Img2Container data-aos="fade-right" data-aos-duration="1000">
         <ImageContainer>
           <VideoImg2
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="1000"
             src="/Img/VideoImg2.png"
             alt="Perform hyper parameter tweaking"
@@ -121,7 +121,7 @@ function Video() {
           />
         </ImageContainer>
       </Img2Container>
-      <Img2Container data-aos="fade-left" data-aos-duration="1000">
+      <Img2Container data-aos="fade-right" data-aos-duration="1000">
         <ImageContainer>
           <VideoImg2
             src="/Img/VideoImg4.png"
@@ -234,6 +234,8 @@ const Content = styled.p`
 
 const VideoImg1 = styled.img`
   width: 100%;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 50px;
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
