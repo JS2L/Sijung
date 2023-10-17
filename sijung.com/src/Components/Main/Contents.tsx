@@ -78,6 +78,7 @@ const Title = styled.div`
 `;
 
 const Detail = styled.p`
+  font-family: "PretendardVariable";
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
