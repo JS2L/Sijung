@@ -21,12 +21,12 @@ function Retro() {
           <img src="/Img/Retro.png" alt="Retro" />
         </ImagesContainer>
         <TextContainer>
-          <Title style={{ fontSize: "40px" }}>
+          <Title>
             SIJUNG
             <br />
             RETRO REFLECTOR
           </Title>
-          <Content style={{ fontSize: "17px" }}>
+          <Content>
             기존의 RETRO REFLECTOR는
             <br />
             유리 표면에 금,은,알루미늄으로 증착, 수작업으로
@@ -55,17 +55,49 @@ const Title = styled.p`
   font-size: 25px;
   font-family: "KoPubWorldDotumBold";
   margin-top: 50px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 22px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
 
 const ContentContainer = styled.div`
   display: flex;
   flex: 1;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const ImagesContainer = styled.div`
   flex: 1.7;
   padding-top: 20px;
   padding-right: 30px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 700px;
+    padding-right: 0px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    padding-right: 0px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -77,4 +109,12 @@ const Content = styled.p`
   font-size: 20px;
   font-family: "KoPubWorldDotumMedium";
   margin-top: 30px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 17px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 14px;
+  }
 `;

@@ -42,6 +42,14 @@ const ArticleContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 80px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    margin: 50px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    margin: 10px;
+  }
 `;
 
 const ArticleImage = styled.div`
@@ -58,6 +66,24 @@ const ArticleImage = styled.div`
     width: 534px;
     height: 280px;
   }
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 60px;
+    img {
+      width: 100%;
+      height: auto 0;
+      object-fit: cover;
+      width: 370px;
+      height: 250px;
+    }
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    margin-right: 60px;
+    img {
+      display: none;
+    }
+  }
 `;
 
 const ArticleContent = styled.div`
@@ -70,16 +96,40 @@ const ArticleTitle = styled.div`
   font-family: "Pretendard-Bold";
   font-size: 20px;
   margin-bottom: 30px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 17px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 13px;
+  }
 `;
 
 const ArticleSummary = styled.div`
   font-family: "Pretendard-Medium";
   margin-bottom: 30px;
   max-width: 500px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 9px;
+  }
 `;
 
 const ArticleSource = styled.div`
   font-family: "Pretendard-Bold";
   color: #888;
   font-size: 13px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 11px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 7px;
+  }
 `;

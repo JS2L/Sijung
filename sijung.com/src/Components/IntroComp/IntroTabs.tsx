@@ -80,21 +80,21 @@ const TabButtons = styled.div`
   display: flex;
   justify-content: center;
   font-family: "Pretendard-SemiBold";
-  font-size: 30px;
-  margin-left: 130px;
-  margin-right: 130px;
+  font-size: 28px;
+  margin-left: 50px;
+  margin-right: 50px;
   padding: 10px;
   z-index: 1;
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
-    font-size: 23px;
-    margin-left: 70px;
-    margin-right: 70px;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-right: 30px;
     padding: 0px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 0px;
     margin-right: 0px;
   }

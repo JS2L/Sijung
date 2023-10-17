@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-// 회사소개 - CEO 소개 ! 싸인만 img
+// 회사소개 - CEO 소개 ! 싸인만 img ! img MQ 넣어야함...
 function ImgContent() {
   return (
     <ContentWrap>
@@ -59,6 +59,26 @@ const AboutUsWrap = styled.div`
   }
 `;
 
+const ParagraphTitle = styled.p`
+  font-size: 24px;
+  line-height: 38px;
+  margin: 10px 50px 10px 50px;
+  padding: 0;
+  word-break: break-all;
+  font-family: "Pretendard-Bold", sans-serif;
+  font-weight: 700;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 19px;
+    margin: 10px 30px 10px 30px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 15px;
+    margin: 10px 10px 10px 10px;
+  }
+`;
+
 const Paragraph = styled.p`
   font-size: 21px;
   line-height: 38px;
@@ -66,6 +86,16 @@ const Paragraph = styled.p`
   padding: 0;
   word-break: break-all;
   font-family: "Pretendard-Black", sans-serif;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 16px;
+    margin: 10px 30px 10px 30px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 12px;
+    margin: 10px 10px 10px 10px;
+  }
 `;
 
 const ParagraphBold = styled.p`
@@ -77,16 +107,14 @@ const ParagraphBold = styled.p`
   font-family: "Pretendard-Black", sans-serif;
   font-weight: 700;
   color: #206fb1;
-`;
 
-const ParagraphTitle = styled.p`
-  font-size: 24px;
-  line-height: 38px;
-  margin: 10px 50px 10px 50px;
-  padding: 0;
-  word-break: break-all;
-  font-family: "Pretendard-Bold", sans-serif;
-  font-weight: 700;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 16px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 12px;
+  }
 `;
 
 const Sign = styled.p`
@@ -99,4 +127,12 @@ const Sign = styled.p`
   color: inherit;
   text-align: end;
   font-family: "Godo", sans-serif;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 16px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 12px;
+  }
 `;

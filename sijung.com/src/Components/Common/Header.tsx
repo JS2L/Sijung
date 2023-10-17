@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-// 헤더 !
+// 헤더 ! 설치사례 추가
 function Header() {
   const [showItems, setShowItems] = useState(false);
 
@@ -122,6 +122,7 @@ const NavList = styled.ul`
 const NavItem = styled.li`
   margin-right: 70px;
   color: black;
+  font-size: 18px;
   font-family: "Pretendard-Bold";
   text-decoration: none;
   font-weight: bold;

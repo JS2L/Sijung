@@ -20,7 +20,7 @@ function History() {
     {
       year: "2019",
       contents: [
-        "한국 표준 과학 연구원 기술 이전 및 기업인가 (연구소 기업 인가)",
+        "한국 표준 과학 연구원 기술 이전 및 기업인가",
         "소프트웨어 사업자 등록",
         "벤처나라 등록 (조달청)",
       ],
@@ -74,12 +74,28 @@ const Title1st = styled.p`
   font-size: 35px;
   color: #0072ff;
   margin-bottom: -7px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 21px;
+  }
 `;
 
 const Title2nd = styled.p`
   font-family: "Pretendard-Bold";
   font-size: 35px;
   margin-bottom: 50px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 21px;
+  }
 `;
 
 const Container = styled.div`
@@ -92,8 +108,16 @@ const YearItem = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
-  margin-right: 20px;
-  margin-left: 300px;
+  align-items: flex-center;
+  justify-content: flex-center;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 21px;
+  }
 `;
 
 const Year = styled.div`
@@ -102,6 +126,14 @@ const Year = styled.div`
   margin-right: 30px;
   width: 60px;
   text-align: right;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 21px;
+  }
 `;
 
 const Divider = styled.div`
@@ -109,6 +141,14 @@ const Divider = styled.div`
   width: 2px;
   background-color: #000;
   margin: 12px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 19px;
+  }
 `;
 
 const Contents = styled.div`
@@ -117,8 +157,24 @@ const Contents = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 19px;
+  }
 `;
 
 const ContentItem = styled.div`
   margin-bottom: 12px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 28px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 19px;
+  }
 `;

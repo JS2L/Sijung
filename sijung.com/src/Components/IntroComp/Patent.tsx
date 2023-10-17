@@ -58,6 +58,15 @@ const ImageList = styled.div`
   align-items: center;
   height: 100%;
   padding: 50px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    padding: 20px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    height: 80%;
+    padding: 0px;
+  }
 `;
 
 const ImageItem = styled.div`
@@ -77,6 +86,14 @@ const ImageItem = styled.div`
 
   &:hover img {
     transform: scale(1.1);
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    transform: scale(0.9);
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    transform: scale(0.8);
   }
 `;
 
@@ -99,6 +116,16 @@ const Modal = styled.div`
   text-align: center;
   width: 500px; /* 모달 너비를 이미지와 동일하게 설정 */
   height: auto; /* 모달 높이를 이미지와 동일하게 설정 */
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 400px; /* 모달 너비를 이미지와 동일하게 설정 */
+    height: auto; /* 모달 높이를 이미지와 동일하게 설정 */
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    width: 300px; /* 모달 너비를 이미지와 동일하게 설정 */
+    height: auto; /* 모달 높이를 이미지와 동일하게 설정 */
+  }
 `;
 const ModalImage = styled.img`
   width: 100%;

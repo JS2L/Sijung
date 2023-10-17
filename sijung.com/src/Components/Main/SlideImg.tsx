@@ -9,7 +9,7 @@ function SlideImg() {
   return (
     <div>
       {/* bootstrap Carousels */}
-      <Carousel style={{ marginTop: "70px", marginBottom: "50px" }}>
+      <Carousel style={{ marginTop: "72px", marginBottom: "50px" }}>
         <Carousel.Item>
           <Link to="/Product/tab1">
             <SlideStyle
