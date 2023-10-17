@@ -3,6 +3,7 @@ import styled from "styled-components";
 // import videoData from "./VideoData";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../../Fonts/Font.css";
 
 // 보유기술 - 영상시정계 ! 구조 망했음 ! AOS활용
 function Video() {
@@ -200,11 +201,15 @@ const Title = styled.p`
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
     font-size: 30px;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
   }
 `;
 

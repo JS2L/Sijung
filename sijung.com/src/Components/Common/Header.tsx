@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import "../../Fonts/Font.css";
 
-// 헤더 ! 설치사례 추가
+// 헤더 ! 설치사례 추가 ! 언젠간 애니메이션 보듯이 내려가는 메인화면 구성 도전 (원페이지 스크롤 혹은 내가 만들기)
 function Header() {
   const [showItems, setShowItems] = useState(false);
 

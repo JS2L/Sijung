@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "../../Fonts/Font.css";
 
 // 푸터 ! Footer ! F00t3r ! 푸ㅌr
 function Footer() {
