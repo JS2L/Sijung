@@ -1,19 +1,24 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import "../../Fonts/Font.css";
 
-// 헤더 ! 설치사례 추가 ! 언젠간 애니메이션 보듯이 내려가는 메인화면 구성 도전 (원페이지 스크롤 혹은 내가 만들기)
 function Header() {
   const [showItems, setShowItems] = useState(false);
+
+  // 새로고침 작동되게 하는 함수
+  const handleLinkClick = (path: string) => {
+    if (window.location.pathname === path) {
+      window.location.reload();
+    }
+  };
 
   return (
     <HeaderContainer>
       <LogoContainer>
         <Logo>
-          <Link to="/">
+          <a href="/" onClick={() => handleLinkClick("/")}>
             <img src="/Img/logo.png" alt="logo" />
-          </Link>
+          </a>
         </Logo>
         <ToggleButton onClick={() => setShowItems(!showItems)}>
           <ToggleImage src="/Img/ToggleSwitch.png" alt="ToggleSwitch" />
@@ -22,19 +27,35 @@ function Header() {
       <Navigation showItems={showItems}>
         <NavList>
           <NavItem>
-            <Link to="/introComp">회사소개</Link>
+            <a href="/introComp" onClick={() => handleLinkClick("/introComp")}>
+              회사소개
+            </a>
           </NavItem>
           <NavItem>
-            <Link to="/Product/tab1">제품소개</Link>
+            <a
+              href="/Product/tab1"
+              onClick={() => handleLinkClick("/Product/tab1")}
+            >
+              제품소개
+            </a>
           </NavItem>
           <NavItem>
-            <Link to="/Technology">보유기술</Link>
+            <a
+              href="/Technology"
+              onClick={() => handleLinkClick("/Technology")}
+            >
+              보유기술
+            </a>
           </NavItem>
           <NavItem>
-            <Link to="/Nalgaem">기상서비스</Link>
+            <a href="/Nalgaem" onClick={() => handleLinkClick("/Nalgaem")}>
+              기상서비스
+            </a>
           </NavItem>
           <NavItem>
-            <Link to="/Mozaic">비식별화</Link>
+            <a href="/Mozaic" onClick={() => handleLinkClick("/Mozaic")}>
+              비식별화
+            </a>
           </NavItem>
         </NavList>
       </Navigation>

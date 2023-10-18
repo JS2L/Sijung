@@ -18,16 +18,18 @@ export default function Slide() {
         autoplay={{ delay: 2500 }}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={5}
-        spaceBetween={10}
+        slidesPerView={3}
+        spaceBetween={5}
         coverflowEffect={{
-          rotate: 5, // 회전각도
+          rotate: 0, // 회전각도
           stretch: 0,
           depth: 100,
-          modifier: 2,
+          modifier: 3,
           slideShadows: true,
         }}
         mousewheel={false} // 마우스 휠
+        loop={true}
+        loopedSlides={2}
         modules={[EffectCoverflow, Mousewheel, Autoplay]} // 모듈추가
         className="mySwiper"
       >
@@ -56,6 +58,16 @@ export default function Slide() {
             <img src="./Img/Caro5.jpg" alt="Slide 5" />
           </ImageContainer>
         </SwiperSlide>
+        <SwiperSlide>
+          <ImageContainer>
+            <img src="./Img/Caro5.jpg" alt="Slide 5" />
+          </ImageContainer>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ImageContainer>
+            <img src="./Img/Caro5.jpg" alt="Slide 5" />
+          </ImageContainer>
+        </SwiperSlide>
       </Swiper>
     </SlideContainer>
   );
@@ -64,7 +76,6 @@ export default function Slide() {
 const SlideContainer = styled.div`
   margin-top: 100px;
   margin-bottom: 30px;
-  margin-right: 40px;
 
   .swiper-wrapper {
     padding: 30px;
@@ -78,7 +89,7 @@ const SlideContainer = styled.div`
 
   .swiper-slide img {
     display: block;
-    width: 150%;
+    width: 100%;
   }
 `;
 

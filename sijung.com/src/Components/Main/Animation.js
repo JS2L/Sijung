@@ -1,3 +1,4 @@
+// Code Pen에서 가져옴
 import { TweenLite, Expo } from "gsap";
 
 function defaults(object, src) {
