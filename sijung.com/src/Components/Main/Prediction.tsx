@@ -244,7 +244,7 @@ const ImgRightTxtLow = styled.p`
   font-family: "Pretendard-Bold";
   font-size: 35px;
   margin-top: 2000px;
-  margin-right: 550px;
+  margin-right: 450px;
 
   a {
     text-decoration: none;
