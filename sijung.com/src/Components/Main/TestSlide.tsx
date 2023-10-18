@@ -24,10 +24,10 @@ export default function Slide() {
           rotate: 5, // 회전각도
           stretch: 0,
           depth: 100,
-          modifier: 1,
+          modifier: 2,
           slideShadows: true,
         }}
-        mousewheel={true} // 마우스 휠
+        mousewheel={false} // 마우스 휠
         modules={[EffectCoverflow, Mousewheel, Autoplay]} // 모듈추가
         className="mySwiper"
       >
@@ -48,7 +48,7 @@ export default function Slide() {
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
-            <img src="./Img/TitleBarBG.png" alt="Slide 4" />
+            <img src="./Img/Caro4.jpg" alt="Slide 4" />
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
@@ -64,6 +64,7 @@ export default function Slide() {
 const SlideContainer = styled.div`
   margin-top: 100px;
   margin-bottom: 30px;
+  margin-right: 40px;
 
   .swiper-wrapper {
     padding: 30px;
@@ -90,10 +91,10 @@ const ImageContainer = styled.div`
     object-fit: cover;
     width: 100%;
     height: 100%;
-    transition: transform 0.2s; // 확대/축소 애니메이션을 부드럽게 만듭니다.
+    transition: transform 0.2s;
 
     &:hover {
-      transform: scale(1.1); // hover 상태에서 이미지를 1.1배로 확대
+      transform: scale(1.1); // hover 상태에서 이미지 1.1배
     }
   }
 `;

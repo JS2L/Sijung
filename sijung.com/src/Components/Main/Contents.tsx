@@ -42,6 +42,7 @@ const Container = styled.div`
   background: none;
   transition: background 0.3s ease;
   color: black;
+
   &:hover {
     background: url("/img/Transmittance_1.jpg") center/cover no-repeat;
     color: white;
@@ -60,6 +61,7 @@ const ContentItem = styled.div`
   text-align: center;
   margin: 10px;
   transition: all 0.3s ease;
+  z-index: 2;
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);

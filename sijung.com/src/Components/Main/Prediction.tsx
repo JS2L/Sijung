@@ -158,6 +158,7 @@ const ImgRightTxt = styled.p`
   font-size: 35px;
   margin-top: 700px;
   margin-right: 400px;
+  z-index: 2;
 
   a {
     text-decoration: none;
@@ -202,6 +203,7 @@ const ImgLeftTxt = styled.p`
   font-size: 35px;
   margin-top: 1350px;
   margin-left: 400px;
+  z-index: 2;
 
   a {
     text-decoration: none;
@@ -245,6 +247,7 @@ const ImgRightTxtLow = styled.p`
   font-size: 35px;
   margin-top: 2000px;
   margin-right: 450px;
+  z-index: 2;
 
   a {
     text-decoration: none;
@@ -288,6 +291,7 @@ const ImgLeftTxtLow = styled.p`
   font-size: 35px;
   margin-top: 2650px;
   margin-left: 400px;
+  z-index: 2;
 
   a {
     text-decoration: none;
