@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import "../../Fonts/Font.css";
-import ImgSlide from "./ImgSlide";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function JS02P() {
@@ -33,7 +32,6 @@ function JS02P() {
       </OutSection>
       <ImageContainer>
         <ImageContent>설치 이미지</ImageContent>
-        <ImgSlide />
       </ImageContainer>
     </Container>
   );
@@ -187,7 +185,6 @@ const ImageContainer = styled.div`
 const ImageContent = styled.p`
   font-family: "Pretendard-Bold";
   font-size: 30px;
-  margin-bottom: 50px;
 `;
 
 const features = [

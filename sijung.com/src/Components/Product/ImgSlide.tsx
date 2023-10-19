@@ -35,37 +35,37 @@ export default function Slide() {
       >
         <SwiperSlide>
           <ImageContainer>
-            <img src="./Img/Caro1.jpg" alt="Slide 1" />
+            <img src="../Img/Caro1.jpg" alt="Slide 1" />
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
-            <img src="./Img/Caro2.jpg" alt="Slide 2" />
+            <img src="../Img/Caro2.jpg" alt="Slide 2" />
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
-            <img src="./Img/Caro3.jpg" alt="Slide 3" />
+            <img src="../Img/Caro3.jpg" alt="Slide 3" />
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
-            <img src="./Img/Caro4.jpg" alt="Slide 4" />
+            <img src="../Img/Caro4.jpg" alt="Slide 4" />
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
-            <img src="./Img/Caro5.jpg" alt="Slide 5" />
+            <img src="../Img/Caro5.jpg" alt="Slide 5" />
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
-            <img src="./Img/Caro5.jpg" alt="Slide 5" />
+            <img src="../Img/Caro5.jpg" alt="Slide 5" />
           </ImageContainer>
         </SwiperSlide>
         <SwiperSlide>
           <ImageContainer>
-            <img src="./Img/Caro5.jpg" alt="Slide 5" />
+            <img src="../Img/Caro5.jpg" alt="Slide 5" />
           </ImageContainer>
         </SwiperSlide>
       </Swiper>
@@ -74,7 +74,6 @@ export default function Slide() {
 }
 
 const SlideContainer = styled.div`
-  margin-top: 100px;
   margin-bottom: 30px;
 
   .swiper-wrapper {
