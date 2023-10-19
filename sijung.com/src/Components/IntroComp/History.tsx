@@ -86,15 +86,17 @@ const Title1st = styled.p`
 
 const Title2nd = styled.p`
   font-family: "Pretendard-Bold";
-  font-size: 35px;
-  margin-bottom: 50px;
+  font-size: 25px;
+  margin-bottom: 80px;
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
     font-size: 28px;
+    margin-bottom: 50px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 21px;
+    margin-bottom: 30px;
   }
 `;
 

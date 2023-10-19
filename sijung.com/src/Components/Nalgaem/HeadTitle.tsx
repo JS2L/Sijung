@@ -1,16 +1,41 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
+import { gsap } from "gsap";
 
 // 기상서비스 전용 헤드타이틀 ! 날갬 설명
-function HeadTitle() {
+const HeadTitle = () => {
+  // gsap 애니메이션 모듈화
+  const animateWithOpacity = (element: HTMLElement | null) => {
+    gsap.from(element, {
+      opacity: 0,
+      ease: "power2.inOut",
+      onComplete: () => {
+        gsap.to(element, {
+          opacity: 1,
+          ease: "power2.inOut",
+        });
+      },
+    });
+  };
+
+  const introRef = useRef(null);
+  const introKoRef = useRef(null);
+
+  useEffect(() => {
+    animateWithOpacity(introRef.current);
+    animateWithOpacity(introKoRef.current);
+  }, []);
+
   return (
     <div>
-      <IntroEn>LIVE Nalgaem</IntroEn>
-      <IntroKo>실시간 LIVE로 현장 그대로 영상을 확인하는 관광APP</IntroKo>
+      <IntroEn ref={introRef}>LIVE Nalgaem</IntroEn>
+      <IntroKo ref={introKoRef}>
+        실시간 LIVE로 현장 그대로 영상을 확인하는 관광APP
+      </IntroKo>
       <ShadowEn>NALGAEM</ShadowEn>
     </div>
   );
-}
+};
 
 export default HeadTitle;
 
@@ -43,7 +68,7 @@ const IntroKo = styled.p`
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
-    font-size: 20px;
+    font-size: 19px;
     margin-left: 30px;
   }
 `;
@@ -62,7 +87,7 @@ const ShadowEn = styled.p`
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
-    font-size: 80px;
+    font-size: 70px;
     margin-right: 30px;
   }
 `;

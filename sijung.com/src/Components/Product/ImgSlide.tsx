@@ -1,16 +1,26 @@
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-
-// import required modules
 import { EffectCoverflow, Mousewheel, Autoplay } from "swiper/modules";
 import styled from "styled-components";
 
-export default function Slide() {
+const images = [
+  "../Img/Caro1.jpg",
+  "../Img/Caro2.jpg",
+  "../Img/Caro3.jpg",
+  "../Img/Caro4.jpg",
+  "../Img/Caro5.jpg",
+  "../Img/Caro6.jpg",
+  "../Img/Caro7.jpg",
+  "../Img/Caro8.png",
+  "../Img/Caro9.png",
+  "../Img/Caro10.png",
+  "../Img/Caro11.png",
+  "../Img/Caro12.png",
+];
+
+const ImageSlide = () => {
   return (
     <SlideContainer>
       <Swiper
@@ -21,71 +31,41 @@ export default function Slide() {
         slidesPerView={3}
         spaceBetween={5}
         coverflowEffect={{
-          rotate: 0, // 회전각도
+          rotate: 0,
           stretch: 0,
           depth: 100,
           modifier: 3,
           slideShadows: true,
         }}
-        mousewheel={false} // 마우스 휠
+        mousewheel={false}
         loop={true}
-        loopedSlides={2}
-        modules={[EffectCoverflow, Mousewheel, Autoplay]} // 모듈추가
+        loopedSlides={4}
+        modules={[EffectCoverflow, Mousewheel, Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <ImageContainer>
-            <img src="../Img/Caro1.jpg" alt="Slide 1" />
-          </ImageContainer>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageContainer>
-            <img src="../Img/Caro2.jpg" alt="Slide 2" />
-          </ImageContainer>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageContainer>
-            <img src="../Img/Caro3.jpg" alt="Slide 3" />
-          </ImageContainer>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageContainer>
-            <img src="../Img/Caro4.jpg" alt="Slide 4" />
-          </ImageContainer>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageContainer>
-            <img src="../Img/Caro5.jpg" alt="Slide 5" />
-          </ImageContainer>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageContainer>
-            <img src="../Img/Caro5.jpg" alt="Slide 5" />
-          </ImageContainer>
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageContainer>
-            <img src="../Img/Caro5.jpg" alt="Slide 5" />
-          </ImageContainer>
-        </SwiperSlide>
+        {images.map((imagePath, index) => (
+          <SwiperSlide key={index}>
+            <ImageContainer>
+              <img src={imagePath} alt={`Slide ${index + 1}`} />
+            </ImageContainer>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </SlideContainer>
   );
-}
+};
 
 const SlideContainer = styled.div`
+  margin-top: 30px;
   margin-bottom: 30px;
-
   .swiper-wrapper {
     padding: 30px;
   }
-
   .swiper-slide {
     background-position: center;
     background-size: cover;
     height: auto;
   }
-
   .swiper-slide img {
     display: block;
     width: 100%;
@@ -102,9 +82,10 @@ const ImageContainer = styled.div`
     width: 100%;
     height: 100%;
     transition: transform 0.2s;
-
     &:hover {
-      transform: scale(1.1); // hover 상태에서 이미지 1.1배
+      transform: scale(1.1);
     }
   }
 `;
+
+export default ImageSlide;

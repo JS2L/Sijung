@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
+import { gsap } from "gsap";
 
 // 비식별화 헤드타이틀 ! MOZAIC
-function HeadTitle() {
+const HeadTitle = () => {
+  // gsap 애니메이션 모듈화
+  const animateWithOpacity = (element: HTMLElement | null) => {
+    gsap.from(element, {
+      opacity: 0,
+      ease: "power2.inOut",
+      onComplete: () => {
+        gsap.to(element, {
+          opacity: 1,
+          ease: "power2.inOut",
+        });
+      },
+    });
+  };
+
+  const introRef = useRef(null);
+  const introKoRef = useRef(null);
+
+  useEffect(() => {
+    animateWithOpacity(introRef.current);
+    animateWithOpacity(introKoRef.current);
+  }, []);
+
   return (
     <div>
-      <IntroEn>AI Visibility</IntroEn>
-      <IntroKo>AI를 활용한 빠르고 정확한 비식별화</IntroKo>
+      <IntroEn ref={introRef}>AI Visibility</IntroEn>
+      <IntroKo ref={introKoRef}>AI를 활용한 빠르고 정확한 비식별화</IntroKo>
       <ShadowEn>MOZAIC</ShadowEn>
     </div>
   );
-}
+};
 
 export default HeadTitle;
 

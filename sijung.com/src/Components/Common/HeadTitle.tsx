@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
+import { gsap } from "gsap";
 
 // 3가지 페이지(회사소개, 제품소개, 보유기술 에서 쓰이는 공용 헤드타이틀) background 느낌
-function HeadTitle() {
+const HeadTitle = () => {
+  // gsap 애니메이션 모듈화
+  const animateWithOpacity = (element: HTMLElement | null) => {
+    gsap.from(element, {
+      opacity: 0,
+      ease: "power2.inOut",
+      onComplete: () => {
+        gsap.to(element, {
+          opacity: 1,
+          ease: "power2.inOut",
+        });
+      },
+    });
+  };
+
+  const introRef = useRef(null);
+  const introKoRef = useRef(null);
+
+  useEffect(() => {
+    animateWithOpacity(introRef.current);
+    animateWithOpacity(introKoRef.current);
+  }, []);
+
   return (
     <div>
-      <IntroEn>A.I VIDEO ANALYSIS COMPANY</IntroEn>
-      <IntroKo>인공지능 시스템 기술 선도 기업</IntroKo>
+      <IntroEn ref={introRef}>A.I VIDEO ANALYSIS COMPANY</IntroEn>
+      <IntroKo ref={introKoRef}>인공지능 시스템 기술 선도 기업</IntroKo>
       <ShadowEn>SIJUNG</ShadowEn>
     </div>
   );
-}
+};
 
 export default HeadTitle;
 

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import "../../Fonts/Font.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ImageSlide from "./ImgSlide";
 
 function JS06() {
   return (
@@ -31,7 +32,8 @@ function JS06() {
         ))}
       </OutSection>
       <ImageContainer>
-        <ImageContent>설치 이미지</ImageContent>
+        <ImageContent>설치 사례</ImageContent>
+        <ImageSlide />
       </ImageContainer>
     </Container>
   );
@@ -177,7 +179,6 @@ const OutContent = styled.p`
 
 const ImageContainer = styled.div`
   width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
   height: auto;
 `;
@@ -185,6 +186,7 @@ const ImageContainer = styled.div`
 const ImageContent = styled.p`
   font-family: "Pretendard-Bold";
   font-size: 30px;
+  text-align: center;
 `;
 
 const features = [
