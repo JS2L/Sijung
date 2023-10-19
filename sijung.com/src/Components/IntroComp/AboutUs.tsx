@@ -28,7 +28,10 @@ function ImgContent() {
         <ParagraphBold>그것이 시정이 꿈꾸는 미래 입니다.</ParagraphBold>
         <Sign>
           President Sintae Chae
-          <img src="/img/sign.jpg" alt="President Sintae Chae's Signature" />
+          <img
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/sign.jpg?raw=true"
+            alt="President Sintae Chae's Signature"
+          />
         </Sign>
       </AboutUsWrap>
     </ContentWrap>

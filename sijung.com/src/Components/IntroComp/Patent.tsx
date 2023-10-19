@@ -6,21 +6,21 @@ function Patent() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const imagePaths: string[] = [
-    "/img/Patent1.png",
-    "/img/Patent2.png",
-    "/img/Patent3.png",
-    "/img/Patent4.png",
-    "/img/Patent5.png",
-    "/img/Patent6.png",
-    "/img/Patent7.png",
-    "/img/Patent8.png",
-    "/img/Patent9.png",
-    "/img/Patent10.png",
-    "/img/Patent11.png",
-    "/img/Patent12.png",
-    "/img/Patent13.png",
-    "/img/Patent14.jpg",
-    "/img/Patent15.jpg",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent1.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent2.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent3.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent4.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent5.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent6.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent7.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent8.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent9.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent10.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent11.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent12.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent13.png?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent14.jpg?raw=true",
+    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent15.jpg?raw=true",
   ];
 
   const openModal = (imagePath: string) => {

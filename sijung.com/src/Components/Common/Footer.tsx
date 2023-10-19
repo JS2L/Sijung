@@ -12,7 +12,7 @@ function Footer() {
       <FooterTel>TEL : 042-933-5520 / E-MAIL : steve17@sijung.com.</FooterTel>
       <FooterCP> COPYRIGHT (C) 2023 SIJUNG. ALL RIGHTS RESERVED.</FooterCP>
       <WhiteLogo
-        src="/img/SIJUNG_white.png"
+        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/SIJUNG_white.png?raw=true"
         alt="SIJUNG_White_logo"
       ></WhiteLogo>
     </FooterContainer>

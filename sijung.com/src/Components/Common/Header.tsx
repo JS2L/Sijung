@@ -28,7 +28,10 @@ function Header() {
           </a>
         </Logo>
         <ToggleButton onClick={() => setShowitems(!showitems)}>
-          <ToggleImage src="/Img/ToggleSwitch.png" alt="ToggleSwitch" />
+          <ToggleImage
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/ToggleSwitch.png?raw=true"
+            alt="ToggleSwitch"
+          />
         </ToggleButton>
       </LogoContainer>
       <Navigation $showitems={showitems}>

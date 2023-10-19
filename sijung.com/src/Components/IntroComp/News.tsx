@@ -5,7 +5,8 @@ import Article from "./Article";
 const News: React.FC = () => {
   const articles = [
     {
-      imageSrc: "/Img/News1.jpg",
+      imageSrc:
+        "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/News1.jpg?raw=true",
       title:
         "[인터뷰] 채신태 시정 대표 “스마트시티 환경 업그레이드시킬 기상 데이터 제공”",
       summary:
@@ -13,21 +14,24 @@ const News: React.FC = () => {
       source: "https://www.boannews.com/media/view.asp?idx=91552&kind=",
     },
     {
-      imageSrc: "/Img/NewsNo.jpg",
+      imageSrc:
+        "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/NewsNo.jpg?raw=true",
       title: "[미리보는 SECON & eGISEC 2022] 송우인포텍·스마티·시정",
       summary:
         "시정은 2016년 창립 이래 뛰어난 기술력과 우수한 품질을 바탕으로 고객 만족을 실현해온 AI 영상 장비 제품 제조 회사다.",
       source: "https://www.boannews.com/media/view.asp?idx=106040&kind=",
     },
     {
-      imageSrc: "/Img/News3.jpg",
+      imageSrc:
+        "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/News3.jpg?raw=true",
       title: "세종대-시정, 기술·서비스 연계 및 인프라 활용한 산학협력 체결",
       summary:
         "세종대 인공지능·빅데이터연구센터는 지난 10월 18일 인공지능을 이용한 시정계 제조·판매기업 '시정'과 기술·서비스 연계 및 인프라 활용에 관한 산학협력 양해각서를 체결했다고 18일 밝혔다.",
       source: "https://www.mediapen.com/news/view/402396",
     },
     {
-      imageSrc: "/Img/News4.jpg",
+      imageSrc:
+        "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/News4.jpg?raw=true",
       title: "2018 기상기후산업박람회(KCMIE 2018)에서 만나는 국내 유망 기업",
       summary:
         "(주)시정은 한국표준과학원의 기술 출자로 설립된 연구소 기업이다. 출자받은 시정계 기술을 바탕으로 광학 시정계 뿐만 아니라 영상시정계까지 개발을 하고 있다. 인공지능을 이용한 영상 시정계의 경우 세계 최초로 상용화를 하려고 하고 있으며 관련 특허도 다수 보유중에 있다.",
