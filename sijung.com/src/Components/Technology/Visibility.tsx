@@ -30,10 +30,28 @@ const Title = styled.p`
   font-size: 25px;
   font-family: "KoPubWorldDotumBold";
   margin-top: 50px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 19px;
+    margin-top: 0px;
+  }
 `;
 
 const Content = styled.p`
   font-size: 20px;
   font-family: "KoPubWorldDotumMedium";
   margin-top: 50px;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 18px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 16px;
+  }
 `;

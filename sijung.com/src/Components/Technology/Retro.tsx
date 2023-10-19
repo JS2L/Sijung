@@ -58,10 +58,12 @@ const Title = styled.p`
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
     font-size: 22px;
+    margin-top: 20px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 18px;
+    margin-top: 0px;
   }
 `;
 
