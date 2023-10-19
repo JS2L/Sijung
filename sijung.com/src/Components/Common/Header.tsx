@@ -21,7 +21,10 @@ function Header() {
       <LogoContainer>
         <Logo>
           <a href="/" onClick={() => handleLinkClick("/")}>
-            <img src="/Img/logo.png" alt="logo" />
+            <img
+              src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.png?raw=true"
+              alt="logo"
+            />
           </a>
         </Logo>
         <ToggleButton onClick={() => setShowitems(!showitems)}>
