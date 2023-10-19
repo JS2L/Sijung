@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "../../Fonts/Font.css";
 
+interface NavigationProps {
+  $showitems: boolean;
+}
+
 function Header() {
-  const [showItems, setShowItems] = useState(false);
+  const [showitems, setShowitems] = useState(false);
 
   // 새로고침 작동되게 하는 함수
   const handleLinkClick = (path: string) => {
@@ -20,11 +24,11 @@ function Header() {
             <img src="/Img/logo.png" alt="logo" />
           </a>
         </Logo>
-        <ToggleButton onClick={() => setShowItems(!showItems)}>
+        <ToggleButton onClick={() => setShowitems(!showitems)}>
           <ToggleImage src="/Img/ToggleSwitch.png" alt="ToggleSwitch" />
         </ToggleButton>
       </LogoContainer>
-      <Navigation showItems={showItems}>
+      <Navigation $showitems={showitems}>
         <NavList>
           <NavItem>
             <a href="/introComp" onClick={() => handleLinkClick("/introComp")}>
@@ -118,7 +122,7 @@ const ToggleImage = styled.img`
   height: 30px;
 `;
 
-const Navigation = styled.nav<{ showItems: boolean }>`
+const Navigation = styled.nav<NavigationProps>`
   ul {
     list-style: none;
     display: flex;
@@ -126,7 +130,8 @@ const Navigation = styled.nav<{ showItems: boolean }>`
   }
 
   @media (max-width: 950px) {
-    display: ${(props) => (props.showItems ? "block" : "none")};
+    display: ${(props: { $showitems: boolean }) =>
+      props.$showitems ? "block" : "none"};
   }
 `;
 

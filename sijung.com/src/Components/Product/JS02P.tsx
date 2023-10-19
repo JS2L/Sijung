@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "../../Fonts/Font.css";
-import { Carousel } from "react-responsive-carousel";
+import ImgSlide from "./ImgSlide";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function JS02P() {
@@ -33,17 +33,7 @@ function JS02P() {
       </OutSection>
       <ImageContainer>
         <ImageContent>설치 이미지</ImageContent>
-        <Carousel showArrows={true} showThumbs={false} infiniteLoop autoPlay>
-          {carouselImages.map((image, index) => (
-            <div key={index}>
-              <img
-                src={image.src}
-                alt={image.alt}
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-          ))}
-        </Carousel>
+        <ImgSlide />
       </ImageContainer>
     </Container>
   );
@@ -199,12 +189,6 @@ const ImageContent = styled.p`
   font-size: 30px;
   margin-bottom: 50px;
 `;
-
-const carouselImages = [
-  { src: "/Img/Caro1.jpg", alt: "Slide 1" },
-  { src: "/Img/Caro2.jpg", alt: "Slide 2" },
-  { src: "/Img/Caro3.jpg", alt: "Slide 3" },
-];
 
 const features = [
   {

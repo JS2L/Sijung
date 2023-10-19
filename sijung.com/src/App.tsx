@@ -21,7 +21,6 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
-
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/IntroComp" element={<IntroComp />}></Route>
