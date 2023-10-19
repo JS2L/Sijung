@@ -33,7 +33,7 @@ function Service() {
           <ContentRight>
             내용내용내용내용내용내용
             <br />
-            내용내용내용내용
+            내용내용내용내용내용
             <br />
             내용내용내용내용내용
           </ContentRight>
