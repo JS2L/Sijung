@@ -18,7 +18,10 @@ function Retro() {
       </Content>
       <ContentContainer>
         <ImagesContainer>
-          <img src="/Img/Retro.png" alt="Retro" />
+          <img
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Retro.png?raw=true"
+            alt="Retro"
+          />
         </ImagesContainer>
         <TextContainer>
           <Title>

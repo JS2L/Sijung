@@ -7,7 +7,8 @@ const videoData = [
     content: [
       "학습 셋(Learning)을 수정하고 변형과 라벨 오류를 제거하기 위해 검증,\n보강된 100% 유효한 트레이닝 셋을 구성하여 검증 학습된 데이터 셋을 바탕으로 임의의 데이터에 대해 여러 다양한 환경에 대해 우수한 결과를 유도하기 위함 이는 fault tolerance 측정과 정확도에서 우수한 결과를 도출",
     ],
-    imageSrc: "/Img/VideoImg1.png",
+    imageSrc:
+      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg1.png?raw=true",
     alt: "Refine data set",
   },
   {
@@ -17,7 +18,8 @@ const videoData = [
       "이미지 고도화를 통한 큐잉 및 데이터 셋 밸런싱 알고리즘 학습의 유연성과 속도를 향상",
       "기존 CNN 학습 알고리즘의 입력복잡성을 단순화 시켜서 단순한 벡터 값을 입력값으로 처리할 수 있는 알고리즘 개발",
     ],
-    imageSrc: "/Img/VideoImg2.png",
+    imageSrc:
+      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg2.png?raw=true",
     alt: "Redesign CNN training algorithm",
   },
   {
@@ -29,7 +31,8 @@ const videoData = [
       "학습의 복잡도를 최소화, 빠른 학습과 추론 능력을 보유하기 위한",
       "파라메타 설정 알고리즘을 개발하여 최적화",
     ],
-    imageSrc: "/Img/VideoImg3.png",
+    imageSrc:
+      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg3.png?raw=true",
     alt: "Perform hyper parameter tweaking",
   },
   {
@@ -41,7 +44,8 @@ const videoData = [
       "Tensorflow의 다차원 입력값의 복잡도를 최소화하여",
       "단일 변수만으로도 학습이 가능하도록 입력형식의 최적화 포맷을 개발",
     ],
-    imageSrc: "/Img/VideoImg4.png",
+    imageSrc:
+      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg4.png?raw=true",
     alt: "Compare results, Optimize format",
   },
   {
@@ -54,7 +58,8 @@ const videoData = [
       "Regression 알고리즘을 CNN에 적용하여 Cost를",
       "최적화 하는 단계에서 학습이 일어나도록 알고리즘 개발",
     ],
-    imageSrc: "/Img/VideoImg5.png",
+    imageSrc:
+      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg5.png?raw=true",
     alt: "Implement FT based version",
   },
   {

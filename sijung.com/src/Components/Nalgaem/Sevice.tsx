@@ -14,7 +14,10 @@ function Service() {
     <Container>
       <PageContainer>
         <ImgLeft data-aos="fade-up" data-aos-duration="1000">
-          <img src="./Img/Nalgaem1.png" alt="NalgaemImage1" />
+          <img
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem1.png?raw=true"
+            alt="NalgaemImage1"
+          />
         </ImgLeft>
         <ContentContainer>
           <ContentTitleRight
@@ -59,12 +62,18 @@ function Service() {
           </ContentRight>
         </ContentContainer>
         <ImgLeft data-aos="fade-up" data-aos-duration="1000">
-          <img src="./Img/Nalgaem2.png" alt="NalgaemImage2" />
+          <img
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem2.png?raw=true"
+            alt="NalgaemImage2"
+          />
         </ImgLeft>
       </PageContainer>
       <PageContainer>
         <ImgLeft data-aos="fade-up" data-aos-duration="1000">
-          <img src="./Img/Nalgaem3.png" alt="NalgaemImage3" />
+          <img
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem3.png?raw=true"
+            alt="NalgaemImage3"
+          />
         </ImgLeft>
         <ContentContainer>
           <ContentTitleRight

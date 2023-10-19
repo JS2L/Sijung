@@ -6,20 +6,19 @@ import { EffectCoverflow, Mousewheel, Autoplay } from "swiper/modules";
 import styled from "styled-components";
 
 const images = [
-  "../Img/Caro1.jpg",
-  "../Img/Caro2.jpg",
-  "../Img/Caro3.jpg",
-  "../Img/Caro4.jpg",
-  "../Img/Caro5.jpg",
-  "../Img/Caro6.jpg",
-  "../Img/Caro7.jpg",
-  "../Img/Caro8.png",
-  "../Img/Caro9.png",
-  "../Img/Caro10.png",
-  "../Img/Caro11.png",
-  "../Img/Caro12.png",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro1.jpg?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro2.jpg?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro3.jpg?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro4.jpg?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro5.jpg?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro6.jpg?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro7.jpg?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro8.png?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro9.png?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro10.png?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro11.png?raw=true",
+  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro12.png?raw=true",
 ];
-
 const ImageSlide = () => {
   return (
     <SlideContainer>

@@ -24,7 +24,7 @@ function PredictionSection() {
         data-aos="fade-left"
         data-aos-duration="1500"
         data-aos-offset="170"
-        src="/img/Prediction_1.png"
+        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_1.png?raw=true"
         alt="1st Prediction Img"
       />
       <ImgRightTxt data-aos="fade-left" data-aos-duration="1500">
@@ -33,7 +33,7 @@ function PredictionSection() {
       <ImgLeft
         data-aos="fade-right"
         data-aos-duration="1500"
-        src="/img/Prediction_2.png"
+        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_2.png?raw=true"
         alt="2nd Prediction Img"
       />
       <ImgLeftTxt data-aos="fade-right" data-aos-duration="1500">
@@ -42,7 +42,7 @@ function PredictionSection() {
       <ImgRightLow
         data-aos="fade-left"
         data-aos-duration="1500"
-        src="/img/Prediction_3.png"
+        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_3.png?raw=true"
         alt="3rd Prediction Img"
       />
       <ImgRightTxtLow data-aos="fade-left" data-aos-duration="1500">
@@ -51,7 +51,7 @@ function PredictionSection() {
       <ImgLeftLow
         data-aos="fade-right"
         data-aos-duration="1500"
-        src="/img/Prediction_4.png"
+        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_4.png?raw=true"
         alt="4th Prediction Img"
       />
       <ImgLeftTxtLow data-aos="fade-right" data-aos-duration="1500">

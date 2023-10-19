@@ -14,7 +14,10 @@ function Mozaic() {
     <Container>
       <PageContainer>
         <ImgLeft data-aos="fade-up" data-aos-duration="1000">
-          <img src="./Img/Mozaic1.png" alt="MozaicImage1" />
+          <img
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Mozaic1.png?raw=true"
+            alt="MozaicImage1"
+          />
         </ImgLeft>
         <ContentContainer>
           <ContentTitleRight
@@ -60,12 +63,18 @@ function Mozaic() {
           </ContentRight>
         </ContentContainer>
         <ImgLeft data-aos="fade-up" data-aos-duration="1000">
-          <img src="./Img/Mozaic2.png" alt="MozaicImage2" />
+          <img
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Mozaic2.png?raw=true"
+            alt="MozaicImage2"
+          />
         </ImgLeft>
       </PageContainer>
       <PageContainer>
         <ImgLeft data-aos="fade-up" data-aos-duration="1000">
-          <img src="./Img/Mozaic3.png" alt="MozaicImage3" />
+          <img
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Mozaic3.png?raw=true"
+            alt="MozaicImage3"
+          />
         </ImgLeft>
         <ContentContainer>
           <ContentTitleRight

@@ -191,17 +191,20 @@ const ImageContent = styled.p`
 
 const features = [
   {
-    image: "/Img/Characteristic1.png",
+    image:
+      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Characteristic1.png?raw=true",
     alt: "Characteristic 1",
     text: "인공지능 영상분석 기술 시정측정",
   },
   {
-    image: "/Img/Characteristic3.png",
+    image:
+      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Characteristic3.png?raw=true",
     alt: "Characteristic 3",
     text: "외부 설치용 카메라 보유",
   },
   {
-    image: "/Img/Characteristic2.png",
+    image:
+      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Characteristic2.png?raw=true",
     alt: "Characteristic 2",
     text: "웨더 스테이션 센서 장착",
   },

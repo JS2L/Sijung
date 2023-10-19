@@ -40,7 +40,7 @@ function Video() {
         <VideoImg1
           data-aos="zoom-in"
           data-aos-duration="1000"
-          src="/Img/VideoImg1.png"
+          src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg1.png?raw=true"
           alt="Refine data set"
         />
         <SecContent data-aos="fade-up" data-aos-duration="1000">
@@ -67,7 +67,7 @@ function Video() {
           <VideoImg2
             data-aos="fade-right"
             data-aos-duration="1000"
-            src="/Img/VideoImg2.png"
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg2.png?raw=true"
             alt="Perform hyper parameter tweaking"
           />
         </ImageContainer>
@@ -117,7 +117,7 @@ function Video() {
         </ContentContainer>
         <ImageContainer>
           <VideoImg2
-            src="/Img/VideoImg3.png"
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg3.png?raw=true"
             alt="Compare results, Optimize format"
           />
         </ImageContainer>
@@ -125,7 +125,7 @@ function Video() {
       <Img2Container data-aos="fade-right" data-aos-duration="1000">
         <ImageContainer>
           <VideoImg2
-            src="/Img/VideoImg4.png"
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg4.png?raw=true"
             alt="Implement FT based version
             "
           />
@@ -157,7 +157,7 @@ function Video() {
       <Img1Container data-aos="fade" data-aos-duration="3000">
         <ImgBox>
           <VideoImg1
-            src="/Img/VideoImg5.png"
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg5.png?raw=true"
             alt="Implement DCP based verstion"
           />
         </ImgBox>

@@ -44,7 +44,8 @@ const Container = styled.div`
   color: black;
 
   &:hover {
-    background: url("/img/Transmittance_1.jpg") center/cover no-repeat;
+    background: url("https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/transmittance_1.jpg?raw=true")
+      center/cover no-repeat;
     color: white;
   }
 

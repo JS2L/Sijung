@@ -15,7 +15,7 @@ type TabParams = {
 function Tab1() {
   return (
     <TitleBar
-      backgroundImage="/img/TitleBarBG.png"
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
       title="JS-02P"
       content="인공지능 자동 기상 관측 장비"
     />
@@ -25,7 +25,7 @@ function Tab1() {
 function Tab2() {
   return (
     <TitleBar
-      backgroundImage="/img/TitleBarBG.png"
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
       title="JS-06"
       content="인공지능 영상 분석 시정계"
     />
@@ -35,7 +35,7 @@ function Tab2() {
 function Tab3() {
   return (
     <TitleBar
-      backgroundImage="/img/TitleBarBG.png"
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
       title="JS-08"
       content="인공지능 파노라마 영상 분석 시정계"
     />
