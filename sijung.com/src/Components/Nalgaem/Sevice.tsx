@@ -19,7 +19,7 @@ function Service() {
             <br />
             쉽게 원하는 정보를
             <br />
-            찾아 갈 수 있습니다.
+            찾아 갈 수 있습니다
           </ContentRight>
         </ContentContainer>
       </PageContainer>
