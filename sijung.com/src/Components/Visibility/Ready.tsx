@@ -15,7 +15,8 @@ function Ready() {
 export default Ready;
 
 const Container = styled.div`
-  padding: 20px;
+  padding: 50px;
+  display: flex;
   align-items: center;
   justify-content: center;
 `;
