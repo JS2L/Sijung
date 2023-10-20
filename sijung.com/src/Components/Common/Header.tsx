@@ -62,11 +62,11 @@ function Header() {
               기상서비스
             </a>
           </NavItem>
-          <NavItem>
+          {/*<NavItem>
             <a href="/Mozaic" onClick={() => handleLinkClick("/Mozaic")}>
               비식별화
             </a>
-          </NavItem>
+          </NavItem>*/}
         </NavList>
       </Navigation>
     </HeaderContainer>
