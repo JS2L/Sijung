@@ -6,4 +6,4 @@
 
 html css javascript typescript npm node.js
 
-React bootstrap styeld-components react-router-dom AOS swiper react-carousel
+React bootstrap styeld-components react-router-dom AOS swiper react-carousel webpack babel
