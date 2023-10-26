@@ -6,18 +6,21 @@ import { EffectCoverflow, Mousewheel, Autoplay } from "swiper/modules";
 import styled from "styled-components";
 
 const images = [
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro1.png?raw=true",
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro2.png?raw=true",
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro3.png?raw=true",
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro4.png?raw=true",
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro5.png?raw=true",
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro6.png?raw=true",
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro8.png?raw=true",
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro9.png?raw=true",
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro10.png?raw=true",
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro11.png?raw=true",
-  "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Caro12.png?raw=true",
+  "Caro1",
+  "Caro2",
+  "Caro3",
+  "Caro4",
+  "Caro5",
+  "Caro6",
+  "Caro8",
+  "Caro9",
+  "Caro10",
+  "Caro11",
+  "Caro12",
 ];
+
+const basePath =
+  "https://github.com/JS2L/Sijung/raw/main/sijung.com/public/img/";
 
 const ImageSlide = () => {
   return (
@@ -27,6 +30,7 @@ const ImageSlide = () => {
         autoplay={{ delay: 2500 }}
         grabCursor={true}
         centeredSlides={true}
+        slidesPerView={3}
         spaceBetween={5}
         coverflowEffect={{
           rotate: 0,
@@ -35,27 +39,29 @@ const ImageSlide = () => {
           modifier: 3,
           slideShadows: true,
         }}
-        breakpoints={{
-          360: {
-            slidesPerView: 2, // 브라우저가 768보다 클 때
-          },
-          768: {
-            slidesPerView: 3, // 브라우저가 1024보다 클 때
-          },
-          1200: {
-            slidesPerView: 5, // 브라우저가 1024보다 클 때
-          },
-        }}
         mousewheel={false}
         loop={true}
         loopedSlides={4}
         modules={[EffectCoverflow, Mousewheel, Autoplay]}
         className="mySwiper"
       >
-        {images.map((imagePath, index) => (
+        {images.map((imageName, index) => (
           <SwiperSlide key={index}>
             <ImageContainer>
-              <img src={imagePath} alt={`Slide ${index + 1}`} />
+              <picture>
+                <source
+                  srcSet={`${basePath}${imageName}.avif?raw=true`}
+                  type="image/avif"
+                />
+                <source
+                  srcSet={`${basePath}${imageName}.webpraw=true`}
+                  type="image/webp"
+                />
+                <img
+                  src={`${basePath}${imageName}.pngraw=true`}
+                  alt={`Slide ${index + 1}`}
+                />
+              </picture>
             </ImageContainer>
           </SwiperSlide>
         ))}
