@@ -22,7 +22,7 @@ function Header() {
         <Logo>
           <a href="/" onClick={() => handleLinkClick("/")}>
             <img
-              src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.png?raw=true"
+              src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.webp?raw=true"
               alt="logo"
             />
           </a>
