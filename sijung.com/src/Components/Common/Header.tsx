@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import "../../Fonts/Font.css";
 
 interface NavigationProps {
@@ -9,24 +10,23 @@ interface NavigationProps {
 function Header() {
   const [showitems, setShowitems] = useState(false);
 
-  // 새로고침 작동되게 하는 함수
-  const handleLinkClick = (path: string) => {
+  /* const handleLinkClick = (path: string) => {
     if (window.location.pathname === path) {
       window.location.reload();
     }
-  };
+  }; */
 
   return (
     <HeaderContainer>
       <LogoContainer>
-        <a href="/" onClick={() => handleLinkClick("/")}>
+        <Link to="/" onClick={() => window.location.reload()}>
           <img
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.webp?raw=true"
             width="150"
             height="auto"
             alt="logo"
           />
-        </a>
+        </Link>
         <ToggleButton onClick={() => setShowitems(!showitems)}>
           <ToggleImage
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/ToggleSwitch.png?raw=true"
@@ -39,36 +39,25 @@ function Header() {
       <Navigation $showitems={showitems}>
         <NavList>
           <NavItem>
-            <a href="/introComp" onClick={() => handleLinkClick("/introComp")}>
+            <Link to="/introComp" onClick={() => window.location.reload()}>
               회사소개
-            </a>
+            </Link>
           </NavItem>
           <NavItem>
-            <a
-              href="/Product/tab1"
-              onClick={() => handleLinkClick("/Product/tab1")}
-            >
+            <Link to="/Product/tab1" onClick={() => window.location.reload()}>
               제품소개
-            </a>
+            </Link>
           </NavItem>
           <NavItem>
-            <a
-              href="/Technology"
-              onClick={() => handleLinkClick("/Technology")}
-            >
+            <Link to="/Technology" onClick={() => window.location.reload()}>
               보유기술
-            </a>
+            </Link>
           </NavItem>
           <NavItem>
-            <a href="/Nalgaem" onClick={() => handleLinkClick("/Nalgaem")}>
+            <Link to="/Nalgaem" onClick={() => window.location.reload()}>
               기상서비스
-            </a>
+            </Link>
           </NavItem>
-          {/*<NavItem>
-            <a href="/Mozaic" onClick={() => handleLinkClick("/Mozaic")}>
-              비식별화
-            </a>
-          </NavItem>*/}
         </NavList>
       </Navigation>
     </HeaderContainer>
