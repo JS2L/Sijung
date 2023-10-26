@@ -12,8 +12,10 @@ function Footer() {
       <FooterTel>TEL : 042-933-5520 / E-MAIL : steve17@sijung.com.</FooterTel>
       <FooterCP> COPYRIGHT (C) 2023 SIJUNG. ALL RIGHTS RESERVED.</FooterCP>
       <WhiteLogo
-        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/SIJUNG_white.png?raw=true"
+        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/SIJUNG_white.webp?raw=true"
         alt="SIJUNG_White_logo"
+        width="auto"
+        height="auto"
       ></WhiteLogo>
     </FooterContainer>
   );
@@ -88,12 +90,12 @@ const WhiteLogo = styled.img`
   align-self: flex-end;
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
-    width: 30%;
+    width: 25%;
     padding-right: 30px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
-    width: 30%;
+    width: 25%;
     padding-right: 30px;
   }
 `;

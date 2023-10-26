@@ -19,14 +19,14 @@ function Header() {
   return (
     <HeaderContainer>
       <LogoContainer>
-        <Logo>
-          <a href="/" onClick={() => handleLinkClick("/")}>
-            <img
-              src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.webp?raw=true"
-              alt="logo"
-            />
-          </a>
-        </Logo>
+        <a href="/" onClick={() => handleLinkClick("/")}>
+          <img
+            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.webp?raw=true"
+            alt="logo"
+            width="150"
+            height="auto"
+          />
+        </a>
         <ToggleButton onClick={() => setShowitems(!showitems)}>
           <ToggleImage
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/ToggleSwitch.png?raw=true"
@@ -102,13 +102,6 @@ const LogoContainer = styled.div`
 
   @media (max-width: 950px) {
     width: 100%;
-  }
-`;
-
-const Logo = styled.div`
-  img {
-    width: 150px;
-    height: auto;
   }
 `;
 
