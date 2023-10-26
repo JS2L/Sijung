@@ -22,6 +22,7 @@ function Footer() {
 export default Footer;
 
 const FooterContainer = styled.footer`
+  position: relative;
   height: 280px;
   display: flex;
   flex-direction: column;
@@ -31,6 +32,7 @@ const FooterContainer = styled.footer`
   width: 90%;
   border-top: 1px solid #c4c4c4;
   margin: 0 auto;
+  z-index: 3;
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
     padding-left: 30px;

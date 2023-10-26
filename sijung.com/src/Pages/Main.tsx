@@ -37,7 +37,7 @@ function Main() {
           position: "fixed",
           top: 0,
           left: 0,
-          zIndex: 1,
+          zIndex: 0,
         }}
       />
       <Company />
