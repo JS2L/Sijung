@@ -30,7 +30,7 @@ const ImageSlide = () => {
         autoplay={{ delay: 2500 }}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={5}
         coverflowEffect={{
           rotate: 0,
@@ -80,7 +80,6 @@ const SlideContainer = styled.div`
   }
   .swiper-slide {
     background-position: center;
-    background-size: cover;
     height: auto;
   }
   .swiper-slide img {
@@ -103,6 +102,7 @@ const ImageContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
+  overflow: hidden;
   img {
     object-fit: cover;
     width: 100%;
