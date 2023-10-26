@@ -2,87 +2,80 @@
 
 @font-face {
   font-family: "Pretendard-Black";
-  src: url("./Pretendard/Pretendard-Black.ttf") format("truetype");
+  src: url("./Pretendard/Pretendard-Black.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-Bold";
-  src: url("./Pretendard/Pretendard-Bold.ttf") format("truetype");
+  src: url("./Pretendard/Pretendard-Bold.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-ExtraBold";
-  src: url("./Pretendard/Pretendard-ExtraBold.ttf") format("truetype");
+  src: url("./Pretendard/Pretendard-ExtraBold.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-ExtraLight";
-  src: url("./Pretendard/Pretendard-ExtraLight.ttf") format("truetype");
+  src: url("./Pretendard/Pretendard-ExtraLight.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-Light";
-  src: url("./Pretendard/Pretendard-Light.ttf") format("truetype");
+  src: url("./Pretendard/Pretendard-Light.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-Medium";
-  src: url("./Pretendard/Pretendard-Medium.ttf") format("truetype");
+  src: url("./Pretendard/Pretendard-Medium.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("./Pretendard/Pretendard-Regular.ttf") format("truetype");
+  src: url("./Pretendard/Pretendard-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-SemiBold";
-  src: url("./Pretendard/Pretendard-SemiBold.ttf") format("truetype");
+  src: url("./Pretendard/Pretendard-SemiBold.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pretendard-Thin";
-  src: url("./Pretendard/Pretendard-Thin.ttf") format("truetype");
+  src: url("./Pretendard/Pretendard-Thin.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PretendardVariable";
-  src: url("./Pretendard/PretendardVariable.ttf") format("truetype");
+  src: url("./Pretendard/PretendardVariable.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "NEXONLv2GothicBold";
-  src: url("./NexonLv2/NEXON\ Lv2\ Gothic\ Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "KoPubWorldBatangBold";
-  src: url("./KoPubWorld/KoPubWorld\ Batang\ Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "KoPubWorldBatangLight";
-  src: url("./KoPubWorld/KoPubWorld\ Batang\ Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "KoPubWorldBatangMedium";
-  src: url("./KoPubWorld/KoPubWorld\ Batang\ Medium.ttf") format("truetype");
+  src: url("./NexonLv2/NEXON\ Lv2\ Gothic\ Bold.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "KoPubWorldDotumBold";
-  src: url("./KoPubWorld/KoPubWorld\ Dotum\ Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "KoPubWorldDotumLight";
-  src: url("./KoPubWorld/KoPubWorld\ Dotum\ Light.ttf") format("truetype");
+  src: url("./KoPubWorld/KoPubWorldDotumBold.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "KoPubWorldDotumMedium";
-  src: url("./KoPubWorld/KoPubWorld\ Dotum\ Medium.ttf") format("truetype");
+  src: url("./KoPubWorld/KoPubWorldDotumMedium.woff2") format("woff2");
+  font-display: swap;
 }
 
 /* 각 굵기와 스타일에 대한 @font-face 규칙 추가 */

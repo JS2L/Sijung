@@ -10,19 +10,16 @@ function Contents() {
       <ContentItem>
         <Link to="/Nalgaem">
           <Title>AI Visibility</Title>
-          <Detail>시정 내용</Detail>
         </Link>
       </ContentItem>
       <ContentItem>
         <Link to="/Mozaic">
           <Title>AI De-identification</Title>
-          <Detail>비식별화 내용</Detail>
         </Link>
       </ContentItem>
       <ContentItem>
         <Link to="/Technology">
           <Title>AI Vision</Title>
-          <Detail>비전 내용</Detail>
         </Link>
       </ContentItem>
     </Container>
@@ -81,12 +78,5 @@ const Title = styled.div`
   font-family: "PretendardVariable";
   font-size: 22px;
   margin-top: 20px;
-  margin-bottom: 10px;
-`;
-
-const Detail = styled.p`
-  font-family: "PretendardVariable";
-  font-size: 16px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `;
