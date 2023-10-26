@@ -23,7 +23,7 @@ function Header() {
           <img
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.webp?raw=true"
             alt="logo"
-            width="150"
+            width="150px"
             height="auto"
           />
         </a>
