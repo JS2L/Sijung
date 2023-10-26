@@ -54,11 +54,11 @@ const ImageSlide = () => {
                   type="image/avif"
                 />
                 <source
-                  srcSet={`${basePath}${imageName}.webpraw=true`}
+                  srcSet={`${basePath}${imageName}.web?praw=true`}
                   type="image/webp"
                 />
                 <img
-                  src={`${basePath}${imageName}.pngraw=true`}
+                  src={`${basePath}${imageName}.png?raw=true`}
                   alt={`Slide ${index + 1}`}
                 />
               </picture>
