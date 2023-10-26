@@ -40,7 +40,7 @@ const Container = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
   background: none;
-  transition: background 0.3s ease;
+  transition: background 0.5s ease;
   color: black;
 
   &:hover {
