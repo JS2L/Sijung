@@ -71,7 +71,7 @@ const PredictionContainer = styled.div`
   height: 2900px;
 
   @media all and (min-width: 360px) and (max-width: 767px) {
-    height: 1000px;
+    height: 999px;
   }
 `;
 
