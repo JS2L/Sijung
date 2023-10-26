@@ -22,14 +22,16 @@ function Header() {
         <a href="/" onClick={() => handleLinkClick("/")}>
           <img
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.webp?raw=true"
-            alt="logo"
-            width="150px"
+            width="150"
             height="auto"
+            alt="logo"
           />
         </a>
         <ToggleButton onClick={() => setShowitems(!showitems)}>
           <ToggleImage
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/ToggleSwitch.png?raw=true"
+            width="30"
+            height="30"
             alt="ToggleSwitch"
           />
         </ToggleButton>
@@ -99,6 +101,11 @@ const LogoContainer = styled.div`
   display: flex; // 로고와 버튼을 같은선상에 두기 위함 !
   justify-content: space-between; // 로고와 버튼을 양 끝에 배치 !
   align-items: center;
+
+  .img {
+    width: 150px;
+    height: 150px;
+  }
 
   @media (max-width: 950px) {
     width: 100%;
