@@ -20,13 +20,23 @@ function PredictionSection() {
         </BlueBoxtxt>
         <BlueBoxtxt>아이디어에 근거한 고유의 시정 측정 기술로 예측</BlueBoxtxt>
       </BlueBox>
-      <ImgRight
-        data-aos="fade-left"
-        data-aos-duration="1500"
-        data-aos-offset="170"
-        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_1.png?raw=true"
-        alt="1st Prediction Img"
-      />
+      <picture>
+        <source
+          srcSet="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_1.webp?raw=true"
+          type="image/webp"
+        />
+        <source
+          srcSet="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_1.avif?raw=true"
+          type="image/avif"
+        />
+        <ImgRight
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-offset="170"
+          src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_1.png?raw=true"
+          alt="Image Alt Text"
+        />
+      </picture>
       <ImgRightTxt data-aos="fade-left" data-aos-duration="1500">
         <Link to="/introComp">A.I Visibility</Link>
       </ImgRightTxt>
