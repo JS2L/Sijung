@@ -19,7 +19,7 @@ function Header() {
   return (
     <HeaderContainer>
       <LogoContainer>
-        <Link to="/" onClick={() => window.location.reload()}>
+        <Link to="/">
           <img
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.webp?raw=true"
             width="150"
@@ -39,24 +39,16 @@ function Header() {
       <Navigation $showitems={showitems}>
         <NavList>
           <NavItem>
-            <Link to="/introComp" onClick={() => window.location.reload()}>
-              회사소개
-            </Link>
+            <Link to="/introComp">회사소개</Link>
           </NavItem>
           <NavItem>
-            <Link to="/Product/tab1" onClick={() => window.location.reload()}>
-              제품소개
-            </Link>
+            <Link to="/Product/tab1">제품소개</Link>
           </NavItem>
           <NavItem>
-            <Link to="/Technology" onClick={() => window.location.reload()}>
-              보유기술
-            </Link>
+            <Link to="/Technology">보유기술</Link>
           </NavItem>
           <NavItem>
-            <Link to="/Nalgaem" onClick={() => window.location.reload()}>
-              기상서비스
-            </Link>
+            <Link to="/Nalgaem">기상서비스</Link>
           </NavItem>
         </NavList>
       </Navigation>
