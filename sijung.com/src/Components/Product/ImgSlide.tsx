@@ -58,7 +58,7 @@ const ImageSlide = () => {
                   type="image/webp"
                 />
                 <img
-                  src={`${basePath}${imageName}.png?raw=true`}
+                  src={`${basePath}${imageName}.jpg?raw=true`}
                   alt={`Slide ${index + 1}`}
                 />
               </picture>

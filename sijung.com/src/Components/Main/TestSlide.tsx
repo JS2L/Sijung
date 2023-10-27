@@ -31,7 +31,7 @@ const ImageSlide = () => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={4}
-        spaceBetween={5}
+        spaceBetween={3}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -58,7 +58,7 @@ const ImageSlide = () => {
                   type="image/webp"
                 />
                 <img
-                  src={`${basePath}${imageName}.png?raw=true`}
+                  src={`${basePath}${imageName}.jpg?raw=true`}
                   alt={`Slide ${index + 1}`}
                 />
               </picture>
@@ -105,7 +105,7 @@ const ImageContainer = styled.div`
   overflow: hidden;
   img {
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     transition: transform 0.2s;
     &:hover {

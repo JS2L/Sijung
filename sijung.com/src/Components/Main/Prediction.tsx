@@ -262,7 +262,7 @@ const ImgRightTxtLow = styled.p`
   @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 35px;
     margin-top: 600px;
-    margin-left: 700px;
+    margin-left: 550px;
   }
 `;
 
