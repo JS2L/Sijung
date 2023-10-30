@@ -57,6 +57,14 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 100px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    padding-top: 50px;
+  }
 `;
 
 const PageContainer = styled.div`
