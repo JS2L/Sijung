@@ -30,8 +30,8 @@ const ImageSlide = () => {
         autoplay={{ delay: 2500 }}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={3}
-        spaceBetween={5}
+        slidesPerView={2}
+        spaceBetween={3}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -54,7 +54,7 @@ const ImageSlide = () => {
                   type="image/avif"
                 />
                 <source
-                  srcSet={`${basePath}${imageName}.webp?raw=true`}
+                  srcSet={`${basePath}${imageName}.web?praw=true`}
                   type="image/webp"
                 />
                 <img
@@ -71,19 +71,31 @@ const ImageSlide = () => {
 };
 
 const SlideContainer = styled.div`
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom: 30px;
+  padding-right: 10px;
+
   .swiper-wrapper {
     padding: 30px;
   }
   .swiper-slide {
     background-position: center;
-    background-size: cover;
     height: auto;
+    display: flex;
+    align-items: center;
   }
   .swiper-slide img {
     display: block;
     width: 100%;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 30px;
+  }
+
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    margin-top: 9px;
+    padding-right: 0px;
   }
 `;
 
@@ -91,10 +103,11 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 85%;
+  overflow: hidden;
   img {
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     transition: transform 0.2s;
     &:hover {
