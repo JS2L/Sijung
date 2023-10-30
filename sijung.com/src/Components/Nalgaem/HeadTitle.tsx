@@ -39,6 +39,7 @@ const HeadTitle = () => {
 export default HeadTitle;
 
 const IntroEn = styled.p`
+  position: fixed;
   font-family: "Pretendard-Bold";
   font-size: 40px;
   color: #0072ff;
@@ -57,9 +58,11 @@ const IntroEn = styled.p`
 `;
 
 const IntroKo = styled.p`
+  position: fixed;
   font-family: "Pretendard-Bold";
   font-size: 30px;
   margin-left: 100px;
+  margin-top: 180px;
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
     font-size: 25px;
