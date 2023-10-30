@@ -30,7 +30,6 @@ const HeadTitle = () => {
     <div>
       <IntroEn ref={introRef}>AI Visibility</IntroEn>
       <IntroKo ref={introKoRef}>AI를 활용한 빠르고 정확한 비식별화</IntroKo>
-      <ShadowEn>MOZAIC</ShadowEn>
     </div>
   );
 };
@@ -71,7 +70,7 @@ const IntroKo = styled.p`
   }
 `;
 
-const ShadowEn = styled.p`
+/* const ShadowEn = styled.p`
   color: white;
   font-size: 230px;
   font-family: "NEXONLv2GothicBold";
@@ -88,4 +87,4 @@ const ShadowEn = styled.p`
     font-size: 80px;
     margin-right: 30px;
   }
-`;
+`; */

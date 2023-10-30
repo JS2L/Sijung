@@ -81,6 +81,8 @@ const SlideContainer = styled.div`
   .swiper-slide {
     background-position: center;
     height: auto;
+    display: flex;
+    align-items: center;
   }
   .swiper-slide img {
     display: block;
@@ -101,7 +103,7 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 85%;
   overflow: hidden;
   img {
     object-fit: cover;
