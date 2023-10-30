@@ -29,7 +29,7 @@ function App() {
           <Route path="/Nalgaem" element={<Nalgaem />}></Route>
           <Route path="/Mozaic" element={<Mozaic />}></Route>
         </Routes>
-        {window.location.pathname !== "/Nalgaem" && <Footer />}
+        <Footer />
         <ScrollToTop />
       </BrowserRouter>
     </div>
