@@ -18,24 +18,9 @@ function Uione() {
       <PageContainer>
         <ImgLeft data-aos="fade-up" data-aos-duration="1000">
           <picture>
-            <source
-              srcSet={
-                "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem1.avif?raw=true"
-              }
-              type="image/avif"
-            />
-            <source
-              srcSet={
-                "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem1.webp?raw=true"
-              }
-              type="image/webp"
-            />
-            <img
-              src={
-                "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem1.png?raw=true"
-              }
-              alt={"NalgaemImage1"}
-            />
+            <source srcSet={"./Img/Nalgaem1.avif"} type="image/avif" />
+            <source srcSet={"./Img/Nalgaem1.webp"} type="image/webp" />
+            <img src={"./Img/Nalgaem1.webp"} alt={"NalgaemImage1"} />
           </picture>
         </ImgLeft>
         <ContentContainer>
