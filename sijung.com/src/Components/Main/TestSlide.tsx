@@ -94,7 +94,7 @@ const SlideContainer = styled.div`
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
-    margin-top: 10px;
+    margin-top: 9px;
     padding-right: 0px;
   }
 `;
