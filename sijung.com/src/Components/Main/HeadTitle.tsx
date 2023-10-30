@@ -38,7 +38,6 @@ const HeadTitle = () => {
         (주)시정은 2016년 창립 이래 뛰어난 기술력과 우수한 품질을 바탕으로
         고객만족을 실현하고 있는 기업입니다
       </ShadowKo>
-      <ShadowEn>SIJUNG</ShadowEn>
     </Container>
   );
 };
@@ -99,7 +98,7 @@ const ShadowKo = styled.p`
   }
 `;
 
-const ShadowEn = styled.p`
+/* const ShadowEn = styled.p`
   color: #eeeeee;
   font-size: 230px;
   font-family: "NEXONLv2GothicBold";
@@ -116,4 +115,4 @@ const ShadowEn = styled.p`
     font-size: 80px;
     margin-right: 30px;
   }
-`;
+`; */

@@ -115,17 +115,17 @@ const Modal = styled.div`
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
-  width: 500px; /* 모달 너비를 이미지와 동일하게 설정 */
-  height: auto; /* 모달 높이를 이미지와 동일하게 설정 */
+  width: 500px;
+  height: auto;
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
-    width: 400px; /* 모달 너비를 이미지와 동일하게 설정 */
-    height: auto; /* 모달 높이를 이미지와 동일하게 설정 */
+    width: 400px;
+    height: auto;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
-    width: 300px; /* 모달 너비를 이미지와 동일하게 설정 */
-    height: auto; /* 모달 높이를 이미지와 동일하게 설정 */
+    width: 250px;
+    height: auto;
   }
 `;
 const ModalImage = styled.img`

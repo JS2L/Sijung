@@ -32,7 +32,6 @@ const HeadTitle = () => {
       <IntroKo ref={introKoRef}>
         실시간 LIVE로 현장 그대로 영상을 확인하는 관광APP
       </IntroKo>
-      <ShadowEn>NALGAEM</ShadowEn>
     </div>
   );
 };
@@ -73,7 +72,7 @@ const IntroKo = styled.p`
   }
 `;
 
-const ShadowEn = styled.p`
+/* const ShadowEn = styled.p`
   color: white;
   font-size: 230px;
   font-family: "NEXONLv2GothicBold";
@@ -90,4 +89,4 @@ const ShadowEn = styled.p`
     font-size: 70px;
     margin-right: 30px;
   }
-`;
+`; */

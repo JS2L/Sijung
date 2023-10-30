@@ -30,7 +30,6 @@ const HeadTitle = () => {
     <div>
       <IntroEn ref={introRef}>A.I VIDEO ANALYSIS COMPANY</IntroEn>
       <IntroKo ref={introKoRef}>인공지능 시스템 기술 선도 기업</IntroKo>
-      <ShadowEn>SIJUNG</ShadowEn>
     </div>
   );
 };
@@ -71,7 +70,7 @@ const IntroKo = styled.p`
   }
 `;
 
-const ShadowEn = styled.p`
+/* const ShadowEn = styled.p`
   color: white;
   font-size: 230px;
   font-family: "NEXONLv2GothicBold";
@@ -88,4 +87,4 @@ const ShadowEn = styled.p`
     font-size: 80px;
     margin-right: 30px;
   }
-`;
+`; */

@@ -79,22 +79,19 @@ const TabsContainer = styled.div`
 const TabButtons = styled.div`
   display: flex;
   justify-content: center;
-  font-family: "Pretendard-SemiBold";
-  font-size: 28px;
+
   margin-left: 50px;
   margin-right: 50px;
   padding: 10px;
   z-index: 1;
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
-    font-size: 22px;
     margin-left: 30px;
     margin-right: 30px;
     padding: 0px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
-    font-size: 14px;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -106,6 +103,8 @@ const TabButton = styled.button<{ active: boolean }>`
   border: 0px solid #ccc;
   padding: 50px 80px;
   cursor: pointer;
+  font-family: "Pretendard-SemiBold";
+  font-size: 28px;
   border-radius: 7px;
   margin: 20px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.08);
@@ -116,10 +115,12 @@ const TabButton = styled.button<{ active: boolean }>`
   }
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 22px;
     padding: 40px 40px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 14px;
     padding: 20px 20px;
     margin: 5px 5px 55px;
   }
