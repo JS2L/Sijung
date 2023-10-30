@@ -40,8 +40,8 @@ export default Uitwo;
 const Container = styled.section`
   padding-top: 200px;
   position: relative;
-  width: 100vw;
-  min-height: 100vh;
+  max-width: 98vw;
+  max-height: 100vh;
   display: column;
   justify-content: center;
   align-items: center;
@@ -65,7 +65,7 @@ const PageContainer = styled.div`
 
 const ImgLeft = styled.div`
   flex: 1.5;
-  margin-left: 50px;
+  margin-right: 50px;
   img {
     max-width: 100%;
   }

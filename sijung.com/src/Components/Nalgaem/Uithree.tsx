@@ -39,8 +39,8 @@ export default Uione;
 const Container = styled.section`
   padding-top: 200px;
   position: relative;
-  width: 100vw;
-  min-height: 100vh;
+  max-width: 98vw;
+  max-height: 100vh;
   display: column;
   justify-content: center;
   align-items: center;
