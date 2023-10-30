@@ -25,10 +25,26 @@ function Uitwo() {
           </ContentRight>
         </ContentContainer>
         <ImgLeft>
-          <img
-            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem2.png?raw=true"
-            alt="NalgaemImage2"
-          />
+          <picture>
+            <source
+              srcSet={
+                "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem2.avif?raw=true"
+              }
+              type="image/avif"
+            />
+            <source
+              srcSet={
+                "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem2.webp?raw=true"
+              }
+              type="image/webp"
+            />
+            <img
+              src={
+                "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem2.png?raw=true"
+              }
+              alt={"NalgaemImage2"}
+            />
+          </picture>
         </ImgLeft>
       </PageContainer>
     </Container>

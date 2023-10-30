@@ -7,10 +7,26 @@ function Uione() {
     <Container>
       <PageContainer>
         <ImgLeft>
-          <img
-            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem3.png?raw=true"
-            alt="NalgaemImage3"
-          />
+          <picture>
+            <source
+              srcSet={
+                "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem3.avif?raw=true"
+              }
+              type="image/avif"
+            />
+            <source
+              srcSet={
+                "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem3.webp?raw=true"
+              }
+              type="image/webp"
+            />
+            <img
+              src={
+                "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem3.png?raw=true"
+              }
+              alt={"NalgaemImage3"}
+            />
+          </picture>
         </ImgLeft>
         <ContentContainer>
           <ContentTitleRight
