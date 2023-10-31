@@ -58,6 +58,7 @@ const ImageSlide = () => {
                   type="image/webp"
                 />
                 <img
+                  loading="lazy"
                   src={`${basePath}${imageName}.jpg?raw=true`}
                   alt={`Slide ${index + 1}`}
                 />

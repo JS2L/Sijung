@@ -1,22 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import "../../Fonts/Font.css";
 
 import HeadTitle from "./HeadTitle";
 
 // 기상서비스 메인 내용 ! aos ! 제일 하단에 바로가기 버튼
 function Uione() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <Container>
       <HeadTitle />
       <PageContainer>
-        <ImgLeft data-aos="fade-up" data-aos-duration="1000">
+        <ImgLeft>
           <picture>
             <source
               srcSet={
@@ -31,6 +24,7 @@ function Uione() {
               type="image/webp"
             />
             <img
+              loading="lazy"
               src={
                 "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem1.png?raw=true"
               }
@@ -40,9 +34,6 @@ function Uione() {
         </ImgLeft>
         <ContentContainer>
           <ContentTitleRight
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-offset="190"
             style={{
               color: "#0072ff",
             }}
@@ -50,7 +41,7 @@ function Uione() {
             01.
             <br />한 눈에 보이는 UI
           </ContentTitleRight>
-          <ContentRight data-aos="fade-up" data-aos-duration="1000">
+          <ContentRight>
             가독성이 좋은 디자인으로
             <br />
             쉽게 원하는 정보를

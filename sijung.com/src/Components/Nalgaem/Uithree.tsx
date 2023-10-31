@@ -21,6 +21,7 @@ function Uione() {
               type="image/webp"
             />
             <img
+              loading="lazy"
               src={
                 "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem3.png?raw=true"
               }
@@ -34,15 +35,16 @@ function Uione() {
               color: "#0072ff",
             }}
           >
-            01.
-            <br />한 눈에 보이는 UI
+            03.
+            <br />
+            날씨 확인도 날갬에서
           </ContentTitleRight>
           <ContentRight>
-            가독성이 좋은 디자인으로
+            여행뿐만 아니라
             <br />
-            쉽게 원하는 정보를
+            일상생활에 필요한 날씨
             <br />
-            찾아 갈 수 있습니다
+            어플 하나로 확인
           </ContentRight>
         </ContentContainer>
       </PageContainer>

@@ -35,7 +35,7 @@ function Patent() {
     <ImageList>
       {imagePaths.map((imagePath, index) => (
         <ImageItem key={index} onClick={() => openModal(imagePath)}>
-          <img src={imagePath} alt={`특허증 ${index + 1}`} />
+          <img loading="lazy" src={imagePath} alt={`특허증 ${index + 1}`} />
         </ImageItem>
       ))}
       {selectedImage && (

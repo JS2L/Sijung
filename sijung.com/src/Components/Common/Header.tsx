@@ -21,6 +21,7 @@ function Header() {
       <LogoContainer>
         <Link to="/">
           <img
+            loading="lazy"
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.webp?raw=true"
             width="150"
             height="auto"
@@ -29,6 +30,7 @@ function Header() {
         </Link>
         <ToggleButton onClick={() => setShowitems(!showitems)}>
           <ToggleImage
+            loading="lazy"
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/ToggleSwitch.png?raw=true"
             width="30"
             height="30"

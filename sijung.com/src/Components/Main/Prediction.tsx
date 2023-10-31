@@ -21,6 +21,7 @@ function PredictionSection() {
         <BlueBoxtxt>아이디어에 근거한 고유의 시정 측정 기술로 예측</BlueBoxtxt>
       </BlueBox>
       <ImgRight
+        loading="lazy"
         data-aos="fade-left"
         data-aos-duration="1500"
         data-aos-offset="170"
@@ -31,6 +32,7 @@ function PredictionSection() {
         <Link to="/introComp">A.I Visibility</Link>
       </ImgRightTxt>
       <ImgLeft
+        loading="lazy"
         data-aos="fade-right"
         data-aos-duration="1500"
         src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_2.webp?raw=true"
@@ -40,6 +42,7 @@ function PredictionSection() {
         <Link to="/mozaic">A.I De-identification</Link>
       </ImgLeftTxt>
       <ImgRightLow
+        loading="lazy"
         data-aos="fade-left"
         data-aos-duration="1500"
         src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_3.webp?raw=true"
@@ -49,6 +52,7 @@ function PredictionSection() {
         <Link to="/technology">A.I Vision</Link>
       </ImgRightTxtLow>
       <ImgLeftLow
+        loading="lazy"
         data-aos="fade-right"
         data-aos-duration="1500"
         src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_4.webp?raw=true"

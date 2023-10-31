@@ -14,14 +14,14 @@ function Uitwo() {
           >
             02.
             <br />
-            제목을 뭘로할까
+            뜨고 있는 관광지 & 축제
           </ContentTitleRight>
           <ContentRight>
-            내용내용내용내용내용내용
+            지금 뜨고 있는
             <br />
-            내용내용내용내용내용
+            관광지와 축제의
             <br />
-            내용내용내용내용내용
+            정보를 한번에
           </ContentRight>
         </ContentContainer>
         <ImgLeft>
@@ -39,6 +39,7 @@ function Uitwo() {
               type="image/webp"
             />
             <img
+              loading="lazy"
               src={
                 "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Nalgaem2.png?raw=true"
               }

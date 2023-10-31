@@ -29,6 +29,7 @@ function ImgContent() {
         <Sign>
           President Sintae Chae
           <img
+            loading="lazy"
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/sign.jpg?raw=true"
             alt="President Sintae Chae's Signature"
           />
