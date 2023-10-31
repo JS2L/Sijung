@@ -50,7 +50,7 @@ const ImageSlide = () => {
             <ImageContainer>
               <picture>
                 <source
-                  srcSet={`${basePath}${imageName}.web?praw=true`}
+                  srcSet={`${basePath}${imageName}.webp?praw=true`}
                   type="image/webp"
                 />
                 <source
