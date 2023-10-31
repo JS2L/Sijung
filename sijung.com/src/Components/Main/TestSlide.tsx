@@ -6,6 +6,7 @@ import { EffectCoverflow, Mousewheel, Autoplay } from "swiper/modules";
 import styled from "styled-components";
 
 const images: string[] = [
+  "Caro12",
   "Caro1",
   "Caro2",
   "Caro3",
@@ -16,7 +17,6 @@ const images: string[] = [
   "Caro9",
   "Caro10",
   "Caro11",
-  "Caro12",
 ];
 
 const basePath: string =

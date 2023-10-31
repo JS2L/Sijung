@@ -45,7 +45,7 @@ const Container = styled.div`
         center/cover no-repeat,
       url("https://github.com/JS2L/Sijung/raw/main/sijung.com/public/img/transmittance_1.avif?raw=true")
         center/cover no-repeat,
-      url("https://github.com/JS2L/Sijung/raw/main/sijung.com/public/img/transmittance_1.png?raw=true")
+      url("https://github.com/JS2L/Sijung/raw/main/sijung.com/public/img/transmittance_1.jpg?raw=true")
         center/cover no-repeat;
     color: white;
   }
