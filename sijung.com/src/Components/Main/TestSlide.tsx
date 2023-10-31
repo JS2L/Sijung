@@ -50,13 +50,14 @@ const ImageSlide = () => {
             <ImageContainer>
               <picture>
                 <source
-                  srcSet={`${basePath}${imageName}.avif?raw=true`}
-                  type="image/avif"
-                />
-                <source
                   srcSet={`${basePath}${imageName}.web?praw=true`}
                   type="image/webp"
                 />
+                <source
+                  srcSet={`${basePath}${imageName}.avif?raw=true`}
+                  type="image/avif"
+                />
+
                 <img
                   loading="lazy"
                   src={`${basePath}${imageName}.jpg?raw=true`}
