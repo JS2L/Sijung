@@ -5,7 +5,7 @@ import "swiper/css/effect-coverflow";
 import { EffectCoverflow, Mousewheel, Autoplay } from "swiper/modules";
 import styled from "styled-components";
 
-const images = [
+const images: string[] = [
   "Caro1",
   "Caro2",
   "Caro3",
@@ -19,7 +19,7 @@ const images = [
   "Caro12",
 ];
 
-const basePath =
+const basePath: string =
   "https://github.com/JS2L/Sijung/raw/main/sijung.com/public/img/";
 
 const ImageSlide = () => {
@@ -50,7 +50,7 @@ const ImageSlide = () => {
             <ImageContainer>
               <picture>
                 <source
-                  srcSet={`${basePath}${imageName}.webp?praw=true`}
+                  srcSet={`${basePath}${imageName}.webp?raw=true`}
                   type="image/webp"
                 />
                 <source
@@ -61,7 +61,7 @@ const ImageSlide = () => {
                 <img
                   loading="lazy"
                   src={`${basePath}${imageName}.jpg?raw=true`}
-                  alt={`Slide ${index + 1}`}
+                  alt={`설치사례 슬라이드 ${index + 1}번째 사진`}
                 />
               </picture>
             </ImageContainer>
