@@ -10,7 +10,7 @@ React, styeld-components, react-router-dom, AOS, swiper, react-carousel, webpack
 
 웹 성능 최적화
 
-이미지(webp, avif, lazy loading), 폰트(woff, woff2),
+이미지(webp, avif, lazy loading), 폰트(woff, woff2), 메타
 
 배포
 
