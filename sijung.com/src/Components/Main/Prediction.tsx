@@ -29,7 +29,7 @@ function PredictionSection() {
         alt="1st Prediction Img"
       />
       <ImgRightTxt data-aos="fade-left" data-aos-duration="1500">
-        <Link to="/introComp">A.I. Visibility</Link>
+        <Link to="/introComp/tab1">A.I. Visibility</Link>
       </ImgRightTxt>
       <ImgLeft
         loading="lazy"
@@ -39,7 +39,7 @@ function PredictionSection() {
         alt="2nd Prediction Img"
       />
       <ImgLeftTxt data-aos="fade-right" data-aos-duration="1500">
-        <Link to="/technology">A.I. Vision</Link>
+        <Link to="/technology/tab1">A.I. Vision</Link>
       </ImgLeftTxt>
       <ImgRightLow
         loading="lazy"
