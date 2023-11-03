@@ -6,8 +6,12 @@
 
 html, css, javascript, typescript
 
-React, bootstrap, styeld-components, react-router-dom, AOS, swiper, react-carousel, webpack, babel, npm, node.js
+React, styeld-components, react-router-dom, AOS, swiper, react-carousel, webpack, babel, npm, node.js, react-fullpage
 
 웹 성능 최적화
 
-이미지(webp, avif), 폰트(woff, woff2),
+이미지(webp, avif, lazy loading), 폰트(woff, woff2), 메타
+
+배포
+
+vercel
