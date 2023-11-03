@@ -15,7 +15,7 @@ type TabParams = {
 function Tab1() {
   return (
     <TitleBar
-      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
       title="영상시정계"
       content="목측을 모사한 가시거리 측정"
     />
@@ -25,7 +25,7 @@ function Tab1() {
 function Tab2() {
   return (
     <TitleBar
-      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
       title="광학시정계"
       content="LED광원과 Long Path Open Cell 방식을 적용한 시정계"
     />
@@ -35,7 +35,7 @@ function Tab2() {
 function Tab3() {
   return (
     <TitleBar
-      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
       title="역반사체"
       content="반사 광선을 입사 광선과 평행하게 하기 위한 레이저 광선 역반사 장치"
     />

@@ -16,7 +16,7 @@ type TabParams = {
 function Tab1() {
   return (
     <TitleBar
-      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
       title="CEO 소개"
       content="(주)시정 채신태 대표를 소개합니다"
     />
@@ -26,7 +26,7 @@ function Tab1() {
 function Tab2() {
   return (
     <TitleBar
-      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
       title="회사 연혁"
       content="(주)시정이 걸어온 길"
     />
@@ -36,7 +36,7 @@ function Tab2() {
 function Tab3() {
   return (
     <TitleBar
-      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
       title="인증서&특허증"
       content="인증서와 특허증 모음"
     />
@@ -46,7 +46,7 @@ function Tab3() {
 function Tab4() {
   return (
     <TitleBar
-      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
       title="보도 자료"
       content="(주)시정의 주요 기사들"
     />
