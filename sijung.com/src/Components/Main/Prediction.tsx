@@ -199,6 +199,7 @@ const ImgLeft = styled.img`
     width: 300px;
     height: auto 0;
     margin-right: 250px;
+    margin-top: 870px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
