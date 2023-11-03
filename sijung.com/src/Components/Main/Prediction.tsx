@@ -25,7 +25,7 @@ function PredictionSection() {
         data-aos="fade-left"
         data-aos-duration="1500"
         data-aos-offset="170"
-        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_11.webp?raw=true"
+        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_1.webp?raw=true"
         alt="1st Prediction Img"
       />
       <ImgRightTxt data-aos="fade-left" data-aos-duration="1500">
