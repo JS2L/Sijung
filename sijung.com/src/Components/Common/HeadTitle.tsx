@@ -28,7 +28,7 @@ const HeadTitle = () => {
 
   return (
     <div>
-      <IntroEn ref={introRef}>A.I VIDEO ANALYSIS COMPANY</IntroEn>
+      <IntroEn ref={introRef}>A.I. VIDEO ANALYSIS COMPANY</IntroEn>
       <IntroKo ref={introKoRef}>인공지능 시스템 기술 선도 기업</IntroKo>
     </div>
   );

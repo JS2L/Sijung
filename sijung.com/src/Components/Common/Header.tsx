@@ -41,13 +41,13 @@ function Header() {
       <Navigation $showitems={showitems}>
         <NavList>
           <NavItem>
-            <Link to="/introComp">회사소개</Link>
+            <Link to="/introComp/tab1">회사소개</Link>
           </NavItem>
           <NavItem>
             <Link to="/Product/tab1">제품소개</Link>
           </NavItem>
           <NavItem>
-            <Link to="/Technology">보유기술</Link>
+            <Link to="/Technology/tab1">보유기술</Link>
           </NavItem>
           <NavItem>
             <Link to="/Nalgaem">기상서비스</Link>

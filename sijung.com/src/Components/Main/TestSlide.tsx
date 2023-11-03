@@ -57,7 +57,6 @@ const ImageSlide = () => {
                   srcSet={`${basePath}${imageName}.avif?raw=true`}
                   type="image/avif"
                 />
-
                 <img
                   loading="lazy"
                   src={`${basePath}${imageName}.jpg?raw=true`}

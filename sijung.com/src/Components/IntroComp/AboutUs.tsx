@@ -4,42 +4,52 @@ import styled from "styled-components";
 // 회사소개 - CEO 소개 ! 싸인만 img ! img MQ 넣어야함...
 function ImgContent() {
   return (
-    <ContentWrap>
-      <AboutUsWrap>
-        <ParagraphTitle>
-          "뛰어난 기술력과 우수한 품질을 바탕으로
-          <br />
-          고객 만족을 실현하는 기업, (주)시정 입니다."
-        </ParagraphTitle>
-        <Paragraph>
-          (주)시정은 한국표준과학원의 기술 출자로 설립된 연구소 기업입니다.
-          <br />
-          출자받은 시정계 기술을 바탕으로 광학 시정계 뿐만 아니라 영상시정계까지
-          개발을 하고 있습니다.
-          <br /> 인공지능을 이용한 영상 시정계의 경우 세계 최초로 상용화를
-          하려고 하고 있으며,
-          <br /> 관련 특허도 다수 보유중에 있습니다.
-        </Paragraph>
-        <Paragraph>
-          미래를 예측하는 가장 좋은 방법은 미래를 창조하는 것 이라 합니다.
-          <br /> 미국 경영학자 피터 드러커의 말처럼 저희는 앞으로 시정계 시장의
-          패러다임을 직접 창조해 나가고자 합니다.
-        </Paragraph>
-        <ParagraphBold>그것이 시정이 꿈꾸는 미래 입니다.</ParagraphBold>
-        <Sign>
-          President Sintae Chae
-          <img
-            loading="lazy"
-            src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/sign.jpg?raw=true"
-            alt="President Sintae Chae's Signature"
-          />
-        </Sign>
-      </AboutUsWrap>
-    </ContentWrap>
+    <Container>
+      <ContentWrap>
+        <AboutUsWrap>
+          <ParagraphTitle>
+            "뛰어난 기술력과 우수한 품질을 바탕으로
+            <br />
+            고객 만족을 실현하는 기업, (주)시정 입니다."
+          </ParagraphTitle>
+          <Paragraph>
+            (주)시정은 한국표준과학원의 기술 출자로 설립된 연구소 기업입니다.
+            <br />
+            출자받은 시정계 기술을 바탕으로 광학 시정계 뿐만 아니라
+            영상시정계까지 개발을 하고 있습니다.
+            <br /> 인공지능을 이용한 영상 시정계의 경우 세계 최초로 상용화를
+            하려고 하고 있으며,
+            <br /> 관련 특허도 다수 보유중에 있습니다.
+          </Paragraph>
+          <Paragraph>
+            미래를 예측하는 가장 좋은 방법은 미래를 창조하는 것 이라 합니다.
+            <br /> 미국 경영학자 피터 드러커의 말처럼 저희는 앞으로 시정계
+            시장의 패러다임을 직접 창조해 나가고자 합니다.
+          </Paragraph>
+          <ParagraphBold>그것이 시정이 꿈꾸는 미래 입니다.</ParagraphBold>
+          <Sign>
+            President Sintae Chae
+            <img
+              loading="lazy"
+              src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/sign.jpg?raw=true"
+              alt="President Sintae Chae's Signature"
+            />
+          </Sign>
+        </AboutUsWrap>
+      </ContentWrap>
+    </Container>
   );
 }
 
 export default ImgContent;
+
+const Container = styled.div`
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+`;
 
 const ContentWrap = styled.div`
   .aboutUs_wrap {

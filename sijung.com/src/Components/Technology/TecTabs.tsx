@@ -1,16 +1,64 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
+import TitleBar from "./TitleBar";
 import Video from "./Video";
 import Visibility from "./Visibility";
 import Retro from "./Retro";
 
-// 보유기술 탭 ! url작업 고민중
+type TabParams = {
+  tab: string;
+};
+
+// TecTab 모음집 ! 탭으로 관리 ! Params로 url관리 ! State로 tab 상태관리
+function Tab1() {
+  return (
+    <TitleBar
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
+      title="영상시정계"
+      content="목측을 모사한 가시거리 측정"
+    />
+  );
+}
+
+function Tab2() {
+  return (
+    <TitleBar
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
+      title="광학시정계"
+      content="LED광원과 Long Path Open Cell 방식을 적용한 시정계"
+    />
+  );
+}
+
+function Tab3() {
+  return (
+    <TitleBar
+      backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.png?raw=true"
+      title="역반사체"
+      content="반사 광선을 입사 광선과 평행하게 하기 위한 레이저 광선 역반사 장치"
+    />
+  );
+}
+
 function Tabs() {
-  const [activeTab, setActiveTab] = useState<string>("tab1");
+  const { tab } = useParams<TabParams>();
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState("tab1");
+
+  useEffect(() => {
+    if (tab) {
+      setActiveTab(tab);
+    } else {
+      // URL이 없으면 기본값 (tab1)
+      navigate(`/Technology/${activeTab}`);
+    }
+  }, [tab, activeTab, navigate]);
 
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
+    navigate(`/Technology/${tab}`);
   };
 
   return (
@@ -32,14 +80,17 @@ function Tabs() {
           onClick={() => handleTabClick("tab3")}
           active={activeTab === "tab3"}
         >
-          RETRO REFLECTOR
+          역반사체
         </TabButton>
       </TabButtons>
       <TabContent>
-        {activeTab === "tab1" && <Video />}
-        {activeTab === "tab2" && <Visibility />}
-        {activeTab === "tab3" && <Retro />}
+        {activeTab === "tab1" && <Tab1 />}
+        {activeTab === "tab2" && <Tab2 />}
+        {activeTab === "tab3" && <Tab3 />}
       </TabContent>
+      <TabContainer>{activeTab === "tab1" && <Video />}</TabContainer>
+      <TabContainer>{activeTab === "tab2" && <Visibility />}</TabContainer>
+      <TabContainer>{activeTab === "tab3" && <Retro />}</TabContainer>
     </TabsContainer>
   );
 }
@@ -55,7 +106,6 @@ const TabsContainer = styled.div`
 const TabButtons = styled.div`
   display: flex;
   justify-content: center;
-
   margin-left: 130px;
   margin-right: 130px;
   padding: 10px;
@@ -78,13 +128,14 @@ const TabButton = styled.button<{ active: boolean }>`
   color: ${(props) => (props.active ? "white" : "gray")};
   border: 0px solid #ccc;
   padding: 50px 80px;
-  max-width: 300px;
   cursor: pointer;
+  width: 300px;
   font-family: "Pretendard-SemiBold";
-  font-size: 30px;
+  font-size: 28px;
   border-radius: 7px;
   margin: 20px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.08);
+
   &:hover {
     background-color: lightblue;
     color: black;
@@ -96,7 +147,7 @@ const TabButton = styled.button<{ active: boolean }>`
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
-    font-size: 17px;
+    font-size: 18px;
     padding: 20px 20px;
     margin: 5px 5px 55px;
   }
@@ -108,4 +159,12 @@ const TabContent = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #fff;
+`;
+
+const TabContainer = styled.div`
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
 `;

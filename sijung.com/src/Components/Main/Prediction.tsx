@@ -18,7 +18,7 @@ function PredictionSection() {
           사람의 눈의 아닌 A.I. 영상 기반의 시정계로
           <br /> 관측 자료의 품질을 높이다.
         </BlueBoxtxt>
-        <BlueBoxtxt>아이디어에 근거한 고유의 시정 측정 기술로 예측</BlueBoxtxt>
+        <BlueBoxtxt>빅데이터에 근거한 고유의 시정 측정 기술로 예측</BlueBoxtxt>
       </BlueBox>
       <ImgRight
         loading="lazy"
@@ -29,7 +29,7 @@ function PredictionSection() {
         alt="1st Prediction Img"
       />
       <ImgRightTxt data-aos="fade-left" data-aos-duration="1500">
-        <Link to="/introComp">A.I Visibility</Link>
+        <Link to="/introComp">A.I. Visibility</Link>
       </ImgRightTxt>
       <ImgLeft
         loading="lazy"
@@ -39,7 +39,7 @@ function PredictionSection() {
         alt="2nd Prediction Img"
       />
       <ImgLeftTxt data-aos="fade-right" data-aos-duration="1500">
-        <Link to="/mozaic">A.I De-identification</Link>
+        <Link to="/technology">A.I. Vision</Link>
       </ImgLeftTxt>
       <ImgRightLow
         loading="lazy"
@@ -49,9 +49,9 @@ function PredictionSection() {
         alt="3rd Prediction Img"
       />
       <ImgRightTxtLow data-aos="fade-left" data-aos-duration="1500">
-        <Link to="/technology">A.I Vision</Link>
+        <Link to="/nalgaem">Nalgaem Service</Link>
       </ImgRightTxtLow>
-      <ImgLeftLow
+      {/* <ImgLeftLow
         loading="lazy"
         data-aos="fade-right"
         data-aos-duration="1500"
@@ -60,7 +60,7 @@ function PredictionSection() {
       />
       <ImgLeftTxtLow data-aos="fade-right" data-aos-duration="1500">
         <Link to="/nalgaem">Nalgaem Service</Link>
-      </ImgLeftTxtLow>
+  </ImgLeftTxtLow> */}
     </PredictionContainer>
   );
 }
@@ -72,7 +72,7 @@ const PredictionContainer = styled.div`
   justify-content: center;
   overflow: hidden;
   position: relative;
-  height: 2900px;
+  height: 2200px;
 
   @media all and (min-width: 360px) and (max-width: 767px) {
     height: 999px;
@@ -260,7 +260,7 @@ const ImgRightTxtLow = styled.p`
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
     font-size: 25px;
-    margin-right: 380px;
+    margin-right: 480px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {

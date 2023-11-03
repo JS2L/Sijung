@@ -30,10 +30,8 @@ const HeadTitle = () => {
 
   return (
     <Container>
-      <IntroEn ref={introRef}>A.I VIDEO ANALYSIS COMPANY</IntroEn>
-      <IntroKo ref={introKoRef}>
-        출자받은 기술을 통한 세계 최초의 인공지능 시정계 상용화
-      </IntroKo>
+      <IntroEn ref={introRef}>A.I. VIDEO ANALYSIS COMPANY</IntroEn>
+      <IntroKo ref={introKoRef}>세계 최초의 인공지능 시정계 상용화</IntroKo>
       <ShadowKo ref={shadowKoRef}>
         (주)시정은 2016년 창립 이래 뛰어난 기술력과 우수한 품질을 바탕으로
         고객만족을 실현하고 있는 기업입니다

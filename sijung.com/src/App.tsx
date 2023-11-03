@@ -23,9 +23,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Main />}></Route>
-          <Route path="/IntroComp" element={<IntroComp />}></Route>
+          <Route path="/IntroComp/:tab" element={<IntroComp />}></Route>
           <Route path="/Product/:tab" element={<Product />}></Route>
-          <Route path="/Technology" element={<Technology />}></Route>
+          <Route path="/Technology/:tab" element={<Technology />}></Route>
           <Route path="/Nalgaem" element={<Nalgaem />}></Route>
           <Route path="/Mozaic" element={<Mozaic />}></Route>
         </Routes>

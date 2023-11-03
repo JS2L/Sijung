@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Animate } from "../Components/Main/Animation";
 import Company from "../Components/Main/HeadTitle";
-import Contents from "../Components/Main/Contents";
+// import Contents from "../Components/Main/Contents";
 import PredictionSection from "../Components/Main/Prediction";
 import TestSlide from "../Components/Main/TestSlide";
 import styled from "styled-components";
@@ -42,7 +42,6 @@ function Main() {
       />
       <Company />
       <TestSlide />
-      <Contents />
       <PredictionSection />
     </MainWrapper>
   );

@@ -4,10 +4,34 @@ import styled from "styled-components";
 // 회사소개 - 회사 연혁 ! 배열로 관리 ! 2023추가 예정
 function History() {
   const data = [
-    { year: "2022", contents: ["공군 구매조건부 R&D 사업 진행 중"] },
+    {
+      year: "2023",
+      contents: [
+        "관광사업자 등록",
+        "상생협력 제품 등록",
+        "산학연 콜라보 예비연구 수행  완료 후 본과제 선정",
+        "중소환경가옵 사업화 지원사업 선정",
+        "관광기업 혁신바우처 지원사업 선정",
+      ],
+    },
+    {
+      year: "2022",
+      contents: [
+        "대전 본사 이전",
+        "해양 수산 창업 기업 선정",
+        "해양 선박 플랜트 연구소와 무인선박 시정계 공통연구",
+        "속속 SOC 대국민 아이디어 공모전 우수상 수상",
+      ],
+    },
     {
       year: "2021",
-      contents: ["공군 구매조건부 R&D 사업 진행", "조달청 혁신 시제품 등록"],
+      contents: [
+        "공군 구매조건부 R&D 사업 진행",
+        "조달청 혁신 시제품 등록",
+        "혁신제품 지정(JS-02P)",
+        "혁신제품 지정(JS-06)",
+        "해양 방산기술 혁신 아이디어 경진대회 우수상 수상",
+      ],
     },
     {
       year: "2020",
@@ -15,6 +39,7 @@ function History() {
         "기상청 `스마트시티 사업`",
         "대전 TP `드론 스테이션 기상장비 설치`사업",
         "한서대 파노라마형 인공지능 시정 시스템 설치",
+        "데이터바우처 공급기업 등록",
       ],
     },
     {
@@ -47,21 +72,23 @@ function History() {
   ];
 
   return (
-    <Container>
-      <Title1st>HISTORY</Title1st>
-      <Title2nd>A.I. 혁신적인 기술력의 회사</Title2nd>
-      {data.map((item, index) => (
-        <YearItem key={index}>
-          <Year>{item.year}</Year>
-          <Divider />
-          <Contents>
-            {item.contents.map((content, idx) => (
-              <ContentItem key={idx}>{content}</ContentItem>
-            ))}
-          </Contents>
-        </YearItem>
-      ))}
-    </Container>
+    <HisContainer>
+      <Container>
+        <Title1st>HISTORY</Title1st>
+        <Title2nd>A.I. 혁신적인 기술력의 회사</Title2nd>
+        {data.map((item, index) => (
+          <YearItem key={index}>
+            <Year>{item.year}</Year>
+            <Divider />
+            <Contents>
+              {item.contents.map((content, idx) => (
+                <ContentItem key={idx}>{content}</ContentItem>
+              ))}
+            </Contents>
+          </YearItem>
+        ))}
+      </Container>
+    </HisContainer>
   );
 }
 
@@ -98,6 +125,14 @@ const Title2nd = styled.p`
     font-size: 21px;
     margin-bottom: 30px;
   }
+`;
+
+const HisContainer = styled.div`
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
 `;
 
 const Container = styled.div`

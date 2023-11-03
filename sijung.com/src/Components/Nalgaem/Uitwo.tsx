@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 
 // 기상서비스 메인 내용 ! aos ! 제일 하단에 바로가기 버튼

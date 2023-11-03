@@ -18,7 +18,6 @@ function Patent() {
     "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent10.png?raw=true",
     "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent11.png?raw=true",
     "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent12.png?raw=true",
-    "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent13.png?raw=true",
     "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent14.jpg?raw=true",
     "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Patent15.jpg?raw=true",
   ];

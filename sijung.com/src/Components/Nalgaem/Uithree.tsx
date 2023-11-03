@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 
 // 기상서비스 메인 내용 ! aos ! 제일 하단에 바로가기 버튼
-function Uione() {
+function Uithree() {
   return (
     <Container>
       <PageContainer>
@@ -52,10 +52,11 @@ function Uione() {
   );
 }
 
-export default Uione;
+export default Uithree;
 
 const Container = styled.section`
   padding-top: 200px;
+  padding-bottom: 150px;
   position: relative;
   max-width: 98vw;
   max-height: 100vh;
@@ -66,10 +67,12 @@ const Container = styled.section`
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 150px;
+    padding-bottom: 100px;
   }
 
   @media all and (min-width: 360px) and (max-width: 767px) {
     padding-top: 120px;
+    padding-bottom: 70px;
   }
 `;
 
