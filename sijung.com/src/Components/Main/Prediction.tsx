@@ -193,6 +193,7 @@ const ImgLeft = styled.img`
   z-index: 1;
   margin-top: 850px;
   margin-right: 600px;
+  overflow: hidden;
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
     width: 300px;
