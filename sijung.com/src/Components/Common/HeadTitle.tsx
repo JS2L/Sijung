@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { gsap } from "gsap";
+import { useTranslation } from "react-i18next";
 
 // 3가지 페이지(회사소개, 제품소개, 보유기술 에서 쓰이는 공용 헤드타이틀) background 느낌
 const HeadTitle = () => {
+  const { t } = useTranslation();
   // gsap 애니메이션 모듈화
   const animateWithOpacity = (element: HTMLElement | null) => {
     gsap.from(element, {
@@ -29,7 +31,7 @@ const HeadTitle = () => {
   return (
     <div>
       <IntroEn ref={introRef}>A.I. VIDEO ANALYSIS COMPANY</IntroEn>
-      <IntroKo ref={introKoRef}>인공지능 시스템 기술 선도 기업</IntroKo>
+      <IntroKo ref={introKoRef}>{t("인공지능 시스템 기술 선도 기업")}</IntroKo>
     </div>
   );
 };

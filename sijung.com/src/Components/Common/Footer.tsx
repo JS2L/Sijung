@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import "../../Fonts/Font.css";
+import { useTranslation } from "react-i18next";
 
 // 푸터 ! Footer ! F00t3r ! 푸ㅌr
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <FooterContainer>
-      <FooterAddress>
-        대전광역시 유성구 테크노4로 17 대덕비즈센터 B동 101호
-      </FooterAddress>
-      <FooterTel>TEL : 042-933-5520 / E-MAIL : steve17@sijung.com.</FooterTel>
-      <FooterCP> COPYRIGHT (C) 2023 SIJUNG. ALL RIGHTS RESERVED.</FooterCP>
+      <FooterAddress>{t("footerAddress")}</FooterAddress>
+      <FooterTel>{t("footerTel")}</FooterTel>
+      <FooterCP>{t("footerCP")}</FooterCP>
       <WhiteLogo
         loading="lazy"
         src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/SIJUNG_white.webp?raw=true"

@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { gsap } from "gsap";
+import { useTranslation } from "react-i18next";
 
 // 기상서비스 전용 헤드타이틀 ! 날갬 설명
 const HeadTitle = () => {
+  const { t } = useTranslation();
   // gsap 애니메이션 모듈화
   const animateWithOpacity = (element: HTMLElement | null) => {
     gsap.from(element, {
@@ -30,7 +32,7 @@ const HeadTitle = () => {
     <div>
       <IntroEn ref={introRef}>LIVE Nalgaem</IntroEn>
       <IntroKo ref={introKoRef}>
-        실시간 LIVE로 현장 그대로 영상을 확인하는 관광APP
+        {t("실시간 LIVE로 현장 그대로 영상을 확인하는 관광APP")}
       </IntroKo>
     </div>
   );

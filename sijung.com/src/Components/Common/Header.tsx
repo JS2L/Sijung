@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import "../../Fonts/Font.css";
+import { useTranslation } from "react-i18next";
 
 interface NavigationProps {
   $showitems: boolean;
 }
 
 function Header() {
+  const { t } = useTranslation();
   const [showitems, setShowitems] = useState(false);
 
   /* const handleLinkClick = (path: string) => {
@@ -41,16 +43,16 @@ function Header() {
       <Navigation $showitems={showitems}>
         <NavList>
           <NavItem>
-            <Link to="/introComp/tab1">회사소개</Link>
+            <Link to="/introComp/tab1">{t("회사소개")}</Link>
           </NavItem>
           <NavItem>
-            <Link to="/Product/tab1">제품소개</Link>
+            <Link to="/Product/tab1">{t("제품소개")}</Link>
           </NavItem>
           <NavItem>
-            <Link to="/Technology/tab1">보유기술</Link>
+            <Link to="/Technology/tab1">{t("보유기술")}</Link>
           </NavItem>
           <NavItem>
-            <Link to="/Nalgaem">기상서비스</Link>
+            <Link to="/Nalgaem">{t("기상서비스")}</Link>
           </NavItem>
         </NavList>
       </Navigation>

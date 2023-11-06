@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 // 회사소개 - 보도자료의 뼈대 ! 타입관리 및 스타일 관리
 interface ArticleProps {
@@ -15,6 +16,7 @@ const Article: React.FC<ArticleProps> = ({
   summary,
   source,
 }) => {
+  const { t } = useTranslation();
   return (
     <ArticleContainer>
       <ArticleImage>
@@ -29,7 +31,9 @@ const Article: React.FC<ArticleProps> = ({
           </a>
         </ArticleTitle>
         <ArticleSummary>{summary}</ArticleSummary>
-        <ArticleSource>출처: {source}</ArticleSource>
+        <ArticleSource>
+          {t("출처")} {source}
+        </ArticleSource>
       </ArticleContent>
     </ArticleContainer>
   );

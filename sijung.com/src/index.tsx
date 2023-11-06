@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import "./i18n";
 
 AOS.init();
 
@@ -16,8 +17,6 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

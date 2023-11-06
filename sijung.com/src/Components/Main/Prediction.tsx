@@ -4,8 +4,10 @@ import "../../Fonts/Font.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function PredictionSection() {
+  const { t } = useTranslation();
   useEffect(() => {
     AOS.init();
   }, []);
@@ -14,11 +16,16 @@ function PredictionSection() {
     <PredictionContainer>
       <BlueBox>
         <BlueBoxTitle>PRECIDTION</BlueBoxTitle>
+        <BlueBoxtxt
+          dangerouslySetInnerHTML={{
+            __html: t(
+              "사람의 눈의 아닌 A.I. 영상 기반의 시정계로 관측 자료의 품질을 높이다."
+            ),
+          }}
+        ></BlueBoxtxt>
         <BlueBoxtxt>
-          사람의 눈의 아닌 A.I. 영상 기반의 시정계로
-          <br /> 관측 자료의 품질을 높이다.
+          {t("빅데이터에 근거한 고유의 시정 측정 기술로 예측")}
         </BlueBoxtxt>
-        <BlueBoxtxt>빅데이터에 근거한 고유의 시정 측정 기술로 예측</BlueBoxtxt>
       </BlueBox>
       <ImgRight
         loading="lazy"
@@ -278,7 +285,7 @@ const ImgRightTxtLow = styled.p`
   }
 `;
 
-const ImgLeftLow = styled.img`
+/* const ImgLeftLow = styled.img`
   position: absolute;
   width: 505px !important;
   height: 593px;
@@ -320,4 +327,4 @@ const ImgLeftTxtLow = styled.p`
     margin-top: 800px;
     margin-right: 500px;
   }
-`;
+`; */

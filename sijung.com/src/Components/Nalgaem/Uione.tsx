@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 import HeadTitle from "./HeadTitle";
 
 // 기상서비스 메인 내용 ! aos ! 제일 하단에 바로가기 버튼
 function Uione() {
+  const { t } = useTranslation();
+
   return (
     <Container>
       <HeadTitle />
@@ -38,8 +41,7 @@ function Uione() {
               color: "#0072ff",
             }}
           >
-            01.
-            <br />한 눈에 보이는 UI
+            {t("한 눈에 보이는 UI")}
           </ContentTitleRight>
           <ContentRight>
             가독성이 좋은 디자인으로

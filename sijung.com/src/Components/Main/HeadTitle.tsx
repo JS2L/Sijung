@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { gsap } from "gsap";
+import { useTranslation } from "react-i18next";
 
 // 3가지 페이지(회사소개, 제품소개, 보유기술 에서 쓰이는 공용 헤드타이틀) background 느낌
 const HeadTitle = () => {
+  const { t } = useTranslation();
   // gsap 애니메이션 모듈화
   const animateWithOpacity = (element: HTMLElement | null) => {
     gsap.from(element, {
@@ -31,10 +33,13 @@ const HeadTitle = () => {
   return (
     <Container>
       <IntroEn ref={introRef}>A.I. VIDEO ANALYSIS COMPANY</IntroEn>
-      <IntroKo ref={introKoRef}>세계 최초의 인공지능 시정계 상용화</IntroKo>
+      <IntroKo ref={introKoRef}>
+        {t("세계 최초의 인공지능 시정계 상용화")}
+      </IntroKo>
       <ShadowKo ref={shadowKoRef}>
-        (주)시정은 2016년 창립 이래 뛰어난 기술력과 우수한 품질을 바탕으로
-        고객만족을 실현하고 있는 기업입니다
+        {t(
+          "(주)시정은 2016년 창립 이래 뛰어난 기술력과 우수한 품질을 바탕으로 고객만족을 실현하고 있는 기업입니다"
+        )}
       </ShadowKo>
     </Container>
   );

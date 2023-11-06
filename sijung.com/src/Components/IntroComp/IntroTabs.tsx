@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 import AboutUs from "./AboutUs";
 import History from "./History";
@@ -14,46 +15,51 @@ type TabParams = {
 
 // 회사소개 모음집 ! 탭으로 관리 ! Params로 url관리 ! State로 tab 상태관리
 function Tab1() {
+  const { t } = useTranslation();
   return (
     <TitleBar
       backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
-      title="CEO 소개"
-      content="(주)시정 채신태 대표를 소개합니다"
+      title={t("CEO 소개")}
+      content={t("(주)시정 채신태 대표를 소개합니다")}
     />
   );
 }
 
 function Tab2() {
+  const { t } = useTranslation();
   return (
     <TitleBar
       backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
-      title="회사 연혁"
-      content="(주)시정이 걸어온 길"
+      title={t("회사 연혁")}
+      content={t("(주)시정이 걸어온 길")}
     />
   );
 }
 
 function Tab3() {
+  const { t } = useTranslation();
   return (
     <TitleBar
       backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
-      title="인증서&특허증"
-      content="인증서와 특허증 모음"
+      title={t("인증서&특허증")}
+      content={t("인증서와 특허증 모음")}
     />
   );
 }
 
 function Tab4() {
+  const { t } = useTranslation();
   return (
     <TitleBar
       backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
-      title="보도 자료"
-      content="(주)시정의 주요 기사들"
+      title={t("보도 자료")}
+      content={t("(주)시정의 주요 기사들")}
     />
   );
 }
 
 function Tabs() {
+  const { t } = useTranslation();
   const { tab } = useParams<TabParams>();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("tab1");
@@ -79,25 +85,25 @@ function Tabs() {
           onClick={() => handleTabClick("tab1")}
           active={activeTab === "tab1"}
         >
-          CEO 소개
+          {t("CEO 소개")}
         </TabButton>
         <TabButton
           onClick={() => handleTabClick("tab2")}
           active={activeTab === "tab2"}
         >
-          회사 연혁
+          {t("회사 연혁")}
         </TabButton>
         <TabButton
           onClick={() => handleTabClick("tab3")}
           active={activeTab === "tab3"}
         >
-          인증서&특허증
+          {t("인증서&특허증")}
         </TabButton>
         <TabButton
           onClick={() => handleTabClick("tab4")}
           active={activeTab === "tab4"}
         >
-          보도 자료
+          {t("보도 자료")}
         </TabButton>
       </TabButtons>
       <TabContent>
