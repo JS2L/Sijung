@@ -8,15 +8,25 @@ interface NavigationProps {
   $showitems: boolean;
 }
 
+interface LanguageDropdownProps {
+  $showDropdown: boolean;
+}
+
 function Header() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [showitems, setShowitems] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   /* const handleLinkClick = (path: string) => {
     if (window.location.pathname === path) {
       window.location.reload();
     }
   }; */
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+    setShowDropdown(false);
+  };
 
   return (
     <HeaderContainer>
@@ -39,6 +49,12 @@ function Header() {
             alt="ToggleSwitch"
           />
         </ToggleButton>
+        <LanguageSwitcher>
+          <button onClick={() => changeLanguage("ko")}>한국어</button>
+          <button onClick={() => changeLanguage("en")}>English</button>
+          <button onClick={() => changeLanguage("jp")}>日本語</button>
+          <button onClick={() => changeLanguage("cn")}>中文</button>
+        </LanguageSwitcher>
       </LogoContainer>
       <Navigation $showitems={showitems}>
         <NavList>
@@ -158,5 +174,17 @@ const NavItem = styled.li`
 
   @media (max-width: 950px) {
     margin: 10px 0;
+  }
+`;
+
+const LanguageSwitcher = styled.div`
+  display: flex;
+  align-items: center;
+
+  button {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
   }
 `;
