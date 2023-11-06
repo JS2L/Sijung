@@ -98,8 +98,37 @@
   "온도, 습도, 풍향, 풍속, 기압 등을 측정,": "Temperature, humidity, wind direction, wind speed, air pressure, etc. are measured,<br>Weather Station Sensor Installation",
 
   "설치 사례": "Installation Case",
-  
+
   "인공지능 자동 기상 관측 장비": "AI Automatic Weather Observation Equipment",
   "인공지능 영상 분석 시정계": "Artificial Intelligence Image Analysis Vision System",
-  "인공지능 파노라마 영상 분석 시정계": "Artificial Intelligence Panorama Image Analysis Vision System"
+  "인공지능 파노라마 영상 분석 시정계": "Artificial Intelligence Panorama Image Analysis Vision System",
+
+  "RETRO REFLECTOR": "RETRO REFLECTOR",
+  "RetroContent": "The retroreflector is a reflector in which light from a light source is<br> reflected from the surface of an object and returned to the light source.<br/>The retroreflector is characterized by reflection in the direction of that light source no<br> matter what angle the light is illuminated on the retroreflective material.<br/>Shining the car's headlights or flash light onto the reverse reflector will<br> return to the direction of the light, making it easy for the person in the light source to see it.",
+  "RetroContent2": "Traditional RETRO REFLECTOR was very expensive<br> because it was deposited in gold, silver, and aluminum<br> on the surface of the glass and manufactured manually.<br/>Correction Co., Ltd. has a technology of <br/> method of injection and aluminum vacuum deposition<br> with ABS material.",
+
+  "광학시정계": "optical corrector",
+  "VisiContent": "A long path open cell method is applied to a light source that irradiates LED light and a detector that detects the intensity of light by receiving the irradiated light. This LED light source and a visibility system applied with the Long Path Open Cell method are provided to be accommodated inside the housing image geometric housing, including a light source that irradiates light, a short-range reflector that reflects the irradiated light, and a detector that receives and detects the reflected light so that the optical path of the irradiated light is changed, and at this time, the light source and the detector may be provided to be accommodated inside the housing.",
+  "- 대표도": "- Representative too",
+  "VisiContent2": "Accordingly, the Long Path Open Cell method can be applied to accurately measure the corrective distance without installing the light source and the reflector far apart, and if the corrective deterioration occurs due to fine dust or ultrafine dust, the corrective distance can be calculated to prevent economic losses caused by the corrective deterioration. In addition, a light source that irradiates light and a detector that receives irradiated light are integrally provided to reduce human and material costs for managing the light source and detector.",
+
+  "영상시정계": "image corrector",
+  "역반사체": "RETRO REFLECTOR",
+
+  "목측을 모사한 가시거리 측정": "Visibility measurements simulating the side of the eye",
+  "LED광원과 Long Path Open Cell 방식을 적용한 시정계": "Visibility System with LED Light Source and Long Path Open Cell Method",
+  "반사 광선을 입사 광선과 평행하게 하기 위한 레이저 광선 역반사 장치": "Laser beam reverse reflection device for parallelizing reflected light with incident light",
+
+  "Refine data set": "Refine data set",
+  "Content1": "Configure a 100% valid training set that is validated,<br/>enhanced to correct the learning set and eliminate variations<br /> and label errors to validate deliver good results for any data based<br/> on the learned datasetsfor different environments,<br/>deliver good results from fault tolerance measurements and accuracy.",
+  "Redesign CNN training algorithm": "Redesign CNN training algorithm",
+  "Content2": "Improving the flexibility and speed of queuing and dataset balancing <br/> algorithms through image enhancement Develop algorithms<br /> that can handle simple vector values as input values by simplifying<br /> the input complexity of existing CNN learning algorithms",
+  "Perform hyper parameter tweaking": "Perform hyper parameter tweaking",
+  "Content3": "Optimizing model formats to enhance learning models and <br/> secure reliability (Low memory consumption, fast inference)<br/>Minimize learning complexity, develop and optimize parameter <br/> setting algorithms to possess fast learning and reasoning capabilities",
+  "Compare results, Optimize format": "Compare results, Optimize format",
+  "Content4": "Developed an optimized format of the input<br/> format by minimizing the complexity of multidimensional input <br/> values ofTensorflow for Native Tensorflow web services",
+  "Implement FT based version": "Implement FT based version",
+  "Content5": "Frequency-based CNN model implementation tests focused on<br/> regression analysis instead of classifier-driven CNN<br/> (creating continuous visibility values instead of isolated classes)<br/>Develop algorithms to optimize cost by applying regression algorithms to<br/> CNNs to develop algorithms to enable learning to occur<br/> at the stage of optimizing cost",
+  "Implement DCP based verstion": "Implement DCP based verstion",
+  "Content6": "Developed by applying Fourier Transformation-based image processing algorithm<br/> that can predict sunlight amount regardless of the contrast of data based on the degree<br/> of darkness in the surrounding environment and the dark information between pixels"
 }

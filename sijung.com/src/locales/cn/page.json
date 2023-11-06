@@ -101,5 +101,34 @@
 
   "인공지능 자동 기상 관측 장비": "人工智能自动气象观测设备",
   "인공지능 영상 분석 시정계": "人工智能影像分析计时器",
-  "인공지능 파노라마 영상 분석 시정계": "人工智能全景影像分析计时器"
+  "인공지능 파노라마 영상 분석 시정계": "人工智能全景影像分析计时器",
+
+  "RETRO REFLECTOR": "反反射体",
+  "RetroContent": "反光体是来自光源的光在物体表面反射后重新返回光源的反射体,<br/>反光的特点是,无论以何种角度向返回反射材料照射光,都会向光源的方向反射。<br/>将汽车的前灯或闪光灯照射到反光反射器上,返回光线方向,在光源上的人很容易看到。",
+  "RetroContent2": "现有的反反射体在玻璃表面用<br/>金、银、铝沉积,手工制作<br/>,是非常昂贵的产品。<br/>（株）改性采用ABS材料，采用注塑、<br/>铝真空蒸镀的法。",
+
+  "광학시정계": "光学视程计",
+  "VisiContent": "公开了一种用于照射LED光的光源体和用于接收照射的光来检测光强度的检测器,其被配置为采用Long Path Open Cell方法。 采用本LED光源和Long Path Open Cell方式的视界被设置成容纳在壳体上壳体内部,包括照射光的光源体、反射上述照射光的光路改变、反射上述照射光的近距离反射镜及接收上述反射光的检测器,此时,上述光源体和上述检测器可以设置成容纳在上述壳体内部。",
+  "- 대표도": "- 代表图",
+  "VisiContent2": "因此,应用了Long Path Open Cell方法,即使不将光源体和反射镜分开设置,也可以准确地测量校正距离,并且当由于雾霾或细颗粒物而引起校正恶化时,计算校正距离,以防止由于校正恶化而造成的经济损失。 另外,由于照射光的光源体和接收照射光的检测器一体地设置,因此可以降低用于管理光源和检测器的人力、物力成本。",
+
+  "영상시정계": "视像计",
+  "역반사체": "反反射体",
+
+  "목측을 모사한 가시거리 측정": "模拟目测能见度",
+  "LED광원과 Long Path Open Cell 방식을 적용한 시정계": "采用LED光源和Long Path Open Cell方式的计时器",
+  "반사 광선을 입사 광선과 평행하게 하기 위한 레이저 광선 역반사 장치": "使反射光线与入射光线平行的激光反光装置",
+
+  "Refine data set": "Refine data set",
+  "Content1": "为了修改学习集(Learning)，消除变形和标签错误，组成了验证、<br/>增强的100%有效训练集，以验证<br/>学习的数据集为基础，对任意数据<br/>，为了对各种环境诱导优秀结果，<br/>在fault tolerance测定和准确度上得出优秀结果。",
+  "Redesign CNN training algorithm": "Redesign CNN training algorithm",
+  "Content2": " 通过图像高度化提高队列和数据组平衡算法学习的灵活性和速度,<br/>通过简化现有CNN学习算法的输入复杂性,开发出可以将单纯的矢量值处理为输入值的算法。",
+  "Perform hyper parameter tweaking": "Perform hyper parameter tweaking",
+  "Content3": "为了学习模型的高度化及确保信赖度，<br/>模型形式最优化（内存消耗少，快速推论）<br/>学习的复杂度最小化，为了拥有快速学习和推论能力，开发了<br/>参数设定算法，进行最优化。",
+  "Compare results, Optimize format": "Compare results, Optimize format",
+  "Content4": "为了Native Tensorflow，将服务器导出为<br/>人工智能引擎(Tensorflow)网络服务的最佳格式，将<br/> Tensorflow的多维输入值的复杂度最小化，开发出仅用<br/>单一变量就可以学习的输入格式的最优化格式。",
+  "Implement FT based version": "Implement FT based version",
+  "Content5": "为了代替以分类器为中心的CNN,进行以回归分析为焦点的<br/>频率为基础的CNN模型实现测试<br/>(代替分离的类别生成连续的可视性值)<br/>Regression算法适用于CNN,开发算法,使Cost在<br/>最优化的阶段发生学习的算法。",
+  "Implement DCP based verstion": "Implement DCP based verstion",
+  "Content6": "以周边环境的黑暗程度及构成像素之间的黑暗信息为基础,适用与数据明暗无关,可以预测日照量的<br/> Fourier transformation基础图像处理算法开发。"
 }

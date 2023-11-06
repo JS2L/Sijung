@@ -4,9 +4,12 @@ import styled from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../../Fonts/Font.css";
+import { useTranslation } from "react-i18next";
 
 // 보유기술 - 영상시정계 ! 구조 망했음 ! AOS활용
 function Video() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -15,28 +18,21 @@ function Video() {
     <div>
       <Img1Container>
         <Title data-aos="fade-right" data-aos-duration="1000">
-          영상 시정계
+          {t("영상시정계")}
         </Title>
         <Content data-aos="fade-right" data-aos-duration="1500">
           <BlackNum>01</BlackNum>
           <br />
-          Refine data set
+          {t("Refine data set")}
         </Content>
         <Content
           data-aos="fade-right"
           data-aos-duration="2000"
           style={{ color: "black", fontSize: "20px" }}
-        >
-          학습 셋(Learning)을 수정하고 변형과 라벨 오류를 제거하기 위해 검증,
-          <br />
-          보강된 100% 유효한 트레이닝 셋을 구성하여 검증
-          <br />
-          학습된 데이터 셋을 바탕으로 임의의 데이터에 대해
-          <br />
-          여러 다양한 환경에 대해 우수한 결과를 유도하기 위함
-          <br />
-          이는 fault tolerance 측정과 정확도에서 우수한 결과를 도출
-        </Content>
+          dangerouslySetInnerHTML={{
+            __html: t("Content1"),
+          }}
+        ></Content>
         <VideoImg1
           data-aos="zoom-in"
           data-aos-duration="1000"
@@ -46,7 +42,7 @@ function Video() {
         <SecContent data-aos="fade-up" data-aos-duration="1000">
           <BlackNum>02</BlackNum>
           <br />
-          Redesign CNN training algorithm
+          {t("Redesign CNN training algorithm")}
         </SecContent>
         <SecContent
           data-aos="fade-up"
@@ -54,13 +50,10 @@ function Video() {
           style={{
             color: "black",
           }}
-        >
-          이미지 고도화를 통한 큐잉 및 데이터 셋 밸런싱 알고리즘 학습의 유연성과
-          속도를 향상시킴
-          <br />
-          기존 CNN 학습 알고리즘의 입력복잡성을 단순화 시켜서 단순한 벡터 값을
-          입력값으로 처리할 수 있는 알고리즘 개발
-        </SecContent>
+          dangerouslySetInnerHTML={{
+            __html: t("Content2"),
+          }}
+        ></SecContent>
       </Img1Container>
       <Img2Container data-aos="fade-right" data-aos-duration="1000">
         <ImageContainer>
@@ -75,22 +68,17 @@ function Video() {
           <FirContent>
             <BlackNum>03</BlackNum>
             <br />
-            Redesign CNN training algorithm
+            {t("Perform hyper parameter tweaking")}
           </FirContent>
           <FirContent
             style={{
               color: "black",
               fontSize: "20px",
             }}
-          >
-            학습모델의 고도화 및 신뢰도 확보를 위한
-            <br />
-            모델 형식 최적화(적은 메모리 소비, 빠른 추론)
-            <br />
-            학습의 복잡도를 최소화, 빠른 학습과 추론 능력을 보유하기 위한
-            <br />
-            파라메타 설정 알고리즘을 개발하여 최적화
-          </FirContent>
+            dangerouslySetInnerHTML={{
+              __html: t("Content3"),
+            }}
+          ></FirContent>
         </ContentContainer>
       </Img2Container>
       <Img2Container data-aos="fade-right" data-aos-duration="1000">
@@ -98,22 +86,17 @@ function Video() {
           <FirContent>
             <BlackNum>04</BlackNum>
             <br />
-            Compare results, Optimize format
+            {t("Compare results, Optimize format")}
           </FirContent>
           <FirContent
             style={{
               color: "black",
               fontSize: "20px",
             }}
-          >
-            Native Tensorflow를 위해 서버를
-            <br />
-            인공지능 엔진(Tensorflow)웹서비스를 위한 최적 포맷 도출
-            <br />
-            Tensorflow의 다차원 입력값의 복잡도를 최소화하여
-            <br />
-            단일 변수만으로도 학습이 가능하도록 입력형식의 최적화 포맷을 개발
-          </FirContent>
+            dangerouslySetInnerHTML={{
+              __html: t("Content4"),
+            }}
+          ></FirContent>
         </ContentContainer>
         <ImageContainer>
           <VideoImg2
@@ -134,24 +117,17 @@ function Video() {
           <FirContent>
             <BlackNum>05</BlackNum>
             <br />
-            Implement FT based version
+            {t("Implement FT based version")}
           </FirContent>
           <FirContent
             style={{
               color: "black",
               fontSize: "20px",
             }}
-          >
-            분류기 중심의 CNN 대신 회귀 분석에 초점을 맞춘
-            <br />
-            주파수 기반 CNN 모델 구현 테스트를 하고자함
-            <br />
-            (분리된 클래스 대신 연속적인 가시성 값을 생성)
-            <br />
-            Regression 알고리즘을 CNN에 적용하여 Cost를
-            <br />
-            최적화 하는 단계에서 학습이 일어나도록 알고리즘 개발
-          </FirContent>
+            dangerouslySetInnerHTML={{
+              __html: t("Content5"),
+            }}
+          ></FirContent>
         </ContentContainer>
       </Img2Container>
       <Img1Container data-aos="fade" data-aos-duration="3000">
@@ -164,7 +140,7 @@ function Video() {
         <SixContent data-aos="fade-in" data-aos-duration="3000">
           <BlackNum>06</BlackNum>
           <br />
-          Implement DCP based verstion
+          {t("Implement DCP based verstion")}
         </SixContent>
         <SixContent
           data-aos="fade-in"
@@ -172,12 +148,10 @@ function Video() {
           style={{
             color: "black",
           }}
-        >
-          주변환경의 어두움 정도 및 구성 픽셀간의 어두움 정보를 바탕으로
-          데이터의 명암과 관계없이 일조량을 예측할 수 있는
-          <br />
-          Fourier transformation 기반 이미지 프로세싱 알고리즘을 적용하여 개발
-        </SixContent>
+          dangerouslySetInnerHTML={{
+            __html: t("Content6"),
+          }}
+        ></SixContent>
       </Img1Container>
     </div>
   );

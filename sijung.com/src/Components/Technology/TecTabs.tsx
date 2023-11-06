@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 import TitleBar from "./TitleBar";
 import Video from "./Video";
@@ -13,36 +14,42 @@ type TabParams = {
 
 // TecTab 모음집 ! 탭으로 관리 ! Params로 url관리 ! State로 tab 상태관리
 function Tab1() {
+  const { t } = useTranslation();
   return (
     <TitleBar
       backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
-      title="영상시정계"
-      content="목측을 모사한 가시거리 측정"
+      title={t("영상시정계")}
+      content={t("목측을 모사한 가시거리 측정")}
     />
   );
 }
 
 function Tab2() {
+  const { t } = useTranslation();
   return (
     <TitleBar
       backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
-      title="광학시정계"
-      content="LED광원과 Long Path Open Cell 방식을 적용한 시정계"
+      title={t("광학시정계")}
+      content={t("LED광원과 Long Path Open Cell 방식을 적용한 시정계")}
     />
   );
 }
 
 function Tab3() {
+  const { t } = useTranslation();
   return (
     <TitleBar
       backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
-      title="역반사체"
-      content="반사 광선을 입사 광선과 평행하게 하기 위한 레이저 광선 역반사 장치"
+      title={t("역반사체")}
+      content={t(
+        "반사 광선을 입사 광선과 평행하게 하기 위한 레이저 광선 역반사 장치"
+      )}
     />
   );
 }
 
 function Tabs() {
+  const { t } = useTranslation();
   const { tab } = useParams<TabParams>();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("tab1");
@@ -68,19 +75,19 @@ function Tabs() {
           onClick={() => handleTabClick("tab1")}
           active={activeTab === "tab1"}
         >
-          영상시정계
+          {t("영상시정계")}
         </TabButton>
         <TabButton
           onClick={() => handleTabClick("tab2")}
           active={activeTab === "tab2"}
         >
-          광학시정계
+          {t("광학시정계")}
         </TabButton>
         <TabButton
           onClick={() => handleTabClick("tab3")}
           active={activeTab === "tab3"}
         >
-          역반사체
+          {t("역반사체")}
         </TabButton>
       </TabButtons>
       <TabContent>
