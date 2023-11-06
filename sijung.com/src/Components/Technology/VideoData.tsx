@@ -5,7 +5,7 @@ const videoData = [
     num: "01",
     title: "Refine data set",
     content: [
-      "학습 셋(Learning)을 수정하고 변형과 라벨 오류를 제거하기 위해 검증,\n보강된 100% 유효한 트레이닝 셋을 구성하여 검증 학습된 데이터 셋을 바탕으로 임의의 데이터에 대해 여러 다양한 환경에 대해 우수한 결과를 유도하기 위함 이는 fault tolerance 측정과 정확도에서 우수한 결과를 도출",
+      "학습 셋(Learning)을 수정하고 변형과 라벨 오류를 제거하기 위해 검증, 보강된 100% 유효한 트레이닝 셋을 구성하여 검증 학습된 데이터 셋을 바탕으로 임의의 데이터에 대해 여러 다양한 환경에 대해 우수한 결과를 유도하기 위함 이는 fault tolerance 측정과 정확도에서 우수한 결과를 도출",
     ],
     imageSrc:
       "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/VideoImg1.png?raw=true",

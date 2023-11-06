@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 // 기상서비스 메인 내용 ! aos ! 제일 하단에 바로가기 버튼
 function Uithree() {
+  const { t } = useTranslation();
   return (
     <Container>
       <PageContainer>
@@ -34,18 +36,15 @@ function Uithree() {
             style={{
               color: "#0072ff",
             }}
-          >
-            03.
-            <br />
-            날씨 확인도 날갬에서
-          </ContentTitleRight>
-          <ContentRight>
-            여행뿐만 아니라
-            <br />
-            일상생활에 필요한 날씨
-            <br />
-            어플 하나로 확인
-          </ContentRight>
+            dangerouslySetInnerHTML={{ __html: t("날씨 확인도 날갬에서") }}
+          ></ContentTitleRight>
+          <ContentRight
+            dangerouslySetInnerHTML={{
+              __html: t(
+                "여행뿐만 아니라 일상생활에 필요한 날씨 어플 하나로 확인"
+              ),
+            }}
+          ></ContentRight>
         </ContentContainer>
       </PageContainer>
     </Container>

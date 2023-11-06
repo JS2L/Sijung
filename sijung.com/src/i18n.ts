@@ -21,7 +21,7 @@ i18n.use(initReactI18next).init({
       translation: cn,
     },
   },
-  lng: "ko", // 기본 언어 설정 (한국어)
+  lng: "cn", // 기본 언어 설정 (한국어)
   fallbackLng: "ko", // 번역이 없는 경우의 기본 언어 설정
   debug: true,
   interpolation: {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 import JS02P from "./JS02P";
 import JS06 from "./JS06";
@@ -13,31 +14,34 @@ type TabParams = {
 
 // JS-02P, JS-06, JS-08 모음집 ! 탭으로 관리 ! Params로 url관리 ! State로 tab 상태관리
 function Tab1() {
+  const { t } = useTranslation();
   return (
     <TitleBar
       backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
       title="JS-02P"
-      content="인공지능 자동 기상 관측 장비"
+      content={t("인공지능 자동 기상 관측 장비")}
     />
   );
 }
 
 function Tab2() {
+  const { t } = useTranslation();
   return (
     <TitleBar
       backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
       title="JS-06"
-      content="인공지능 영상 분석 시정계"
+      content={t("인공지능 영상 분석 시정계")}
     />
   );
 }
 
 function Tab3() {
+  const { t } = useTranslation();
   return (
     <TitleBar
       backgroundImage="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/TitlebarBG.webp?raw=true"
       title="JS-08"
-      content="인공지능 파노라마 영상 분석 시정계"
+      content={t("인공지능 파노라마 영상 분석 시정계")}
     />
   );
 }

@@ -7,7 +7,6 @@ import HeadTitle from "./HeadTitle";
 // 기상서비스 메인 내용 ! aos ! 제일 하단에 바로가기 버튼
 function Uione() {
   const { t } = useTranslation();
-
   return (
     <Container>
       <HeadTitle />
@@ -40,16 +39,15 @@ function Uione() {
             style={{
               color: "#0072ff",
             }}
-          >
-            {t("한 눈에 보이는 UI")}
-          </ContentTitleRight>
-          <ContentRight>
-            가독성이 좋은 디자인으로
-            <br />
-            쉽게 원하는 정보를
-            <br />
-            찾아 갈 수 있습니다
-          </ContentRight>
+            dangerouslySetInnerHTML={{ __html: t("한 눈에 보이는 UI") }}
+          ></ContentTitleRight>
+          <ContentRight
+            dangerouslySetInnerHTML={{
+              __html: t(
+                "가독성이 좋은 디자인으로 쉽게 원하는 정보를 찾아 갈 수 있습니다"
+              ),
+            }}
+          ></ContentRight>
         </ContentContainer>
       </PageContainer>
     </Container>

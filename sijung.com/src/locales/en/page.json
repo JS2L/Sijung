@@ -15,9 +15,9 @@
 
   "인공지능 시스템 기술 선도 기업": "AI Systems Technology Leading Company",
 
-  "ParagraphTitle": "It is a company that realizes customer satisfaction\n based on excellent technology and quality.",
-  "Paragraph": "Sijeong Co., Ltd. is a research institute company established with technology investment from the Korea Institute of Standards and Science.\n Based on the invested visual field technology, we are developing not only optical visual field but also image visual field.\nIn the case of artificial intelligence imaging systems, we are trying to commercialize them for the first time in the world, and we also hold a number of related patents.",
-  "Paragraph2": " The best way to predict the future is to create it.\nAs American businessman Peter Drucker put it, we want to create a paradigm for the municipal market in the future.",
+  "ParagraphTitle": "It is a company that realizes customer satisfaction<br> based on excellent technology and quality.",
+  "Paragraph": "Sijeong Co., Ltd. is a research institute company established with technology investment from the Korea Institute of Standards and Science. Based on the invested visual field technology, we are developing not only optical visual field but also image visual field.In the case of artificial intelligence imaging systems, we are trying to commercialize them for the first time in the world, and we also hold a number of related patents",
+  "Paragraph2": " The best way to predict the future is to create it.<br>As American businessman Peter Drucker put it, we want to create a paradigm for the municipal market in the future.",
   "ParagraphBold": "That's the future that the city government dreams of.",
 
   "출처": "Sources :",
@@ -70,5 +70,36 @@
   "인증서&특허증": "Certificate & Patent",
   "인증서와 특허증 모음": "Certificate and Patent Collection",
   "보도 자료": "Articles",
-  "(주)시정의 주요 기사들": "city government's main articles"
+  "(주)시정의 주요 기사들": "city government's main articles",
+
+  "실시간 LIVE로 현장 그대로 영상을 확인하는 관광APP": "Tourism APP where you can check the video on the spot through real-time live",
+  "한 눈에 보이는 UI": "01.<br> UI at a glance",
+  "가독성이 좋은 디자인으로 쉽게 원하는 정보를 찾아 갈 수 있습니다": "With a readable design<br>you can easily find<br>the information you want",
+  "뜨고 있는 관광지 & 축제": "02.<br>Rising tourist attractions and festivals",
+  "지금 뜨고 있는 관광지와 축제의 정보를 한번에": "Let's take a look at the<br>tourist attractions and festivals<br>that are on the rise",
+  "날씨 확인도 날갬에서": "03.<br>Weather check on the wings",
+  "여행뿐만 아니라 일상생활에 필요한 날씨 어플 하나로 확인": "Check with one weather application<br>for daily life as well as travel",
+
+  "JS02Title": "It is an automatic weather observation equipment that measures visibility with artificial intelligence image analysis technology.<br />It provides images and visibility together, and anyone can know easy and objective weather information.<br />You can also dataize corrective information with real images,<br />By building big data, it can be used as evidence in academic research and accidents.",
+  "JS-02P 특징": "JS-02P Characteristics",
+
+  "JS06Title": "The server analyzes the images taken with the high-definition panorama camera to determine the visibility.<br>It is an artificial intelligence visibility system that can measure accurate visibility and fine dust concentration,<br> and accurately analyzes visibility using data analysis and artificial intelligence (CNN deep learning approach).",
+  "JS-06 특징": "JS-06 Characteristics",
+
+  "JS08Title": "An artificial intelligence based advanced visibility system that can measure runway visibility and dominant visibility on an airfield. Use two 180 ˚ Panorama cameras to measure dominance every minute.",
+  "JS-08 특징": "JS-08 Characteristics",
+
+  "인공지능 영상분석 기술 시정측정": "Artificial Intelligence Imaging Technology Corrective Measurement",
+  "외부 설치용 카메라 보유": "Retaining cameras for installation",
+  "웨더 스테이션 센서 장착": "Weather Station Sensor Installation",
+
+  "목측을 모사한 시정거리 측정": "Measurement of visual distance simulating the side of the eye<br>Provides full screen and screen transition",
+  "장기 관측을 위해 외부 설치용 하우징은 부식이": "For long-term observation, the exterior housing is corroded<br>It's made of materials that don't work well.",
+  "온도, 습도, 풍향, 풍속, 기압 등을 측정,": "Temperature, humidity, wind direction, wind speed, air pressure, etc. are measured,<br>Weather Station Sensor Installation",
+
+  "설치 사례": "Installation Case",
+  
+  "인공지능 자동 기상 관측 장비": "AI Automatic Weather Observation Equipment",
+  "인공지능 영상 분석 시정계": "Artificial Intelligence Image Analysis Vision System",
+  "인공지능 파노라마 영상 분석 시정계": "Artificial Intelligence Panorama Image Analysis Vision System"
 }

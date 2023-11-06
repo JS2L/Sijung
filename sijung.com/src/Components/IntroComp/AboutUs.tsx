@@ -9,10 +9,26 @@ function ImgContent() {
     <Container>
       <ContentWrap>
         <AboutUsWrap>
-          <ParagraphTitle>{t("ParagraphTitle")}</ParagraphTitle>
-          <Paragraph>{t("Paragraph")}</Paragraph>
-          <Paragraph>{t("Paragraph2")}</Paragraph>
-          <ParagraphBold>{t("ParagraphBold")}</ParagraphBold>
+          <ParagraphTitle
+            dangerouslySetInnerHTML={{
+              __html: t("ParagraphTitle"),
+            }}
+          ></ParagraphTitle>
+          <Paragraph
+            dangerouslySetInnerHTML={{
+              __html: t("Paragraph"),
+            }}
+          ></Paragraph>
+          <Paragraph
+            dangerouslySetInnerHTML={{
+              __html: t("Paragraph2"),
+            }}
+          ></Paragraph>
+          <ParagraphBold
+            dangerouslySetInnerHTML={{
+              __html: t("ParagraphBold"),
+            }}
+          ></ParagraphBold>
           <Sign>
             President Sintae Chae
             <img

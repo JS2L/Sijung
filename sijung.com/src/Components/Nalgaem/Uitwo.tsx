@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 // 기상서비스 메인 내용 ! aos ! 제일 하단에 바로가기 버튼
 function Uitwo() {
+  const { t } = useTranslation();
   return (
     <Container>
       <PageContainer>
@@ -11,18 +13,13 @@ function Uitwo() {
             style={{
               color: "#0072ff",
             }}
-          >
-            02.
-            <br />
-            뜨고 있는 관광지 & 축제
-          </ContentTitleRight>
-          <ContentRight>
-            지금 뜨고 있는
-            <br />
-            관광지와 축제의
-            <br />
-            정보를 한번에
-          </ContentRight>
+            dangerouslySetInnerHTML={{ __html: t("뜨고 있는 관광지 & 축제") }}
+          ></ContentTitleRight>
+          <ContentRight
+            dangerouslySetInnerHTML={{
+              __html: t("지금 뜨고 있는 관광지와 축제의 정보를 한번에"),
+            }}
+          ></ContentRight>
         </ContentContainer>
         <ImgLeft>
           <picture>

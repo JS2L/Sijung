@@ -3,21 +3,58 @@ import styled from "styled-components";
 import "../../Fonts/Font.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ImageSlide from "./ImgSlide";
+import { useTranslation } from "react-i18next";
 
 function JS06() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      image:
+        "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Characteristic1.png?raw=true",
+      alt: "Characteristic 1",
+      text: t("인공지능 영상분석 기술 시정측정"),
+    },
+    {
+      image:
+        "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Characteristic3.png?raw=true",
+      alt: "Characteristic 3",
+      text: t("외부 설치용 카메라 보유"),
+    },
+    {
+      image:
+        "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Characteristic2.png?raw=true",
+      alt: "Characteristic 2",
+      text: t("웨더 스테이션 센서 장착"),
+    },
+  ];
+
+  const outContents = [
+    <span
+      dangerouslySetInnerHTML={{
+        __html: t("인공지능 영상분석 기술 시정측정"),
+      }}
+    ></span>,
+    <span
+      dangerouslySetInnerHTML={{
+        __html: t("외부 설치용 카메라 보유"),
+      }}
+    ></span>,
+    <span
+      dangerouslySetInnerHTML={{
+        __html: t("웨더 스테이션 센서 장착"),
+      }}
+    ></span>,
+  ];
+
   return (
     <Container>
-      <Title>
-        고화질 파노라마 카메라로 촬영한 영상을 서버로 분석하여 가시거리를
-        판단합니다.
-        <br />
-        정확한 가시거리 측정 및 미세먼지 농도를 측정 가능 하며,
-        <br />
-        데이터 분석과 인공지능(CNN 딥 러닝 접근 방법)을 이용하여
-        <br />
-        가시거리를 정확히 분석하는 인공지능 시정계 입니다.
-      </Title>
-      <Characteristic>JS-06 특징</Characteristic>
+      <Title
+        dangerouslySetInnerHTML={{
+          __html: t("JS06Title"),
+        }}
+      ></Title>
+      <Characteristic>{t("JS-06 특징")}</Characteristic>
       <FeatureSection>
         {features.map((feature, index) => (
           <Feature key={index}>
@@ -32,7 +69,7 @@ function JS06() {
         ))}
       </OutSection>
       <ImageContainer>
-        <ImageContent>설치 사례</ImageContent>
+        <ImageContent>{t("설치 사례")}</ImageContent>
         <ImageSlide />
       </ImageContainer>
     </Container>
@@ -188,41 +225,3 @@ const ImageContent = styled.p`
   font-size: 30px;
   text-align: center;
 `;
-
-const features = [
-  {
-    image:
-      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Characteristic1.png?raw=true",
-    alt: "Characteristic 1",
-    text: "인공지능 영상 분석 기술로 시정 측정",
-  },
-  {
-    image:
-      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Characteristic3.png?raw=true",
-    alt: "Characteristic 3",
-    text: "외부 설치용 카메라",
-  },
-  {
-    image:
-      "https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Characteristic2.png?raw=true",
-    alt: "Characteristic 2",
-    text: "웨더 스테이션 센서 장착",
-  },
-];
-
-const outContents = [
-  <span>
-    목측을 모사한 시정거리 측정
-    <br />
-    전체화면 및 화면 전환 기능 제공
-  </span>,
-  <span>
-    장기 관측을 위해 외부 설치용 하우징은 부식이
-    <br />잘 되지 않는 재질로 구성 되어 있습니다.
-  </span>,
-  <span>
-    온도, 습도, 풍향, 풍속, 기압 등을 측정,
-    <br />
-    웨더스테이션 센서 장착
-  </span>,
-];
