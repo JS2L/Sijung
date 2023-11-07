@@ -194,7 +194,6 @@ const ImgRightTxt = styled.p`
 const ImgLeft = styled.img`
   position: absolute;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
   width: 505px !important;
   height: 593px;
   z-index: 1;
@@ -242,7 +241,6 @@ const ImgLeftTxt = styled.p`
 const ImgRightLow = styled.img`
   position: absolute;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
   width: 505px !important;
   height: 593px;
   z-index: 1;
