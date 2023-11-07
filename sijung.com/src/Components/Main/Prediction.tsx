@@ -52,7 +52,7 @@ function PredictionSection() {
         loading="lazy"
         data-aos="fade-left"
         data-aos-duration="1500"
-        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Prediction_3.webp?raw=true"
+        src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/Pre_3.webp?raw=true"
         alt="3rd Prediction Img"
       />
       <ImgRightTxtLow data-aos="fade-left" data-aos-duration="1500">
