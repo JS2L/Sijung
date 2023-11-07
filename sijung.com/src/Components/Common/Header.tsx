@@ -211,7 +211,7 @@ const LanguageButton = styled.button`
   background: none;
   border: none;
   font-size: 17px;
-  font-family: "Pretendard-Bold";
+  font-weight: bold;
   cursor: pointer;
 `;
 
