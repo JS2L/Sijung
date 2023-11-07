@@ -248,12 +248,13 @@ const ImgLeftTxt = styled.p`
 
 const ImgRightLow = styled.img`
   position: absolute;
-  border-radius: 10px;
+  border-radius: 58px;
   width: 505px !important;
   height: 593px;
   z-index: 1;
   margin-left: 600px;
   margin-top: 1500px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
 
   @media all and (min-width: 768px) and (max-width: 1199px) {
     width: 300px;
