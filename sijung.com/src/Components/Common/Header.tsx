@@ -16,16 +16,16 @@ function Header() {
   const { t, i18n } = useTranslation();
   const [showitems, setShowitems] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
-
-  /* const handleLinkClick = (path: string) => {
-    if (window.location.pathname === path) {
-      window.location.reload();
-    }
-  }; */
+  const [selectedLanguage, setSelectedLanguage] = useState("ko");
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    setSelectedLanguage(lng);
     setShowDropdown(false);
+  };
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
   };
 
   return (
@@ -40,6 +40,37 @@ function Header() {
             alt="logo"
           />
         </Link>
+
+        <LanguageSelect>
+          <LanguageButton onClick={toggleDropdown}>
+            {selectedLanguage === "ko"
+              ? "한국어"
+              : selectedLanguage === "en"
+              ? "English"
+              : selectedLanguage === "jp"
+              ? "日本語"
+              : selectedLanguage === "cn"
+              ? "中文"
+              : "Selceted"}
+            {showDropdown ? " ▲" : " ▼"}
+          </LanguageButton>
+          {showDropdown && (
+            <LanguageDropdown $showDropdown={showDropdown}>
+              <LanguageOption onClick={() => changeLanguage("ko")}>
+                한국어
+              </LanguageOption>
+              <LanguageOption onClick={() => changeLanguage("en")}>
+                English
+              </LanguageOption>
+              <LanguageOption onClick={() => changeLanguage("jp")}>
+                日本語
+              </LanguageOption>
+              <LanguageOption onClick={() => changeLanguage("cn")}>
+                中文
+              </LanguageOption>
+            </LanguageDropdown>
+          )}
+        </LanguageSelect>
         <ToggleButton onClick={() => setShowitems(!showitems)}>
           <ToggleImage
             loading="lazy"
@@ -49,12 +80,6 @@ function Header() {
             alt="ToggleSwitch"
           />
         </ToggleButton>
-        <LanguageSwitcher>
-          <button onClick={() => changeLanguage("ko")}>한국어</button>
-          <button onClick={() => changeLanguage("en")}>English</button>
-          <button onClick={() => changeLanguage("jp")}>日本語</button>
-          <button onClick={() => changeLanguage("cn")}>中文</button>
-        </LanguageSwitcher>
       </LogoContainer>
       <Navigation $showitems={showitems}>
         <NavList>
@@ -100,7 +125,7 @@ const HeaderContainer = styled.header`
 
 const LogoContainer = styled.div`
   display: flex; // 로고와 버튼을 같은선상에 두기 위함 !
-  justify-content: space-between; // 로고와 버튼을 양 끝에 배치 !
+  justify-content: space-between;
   align-items: center;
 
   .img {
@@ -120,7 +145,7 @@ const ToggleButton = styled.button`
 
   @media (max-width: 950px) {
     display: block;
-    margin-right: 10px;
+    margin-left: auto;
   }
 `;
 
@@ -177,14 +202,46 @@ const NavItem = styled.li`
   }
 `;
 
-const LanguageSwitcher = styled.div`
-  display: flex;
-  align-items: center;
+const LanguageSelect = styled.div`
+  position: relative;
+  display: inline-block;
+`;
 
-  button {
-    background: none;
-    border: none;
-    margin: 0 10px;
-    cursor: pointer;
+const LanguageButton = styled.button`
+  background: none;
+  border: none;
+  font-size: 17px;
+  font-family: "Pretendard-Bold";
+  cursor: pointer;
+`;
+
+const LanguageDropdown = styled.div<LanguageDropdownProps>`
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  right: 0;
+  display: ${(props: { $showDropdown: boolean }) =>
+    props.$showDropdown ? "block" : "none"};
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+`;
+
+const LanguageOption = styled.button`
+  display: block;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-family: "KoPubWorldDotumMedium";
+  cursor: pointer;
+  font-size: 13px;
+  padding: 10px 0;
+  color: #333;
+
+  &:hover {
+    background-color: #f0f0f0;
   }
 `;
