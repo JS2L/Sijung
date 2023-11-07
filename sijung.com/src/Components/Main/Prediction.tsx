@@ -36,7 +36,11 @@ function PredictionSection() {
         alt="1st Prediction Img"
       />
       <ImgRightTxt data-aos="fade-left" data-aos-duration="1500">
-        <Link to="/introComp/tab1">A.I. Visibility</Link>
+        <Link to="/Product/tab1">
+          A.I. Visibility
+          <br />
+          JS-02P
+        </Link>
       </ImgRightTxt>
       <ImgLeft
         loading="lazy"
@@ -46,7 +50,11 @@ function PredictionSection() {
         alt="2nd Prediction Img"
       />
       <ImgLeftTxt data-aos="fade-right" data-aos-duration="1500">
-        <Link to="/technology/tab1">A.I. Vision</Link>
+        <Link to="/Product/tab3">
+          A.I. Vision
+          <br />
+          JS-08
+        </Link>
       </ImgLeftTxt>
       <ImgRightLow
         loading="lazy"
@@ -217,7 +225,7 @@ const ImgLeftTxt = styled.p`
   position: absolute;
   font-family: "Pretendard-Bold";
   font-size: 35px;
-  margin-top: 1350px;
+  margin-top: 1300px;
   margin-left: 400px;
   z-index: 2;
 
