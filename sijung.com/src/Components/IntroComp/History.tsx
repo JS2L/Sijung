@@ -111,7 +111,7 @@ const Title1st = styled.p`
     font-size: 28px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 21px;
   }
 `;
@@ -126,7 +126,7 @@ const Title2nd = styled.p`
     margin-bottom: 50px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 21px;
     margin-bottom: 30px;
   }
@@ -157,7 +157,7 @@ const YearItem = styled.div`
     font-size: 28px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 21px;
   }
 `;
@@ -173,7 +173,7 @@ const Year = styled.div`
     font-size: 28px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 21px;
   }
 `;
@@ -188,7 +188,7 @@ const Divider = styled.div`
     font-size: 28px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 19px;
   }
 `;
@@ -204,7 +204,7 @@ const Contents = styled.div`
     font-size: 28px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 19px;
   }
 `;
@@ -216,7 +216,7 @@ const ContentItem = styled.div`
     font-size: 28px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 19px;
   }
 `;

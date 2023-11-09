@@ -89,7 +89,7 @@ const PredictionContainer = styled.div`
   position: relative;
   height: 2200px;
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     height: 999px;
   }
 `;
@@ -111,7 +111,7 @@ const BlueBox = styled.div`
     padding-top: 0px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     padding: 10px 30px 10px;
   }
 `;
@@ -128,7 +128,7 @@ const BlueBoxTitle = styled.p`
     font-size: 32px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 24px;
     margin: 10px;
   }
@@ -145,7 +145,7 @@ const BlueBoxtxt = styled.p`
     font-size: 20px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 14px;
     margin: 10px;
   }
@@ -168,7 +168,7 @@ const ImgRight = styled.img`
     margin-top: 250px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     display: none;
   }
 `;
@@ -192,7 +192,7 @@ const ImgRightTxt = styled.p`
     margin-right: 400px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 35px;
     margin-top: 200px;
     margin-left: 500px;
@@ -216,7 +216,7 @@ const ImgLeft = styled.img`
     margin-top: 870px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     display: none;
   }
 `;
@@ -239,7 +239,7 @@ const ImgLeftTxt = styled.p`
     margin-left: 500px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 35px;
     margin-top: 400px;
     margin-right: 450px;
@@ -262,7 +262,7 @@ const ImgRightLow = styled.img`
     margin-left: 250px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     display: none;
   }
 `;
@@ -285,7 +285,7 @@ const ImgRightTxtLow = styled.p`
     margin-right: 480px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 35px;
     margin-top: 600px;
     margin-left: 550px;
@@ -306,7 +306,7 @@ const ImgRightTxtLow = styled.p`
     margin-right: 250px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     display: none;
   }
 `;
@@ -329,7 +329,7 @@ const ImgLeftTxtLow = styled.p`
     margin-left: 450px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 35px;
     margin-top: 800px;
     margin-right: 500px;

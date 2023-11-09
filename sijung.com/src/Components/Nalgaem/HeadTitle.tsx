@@ -52,7 +52,7 @@ const IntroEn = styled.p`
     margin-left: 50px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 30px;
     margin-left: 30px;
   }
@@ -68,7 +68,7 @@ const IntroKo = styled.p`
     margin-left: 50px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 19px;
     margin-left: 30px;
   }
@@ -87,7 +87,7 @@ const IntroKo = styled.p`
     margin-right: 70px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 70px;
     margin-right: 30px;
   }

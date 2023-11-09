@@ -89,7 +89,7 @@ const ParagraphTitle = styled.p`
     margin: 10px 30px 10px 30px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 15px;
     margin: 10px 10px 10px 10px;
   }
@@ -108,7 +108,7 @@ const Paragraph = styled.p`
     margin: 10px 30px 10px 30px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 12px;
     margin: 10px 10px 10px 10px;
   }
@@ -128,7 +128,7 @@ const ParagraphBold = styled.p`
     font-size: 16px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 12px;
   }
 `;
@@ -148,7 +148,7 @@ const Sign = styled.p`
     font-size: 16px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 12px;
   }
 `;

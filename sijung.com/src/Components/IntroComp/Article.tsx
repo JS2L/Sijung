@@ -51,7 +51,7 @@ const ArticleContainer = styled.div`
     margin: 50px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     margin: 10px;
   }
 `;
@@ -82,7 +82,7 @@ const ArticleImage = styled.div`
     }
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     margin-right: 60px;
     img {
       display: none;
@@ -105,7 +105,7 @@ const ArticleTitle = styled.div`
     font-size: 17px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 13px;
   }
 `;
@@ -119,7 +119,7 @@ const ArticleSummary = styled.div`
     font-size: 12px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 9px;
   }
 `;
@@ -133,7 +133,7 @@ const ArticleSource = styled.div`
     font-size: 11px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 7px;
   }
 `;

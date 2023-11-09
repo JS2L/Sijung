@@ -150,7 +150,7 @@ const TabButtons = styled.div`
     padding: 0px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -179,7 +179,7 @@ const TabButton = styled.button<{ active: boolean }>`
     padding: 40px 40px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 16px;
     padding: 20px 20px;
     margin: 2px 2px 55px;

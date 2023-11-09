@@ -37,7 +37,7 @@ const TitleBarContainer = styled.div`
     margin-top: -80px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     height: 200px;
   }
 `;
@@ -52,7 +52,7 @@ const TitleAndContent = styled.div`
     margin-left: 100px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     margin-left: 50px;
   }
 `;
@@ -66,7 +66,7 @@ const TitleText = styled.h1`
     font-size: 45px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 35px;
   }
 `;
@@ -80,7 +80,7 @@ const ContentText = styled.p`
     font-size: 30px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 20px;
   }
 `;

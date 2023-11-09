@@ -65,7 +65,7 @@ const IntroEn = styled.p`
     font-size: 35px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 30px;
   }
 `;
@@ -80,7 +80,7 @@ const IntroKo = styled.p`
     font-size: 25px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 20px;
   }
 `;
@@ -96,7 +96,7 @@ const ShadowKo = styled.p`
     font-size: 20px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 15px;
   }
 `;
@@ -114,7 +114,7 @@ const ShadowKo = styled.p`
     margin-right: 70px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 80px;
     margin-right: 30px;
   }

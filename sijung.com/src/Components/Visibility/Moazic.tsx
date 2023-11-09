@@ -109,7 +109,7 @@ const Container = styled.div`
     padding: 30px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     padding: 0px;
   }
 `;
@@ -124,7 +124,7 @@ const PageContainer = styled.div`
     margin-bottom: 50px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     margin-bottom: 10px;
     padding: 0px;
   }
@@ -156,7 +156,7 @@ const ContentTitleRight = styled.p`
     margin: 20px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 10px;
     margin: 10px;
   }
@@ -172,7 +172,7 @@ const ContentRight = styled.p`
     margin: 30px;
   }
 
-  @media all and (min-width: 360px) and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     font-size: 10px;
     margin: 12px;
   }
