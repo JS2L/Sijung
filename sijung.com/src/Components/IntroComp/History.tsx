@@ -111,7 +111,10 @@ const Title1st = styled.p`
     font-size: 28px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 21px;
+  }
+  @media all and (max-width: 359px) {
     font-size: 21px;
   }
 `;
@@ -126,9 +129,13 @@ const Title2nd = styled.p`
     margin-bottom: 50px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 21px;
     margin-bottom: 30px;
+  }
+  @media all and (max-width: 359px) {
+    font-size: 17px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -157,8 +164,11 @@ const YearItem = styled.div`
     font-size: 28px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 21px;
+  }
+  @media all and (max-width: 359px) {
+    font-size: 18px;
   }
 `;
 
@@ -173,8 +183,13 @@ const Year = styled.div`
     font-size: 28px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 21px;
+  }
+  @media all and (max-width: 359px) {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
   }
 `;
 
@@ -188,8 +203,11 @@ const Divider = styled.div`
     font-size: 28px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 19px;
+  }
+  @media all and (max-width: 359px) {
+    font-size: 16px;
   }
 `;
 
@@ -204,8 +222,11 @@ const Contents = styled.div`
     font-size: 28px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 19px;
+  }
+  @media all and (max-width: 359px) {
+    font-size: 16px;
   }
 `;
 
@@ -216,7 +237,10 @@ const ContentItem = styled.div`
     font-size: 28px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 19px;
+  }
+  @media all and (max-width: 359px) {
+    font-size: 16px;
   }
 `;

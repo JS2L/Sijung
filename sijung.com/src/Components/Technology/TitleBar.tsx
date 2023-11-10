@@ -37,8 +37,12 @@ const TitleBarContainer = styled.div`
     margin-top: -80px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     height: 200px;
+  }
+
+  @media all and (max-width: 359px) {
+    height: 170px;
   }
 `;
 
@@ -52,8 +56,12 @@ const TitleAndContent = styled.div`
     margin-left: 100px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     margin-left: 50px;
+  }
+
+  @media all and (max-width: 359px) {
+    margin-left: 30px;
   }
 `;
 
@@ -66,8 +74,12 @@ const TitleText = styled.h1`
     font-size: 45px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 35px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 25px;
   }
 `;
 
@@ -80,7 +92,11 @@ const ContentText = styled.p`
     font-size: 30px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 20px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 15px;
   }
 `;

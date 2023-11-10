@@ -59,7 +59,7 @@ function JS06() {
         {features.map((feature, index) => (
           <Feature key={index}>
             <FeatureImage src={feature.image} alt={feature.alt} />
-            <FeatureText>{feature.text}</FeatureText>
+            <FeatureText>{t(feature.text)}</FeatureText>
           </Feature>
         ))}
       </FeatureSection>
@@ -86,7 +86,12 @@ const Container = styled.div`
     padding: 50px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    height: auto;
+    padding: 10px;
+  }
+
+  @media all and (max-width: 359px) {
     height: auto;
     padding: 10px;
   }
@@ -101,7 +106,11 @@ const Title = styled.p`
     font-size: 20px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 15px;
+  }
+
+  @media all and (max-width: 359px) {
     font-size: 15px;
   }
 `;
@@ -121,8 +130,12 @@ const FeatureSection = styled.div`
     padding: 30px 20px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     padding: 30px 20px;
+  }
+
+  @media all and (max-width: 359px) {
+    padding: 20px 10px;
   }
 `;
 
@@ -140,8 +153,13 @@ const Feature = styled.div`
     min-width: 160px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     min-width: 100px;
+    margin: 5px;
+  }
+
+  @media all and (max-width: 359px) {
+    min-width: 80px;
     margin: 5px;
   }
 `;
@@ -157,9 +175,15 @@ const FeatureImage = styled.img`
     margin-bottom: 40px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     width: 50px;
     margin: 20px;
+    margin-bottom: 10px;
+  }
+
+  @media all and (max-width: 359px) {
+    width: 50px;
+    margin: 10px;
     margin-bottom: 10px;
   }
 `;
@@ -172,8 +196,12 @@ const FeatureText = styled.p`
     font-size: 16px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 12px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 10px;
   }
 `;
 
@@ -187,7 +215,11 @@ const OutSection = styled.div`
     padding: 20px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    padding: 0px 20px;
+  }
+
+  @media all and (max-width: 359px) {
     padding: 0px 20px;
   }
 `;
@@ -206,7 +238,14 @@ const OutContent = styled.p`
     font-size: 16px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    min-width: 100px;
+    font-size: 12px;
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+
+  @media all and (max-width: 359px) {
     min-width: 100px;
     font-size: 12px;
     margin: 0px;

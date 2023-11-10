@@ -31,7 +31,7 @@ function ImgContent() {
           ></ParagraphBold>
           <Sign>
             President Sintae Chae
-            <img
+            <SignImg
               loading="lazy"
               src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/sign.jpg?raw=true"
               alt="President Sintae Chae's Signature"
@@ -89,8 +89,14 @@ const ParagraphTitle = styled.p`
     margin: 10px 30px 10px 30px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 15px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 12px;
+    line-height: 24px;
     margin: 10px 10px 10px 10px;
   }
 `;
@@ -108,9 +114,15 @@ const Paragraph = styled.p`
     margin: 10px 30px 10px 30px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 12px;
     margin: 10px 10px 10px 10px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 8px;
   }
 `;
 
@@ -128,7 +140,11 @@ const ParagraphBold = styled.p`
     font-size: 16px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 12px;
+  }
+
+  @media all and (max-width: 359px) {
     font-size: 12px;
   }
 `;
@@ -148,7 +164,21 @@ const Sign = styled.p`
     font-size: 16px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 12px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 12px;
+  }
+`;
+
+const SignImg = styled.img`
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    width: 30%;
+  }
+
+  @media all and (max-width: 359px) {
+    width: 25%;
   }
 `;

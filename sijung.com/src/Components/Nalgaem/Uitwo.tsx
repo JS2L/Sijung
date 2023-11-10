@@ -65,7 +65,11 @@ const Container = styled.section`
     padding-top: 150px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    padding-top: 120px;
+  }
+
+  @media all and (max-width: 359px) {
     padding-top: 120px;
   }
 `;
@@ -79,7 +83,12 @@ const PageContainer = styled.div`
     padding-top: 10px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+
+  @media all and (max-width: 359px) {
     flex-direction: column;
     padding-top: 5px;
   }
@@ -92,7 +101,13 @@ const ImgLeft = styled.div`
     max-width: 100%;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    flex-direction: column;
+    padding-top: 5px;
+    margin: 10px;
+  }
+
+  @media all and (max-width: 359px) {
     flex-direction: column;
     padding-top: 5px;
     margin: 10px;
@@ -117,7 +132,12 @@ const ContentTitleRight = styled.p`
     margin: 20px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 25px;
+    margin: 10px;
+  }
+
+  @media all and (max-width: 359px) {
     font-size: 25px;
     margin: 10px;
   }
@@ -133,7 +153,12 @@ const ContentRight = styled.p`
     margin: 30px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    font-size: 18px;
+    margin: 12px;
+  }
+
+  @media all and (max-width: 359px) {
     font-size: 18px;
     margin: 12px;
   }

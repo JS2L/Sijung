@@ -179,8 +179,15 @@ const Title = styled.p`
     margin-bottom: 50px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -204,8 +211,14 @@ const Content = styled.p`
     margin-bottom: 50px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 18px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 15px !important;
     margin-bottom: 40px;
     margin-left: 5px;
   }
@@ -221,7 +234,11 @@ const VideoImg1 = styled.img`
     margin-bottom: 30px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    display: none;
+  }
+
+  @media all and (max-width: 359px) {
     display: none;
   }
 `;
@@ -235,7 +252,11 @@ const Img2Container = styled.div`
     padding: 30px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    padding: 5px;
+  }
+
+  @media all and (max-width: 359px) {
     padding: 5px;
   }
 `;
@@ -250,7 +271,11 @@ const ImageContainer = styled.div`
 const VideoImg2 = styled.img`
   max-width: 100%;
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    display: none;
+  }
+
+  @media all and (max-width: 359px) {
     display: none;
   }
 `;
@@ -260,7 +285,12 @@ const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    flex: 99;
+    margin-left: 9px;
+  }
+
+  @media all and (max-width: 359px) {
     flex: 99;
     margin-left: 9px;
   }
@@ -272,7 +302,11 @@ const ImgBox = styled.div`
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 100px;
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    display: none;
+  }
+
+  @media all and (max-width: 359px) {
     display: none;
   }
 `;
@@ -291,8 +325,14 @@ const FirContent = styled.div`
     margin-left: 30px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 20px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 15px !important;
     margin-bottom: 40px;
     margin-left: 0px;
   }
@@ -313,8 +353,14 @@ const SecContent = styled.div`
     margin-right: 50px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 20px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 15px;
     margin-bottom: 40px;
     margin-left: 5px;
   }
@@ -334,8 +380,15 @@ const SixContent = styled.div`
     margin-bottom: 50px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 20px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    margin-left: 5px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 15px;
     justify-content: flex-start;
     margin-bottom: 40px;
     margin-left: 5px;

@@ -51,8 +51,12 @@ const ArticleContainer = styled.div`
     margin: 50px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     margin: 10px;
+  }
+
+  @media all and (max-width: 359px) {
+    margin: 5px;
   }
 `;
 
@@ -82,7 +86,14 @@ const ArticleImage = styled.div`
     }
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    margin-right: 60px;
+    img {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: 359px) {
     margin-right: 60px;
     img {
       display: none;
@@ -105,8 +116,11 @@ const ArticleTitle = styled.div`
     font-size: 17px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 13px;
+  }
+  @media all and (max-width: 359px) {
+    font-size: 11px;
   }
 `;
 
@@ -119,8 +133,11 @@ const ArticleSummary = styled.div`
     font-size: 12px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 9px;
+  }
+  @media all and (max-width: 359px) {
+    font-size: 8px;
   }
 `;
 
@@ -133,7 +150,10 @@ const ArticleSource = styled.div`
     font-size: 11px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 7px;
+  }
+  @media all and (max-width: 359px) {
+    font-size: 6px;
   }
 `;

@@ -62,7 +62,11 @@ const ImageList = styled.div`
     padding: 20px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    height: 80%;
+    padding: 0px;
+  }
+  @media all and (max-width: 359px) {
     height: 80%;
     padding: 0px;
   }
@@ -91,8 +95,12 @@ const ImageItem = styled.div`
     transform: scale(0.9);
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     transform: scale(0.8);
+  }
+
+  @media all and (max-width: 359px) {
+    transform: scale(0.7);
   }
 `;
 
@@ -122,8 +130,13 @@ const Modal = styled.div`
     height: auto;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     width: 250px;
+    height: auto;
+  }
+
+  @media all and (max-width: 359px) {
+    width: 200px;
     height: auto;
   }
 `;

@@ -33,6 +33,7 @@ function Header() {
       <LogoContainer>
         <Link to="/">
           <img
+            style={{ marginTop: "7px" }}
             loading="lazy"
             src="https://github.com/JS2L/Sijung/blob/main/sijung.com/public/img/logo.webp?raw=true"
             width="150"
@@ -108,7 +109,7 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   color: white;
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -227,7 +228,7 @@ const LanguageDropdown = styled.div<LanguageDropdownProps>`
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 5px 0;
+  padding: 3px 0;
 `;
 
 const LanguageOption = styled.button`

@@ -43,9 +43,14 @@ const FooterContainer = styled.footer`
     font-size: 14px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     padding-left: 30px;
     height: 180px;
+  }
+
+  @media all and (max-width: 359px) {
+    padding-left: 10px;
+    height: 160px;
   }
 `;
 
@@ -57,8 +62,12 @@ const FooterAddress = styled.p`
     font-size: 14px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 10px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 9px;
   }
 `;
 
@@ -70,8 +79,12 @@ const FooterTel = styled.p`
     font-size: 14px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 10px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 9px;
   }
 `;
 
@@ -82,8 +95,12 @@ const FooterCP = styled.p`
     font-size: 14px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 10px;
+  }
+
+  @media all and (max-width: 359px) {
+    font-size: 9px;
   }
 `;
 
@@ -96,7 +113,12 @@ const WhiteLogo = styled.img`
     padding-right: 30px;
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (min-width: 360px) and (max-width: 767px) {
+    width: 25%;
+    padding-right: 30px;
+  }
+
+  @media all and (max-width: 359px) {
     width: 25%;
     padding-right: 30px;
   }
