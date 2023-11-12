@@ -165,7 +165,7 @@ const TabButton = styled.button<{ active: boolean }>`
   }
 
   @media all and (max-width: 359px) {
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 8px;
     margin: 5px 5px 55px;
   }

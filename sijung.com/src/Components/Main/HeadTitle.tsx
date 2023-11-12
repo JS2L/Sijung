@@ -68,9 +68,9 @@ const IntroEn = styled.p`
   @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 30px;
   }
-  
+
   @media all and (max-width: 359px) {
-    
+    font-size: 25px;
   }
 `;
 
@@ -87,9 +87,9 @@ const IntroKo = styled.p`
   @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 20px;
   }
-  
+
   @media all and (max-width: 359px) {
-    
+    font-size: 17px;
   }
 `;
 
@@ -107,9 +107,9 @@ const ShadowKo = styled.p`
   @media all and (min-width: 360px) and (max-width: 767px) {
     font-size: 15px;
   }
-  
+
   @media all and (max-width: 359px) {
-    
+    font-size: 12px;
   }
 `;
 
