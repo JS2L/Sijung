@@ -11,6 +11,7 @@ function Footer() {
     <FooterContainer>
       <FooterAddress>{t("footerAddress")}</FooterAddress>
       <FooterTel>{t("footerTel")}</FooterTel>
+      <FooterTel>{t("footerBis")}</FooterTel>
       <FooterCP>{t("footerCP")}</FooterCP>
       <WhiteLogo
         loading="lazy"
