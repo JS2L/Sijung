@@ -3,7 +3,7 @@ import styled from "styled-components";
 import "../../Fonts/Font.css";
 import { useTranslation } from "react-i18next";
 
-// 푸터 ! Footer ! F00t3r ! 푸ㅌr
+// 2023-11-20 : Feat 사업자등록번호 추가
 function Footer() {
   const { t } = useTranslation();
 
